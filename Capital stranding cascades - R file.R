@@ -21,7 +21,7 @@ library(plotrix)
 library(RColorBrewer)
 library(circlize)
 # Load the functions written in the library file
-source('files_to_load/networks_of_stranded_assets_library.R')
+source('files_to_load/capital_stranding_cascades_function_library.R')
 
 # Countries to be analysed
 countries<- c("AT", "BE", "CZ", "DE", "EL", "FR", "IT", "SE", "SK", "UK")
@@ -150,7 +150,7 @@ for (geo in countries) {
 # 3. Capital stocks at risk of stranding
 ######################################################################################
 
-  # Load files with results from Exiobase
+  # Load files with results from Exiobase database (see "Fossil ratios from Exiobase.R")
   load("files_to_load/fossil.use.ratio.Rda")
   load("files_to_load/fossil.prod.ratio.Rda")
   names(fossil.prod.ratio.int)<-countries
@@ -184,10 +184,6 @@ for (geo in countries) {
   B_sect_stranding["B"]<-(1-fossil.prod.ratio.int[geo])*(B_tot_uses*fossil.use.ratio.int.by.sector["B",geo])/B_diagGt*(Gt["B","B"]-1)*k_int["B"]+fossil_capital_B[geo,]
   B_sect_strand_share["B"]<-B_sect_stranding["B"]/k["B"]
   
-  # To calculate total capital in C sectors TODO: Delete from final file
-  C_k<-sum(k[substr(names(k),1,1)=="C"])
-  int_C_k[count]<-C_k
-  
   # Calculate summary results
   B_tot_stranding<-sum(B_sect_stranding)
   B_stranding_over_GDP<-B_tot_stranding/GDP
@@ -199,10 +195,6 @@ for (geo in countries) {
 ######################################################################################
 # 4. Cascade networks
 ######################################################################################
-  
-  
-  # Create a minimal fully-connected (mfc) S matrix
-  
   
   # The code below draws the circular plot of the S_mfc matrix (diagonal excluded) using the chordDiagram function. col_vector defines a color palette.
   # The S_mfc creates a minimal fully-connected network (see Campiglio et al. 2017, AFD Working Paper)
@@ -219,16 +211,9 @@ for (geo in countries) {
   
   # Create a graph from the S matrix
   S.graph <- simplify(graph_from_adjacency_matrix(t(S), mode = "directed", weighted = TRUE))
-  # TODO: delete in final file
-  #S_mfc.graph <- simplify(graph_from_adjacency_matrix(t(S_mfc), mode = "directed", weighted = TRUE))
-  #table(ends(S_mfc.graph,E(S_mfc.graph))[,2])
-  
-  # Assign weights to the edges of S.graph
-  #weights <- E(S.graph)$weight/max(E(S.graph)$weight)
-  #log.weights <- log(weights) - min(log(weights))
-  
+
   # Define the cn (cascade network) graph. 'q' defines the percentile of values to look at. 'depth' defines the desired number of layers.
-  cn <- cascade_network_EC2(S.graph, sector, q = 0.05 , depth=NA)
+  cn <- cascade_network(S.graph, sector, q = 0.05 , depth=NA)
   
   
   # The lines below define the graphical properties of the cascade network. Comment/uncomment as needed
@@ -237,32 +222,12 @@ for (geo in countries) {
   weights <- E(cn)$weight/max(E(cn)$weight)
   E(cn)$width <- 1.5+maxwidth * weights
   
-  ## Register the ellipse shape with igraph
-  add_shape("ellipse", clip=shapes("circle")$clip, plot=myellipse)
-  
-  # Uncomment the lines below to have edge colors depending on their weights
-  #alpha.min <- 0.5
-  #for (i in 1:length(weights)) {
-  #  E(cn)$color[i] <- adjustcolor("Darkgray", alpha.f = alpha.min + (1 - alpha.min) * weights[i])
-  #}
+ 
   
   #Vertex attributes
-  #V(cn)$size <- 2.7
-  #V(cn)$shape <- "ellipse"
-  #V(cn)$color <- "white"
   V(cn)$label.color <- "black"
   V(cn)$size<-15
-  #V(cn)$label.cex <- 1.5
   V(cn)$label.font <- 2
-  #E(cn)$label.x<-2
-  #V(cn)$label.family <- "sans"
-  #V(cn)$label.dist <- 0
-  #V(cn)$frame.color <- "gray40"
-  
-  #palf <- colorRampPalette(c(rgb(0.6,0,0, 1),rgb(1,0,0, 0.7)), alpha=TRUE)
-  #V(cn)$color<-palf(length(V(cn)$layer))
-  #V(cn)$color<-brewer.pal(n = 11, name = "RdBu")
-  #colrs <- rev(brewer.pal(n = length(unique(V(cn)$layer)), name =  "YlOrRd"))
   palette<-colorRampPalette(c("darkgray", "white"))
   pal<-palette(length(unique(V(cn)$layer)))
   V(cn)$color <- pal[V(cn)$layer]
@@ -277,66 +242,11 @@ for (geo in countries) {
   for (w in 1:length(E(cn))) {
     E(cn)$label[w]<-if (E(cn)$weight[w] %in% tail(sort(E(cn)$weight),10)) {round(E(cn)$weight[w], 3)} else {NA}
   }
-  
-  # ALTERNATIVE LAYOUT: l1 <- ego_circle_layout(S.graph, sector, nlayer=5)#, root=V(B.graph)[sector], circular=TRUE, mode="out")
-  
-  # Counts numbers of times a sector is hit by stranding in the cn graph
-  table(ends(cn,E(cn))[,2])
-  
-  # Code below specifies the position of some edge labels in the cascade network to ensure readability
-  if (geo=="AT"){
-    E(cn)[1]$label.x<--0.2
-    E(cn)[1]$label.y<-0.92
-    #E(cn)[2]$label.x<-0.05
-    E(cn)[2]$label.y<-0.85
-    #E(cn)[3]$label.x<-0.3
-    E(cn)[3]$label.y<-0.85
-    E(cn)[4]$label.x<-0.7
-    E(cn)[4]$label.y<-0.92
-    E(cn)[7]$label.x<--0.2
-  }
-  if (geo=="CZ"){
-    E(cn)[1]$label.x<--0.75
-    E(cn)[1]$label.y<-0.9
-    E(cn)[2]$label.x<--0.35
-    E(cn)[3]$label.x<-0.05
-  }
-  if (geo=="SE"){
-    E(cn)[1]$label.x<--0.45
-    #E(cn)[1]$label.y<-0.9
-    E(cn)[2]$label.x<--0.05
-    E(cn)[3]$label.x<-0.3
-    E(cn)[7]$label.x<--0.25
-    E(cn)[8]$label.x<-0
-  }
-  
-  if (geo=="UK"){
-    E(cn)[1]$label.x<--0.5
-    #E(cn)[1]$label.y<-0.92
-    #E(cn)[2]$label.x<-0.05
-    E(cn)[2]$label.y<-0.8
-    #E(cn)[3]$label.x<-0.3
-    E(cn)[3]$label.y<-0.8
-    E(cn)[4]$label.x<-0.5
-    #E(cn)[4]$label.y<-0.92
-    E(cn)[5]$label.x<--0.9
-    E(cn)[6]$label.x<--0.7
-    E(cn)[30]$label.x<-0.25
-    E(cn)[31]$label.x<-0.4
-  }
-  
+
   # Plot the cascade network
   plot.igraph(cn, layout=layout_as_tree(cn,circular=F))
-  #plot(cn, layout=layout_with_fr(cn,coords=layout_as_tree(cn,circular=T)))
   title(main = geo)
   
-  # TODO: delete in final file
-  layer_1<-V(cn)[V(cn)$layer==2]
-  layer_2<-V(cn)[V(cn)$layer==3]
-  layer_3<-V(cn)[V(cn)$layer==4]
-  ##########################################
-  
-
 ######################################################################################
 # 5. Write-up of results
 ######################################################################################  
