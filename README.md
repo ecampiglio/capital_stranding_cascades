@@ -1,15 +1,25 @@
-# capital_stranding_cascades
-This repository contains the code and material for:
-Cahen-Fourot, L., Campiglio, E., Dawkins, E., Godin, A., and Kemp-Benedict, E. (2019) 
-"Capital stranding cascades: The impact of decarbonisation on productive asset utilisation"
+---
+# Capital Stranding Cascades
+---
 
-The main file is "Capital stranding cascades.R". It requires the installation of R (https://cran.r-project.org/). 
+This repository contains the code and material for: Cahen-Fourot, L., Campiglio, E., Godin, A., Kemp-Benedict, E. and Trsek, S. (2021) "Capital stranding cascades: The impact of decarbonisation on productive asset utilisation"
 
-The code requires additional data and files: 
-- IO and capital stock data from Eurostat (in the "country_data" folder)
-- A library of functions ("capital_stranding_cascades_function_library", in the "files_to_load" folder)
-- Data extracted from the Exiobase database ("fossil.prod.ratio.Rda", "fossil.use.ratio.Rda", "B_domestic_production.csv", in the "files_to_load" folder)
+The main code file is "Cascades_script.R". It requires the installation of [R](https://cran.r-project.org/).
 
-The "Exiobase folder" contains the code to extract the required data from the Exiobase database. The Exiobase database, however, is not included. To run the code, please download the Exiobase 3 database, available at www.exiobase.eu. 
+To run the main code, two additional files are required:
+* A library of functions ("Cascades_function_library.R")
+* A version of the World Input-Output Database (WIOD) for the year 2014 (including capital stocks) in which the mining sector has been disaggregated into three separate sectors ("WIOT2014_disaggregated.RData", see [Data]( https://github.com/ecampiglio/capital_stranding_cascades/tree/master/Data) folder)
 
-For any questions or comments, please write to: emanuele.campiglio@wu.ac.at.
+
+The disaggregatation of the WIOD mining sector is conducted in separate preparatory code files (see R/Data_preparation)
+* The script "ICIO_FossilRatios.R" computes ratios for the splitting of the WIOD mining sector from the OECD Inter-Country Input-Output (ICIO) table. This script requires the sector correspondence sheet "ICIO_to_WIOD.xlsx" as well as the OECD ICIO table for the year 2014. To run the code, please download the ICIO table in csv format from the [OECD website](https://www.oecd.org/sti/ind/inter-country-input-output-tables.htm).
+* The script "WIOD_MiningDisaggregation" disaggregates the WIOD mining sector using the ratios from ICIO and balances the disaggregated table by means of a two-step RAS algorithm. It requires the raw WIOD table for the year 2014 ("WIOT2014_October16_ROW.RData"), the WIOD capital stock data for the same year ("capital_stocks_wiod.xlsx") as well as splitting ratios from ICIO ("FossilRatios2014_ICIO.RData").
+To run the main code, you do not necessarily need to run the preparotry codes. 
+
+
+## Results
+The [Results](https://github.com/ecampiglio/capital_stranding_cascades/tree/master/Results) folder contains several tables and figures contained in the paper. 
+
+
+## Contact
+For any questions or comments, please write to: emanuele.campiglio@unibo.it
