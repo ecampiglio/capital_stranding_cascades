@@ -11,7 +11,7 @@ To run the main code, two additional files are required:
 
 The disaggregatation of the WIOD mining sector is conducted in separate preparatory code files (see [R/Data_preparation](/R/Data_preparation))
 * The script *ICIO_FossilRatios.R* computes ratios for the splitting of the WIOD mining sector from the OECD Inter-Country Input-Output (ICIO) table. This script requires the sector correspondence sheet *ICIO_to_WIOD.xlsx* as well as the OECD ICIO table for the year 2014. To run the code, please download the ICIO table in csv format from the [OECD website](https://www.oecd.org/sti/ind/inter-country-input-output-tables.htm).
-* The script *WIOD_MiningDisaggregation* disaggregates the WIOD mining sector using the ratios from ICIO and balances the disaggregated table by means of a two-step RAS algorithm. It requires the raw WIOD table for the year 2014 (*WIOT2014_October16_ROW.RData*), the WIOD capital stock data for the same year (*capital_stocks_wiod.xlsx*) as well as the obtained splitting ratios from ICIO (*FossilRatios2014_ICIO.Rdata*).
+* The script *WIOD_MiningDisaggregation* disaggregates the WIOD mining sector using the ratios from ICIO and balances the disaggregated table by means of a two-step RAS algorithm. It requires the raw WIOD table for the year 2014 (*WIOT2014_October16_ROW.RData*), the WIOD capital stock data and exchange rates for the same year (*capital_stocks_wiod.xlsx* & *exchange_rate_wiod.csv*) as well as the splitting ratios obtained from ICIO (*FossilRatios2014_ICIO.Rdata*).
 To run the main code, it is not necessary to run the preparatory codes before. 
 
 
