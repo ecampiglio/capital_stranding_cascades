@@ -1,8 +1,8 @@
 # Capital Stranding Cascades
 
-This repository contains the code and material for: __Cahen-Fourot, L., Campiglio, E., Godin, A., Kemp-Benedict, E. and Trsek, S. (2021) *Capital stranding cascades: The impact of decarbonisation on productive asset utilisation*__
+This repository contains the code and material for: __Cahen-Fourot, L., Campiglio, E., Godin, A., Kemp-Benedict, E. and Trsek, S. (2021): *Capital stranding cascades: The impact of decarbonisation on productive asset utilisation*__
 
-The main code file is *Cascades_script.R*. It requires the installation of [R](https://cran.r-project.org/).
+The __main code file__ is *Cascades_script.R*. It requires the installation of [R](https://cran.r-project.org/).
 
 To run the main code, two additional files are required:
 * A library of functions (*Cascades_function_library.R*)
@@ -18,14 +18,14 @@ To run the main code, it is not necessary to run the preparatory codes before.
 
 The [Results](/Results) folder contains several tables and figures contained in the paper. Below we show some key figures (see paper for more details)
 
-- Stranding cascade caused by a marginal supply shock in the global fossil mining sector  
+- __Stranding cascade__ caused by a marginal supply shock in the __global fossil mining sector__  
 ![Stranding cascade from the global mining sector](/Results/figures/Cascades_global_sectors.png)
 
-- Stranding caused by domestic fossil sectors in other countries (Top 10 countries for external marginal stranding multipliers)  
+- __Stranding caused by domestic fossil sectors__ in other countries (Top 10 countries for external marginal stranding multipliers)  
 ![Top 10 countries for external marginal stranding multipliers](/Results/figures/Lollipop_country.png)
 
-- Main stranding exposure links for the United States  
-![Main exposure links for the United States](/Results/figures/Exposure_USA_top2.png)
+- Main __stranding exposure__ links for the __United States__  
+ <img src="/Results/figures/Exposure_USA_top2.png" align="left" height="10">
 
 
 ## Contact
