@@ -334,7 +334,8 @@ ggplot(S_fos_country_plot, aes(x = reorder(orig_country,value, mean, na.rm = TRU
         axis.title.y = element_text(margin = margin(r = 10)),
         axis.text.y = element_text(margin = margin(r = 0)))
 
-ggsave(filename = paste0(path.expand(fig_path),"/","Lollipop_country",".pdf"))
+# export plot
+# ggsave(filename = paste0(path.expand(fig_path),"/","Lollipop_country",".pdf"))
 
 
 # for countries'exposure to all (foreign) MINfos sectors
@@ -368,7 +369,8 @@ ggplot(S_fos_country_plot, aes(x = reorder(aff_country, value, mean, na.rm = TRU
         axis.title.y = element_text(margin = margin(r = 10)),
         axis.text.y = element_text(margin = margin(r = 0)))
 
-ggsave(filename = paste0(path.expand(fig_path),"/","Lollipop_country_exposure",".pdf"))
+# export plot
+# ggsave(filename = paste0(path.expand(fig_path),"/","Lollipop_country_exposure",".pdf"))
 
 
 # 3. Stranding rounds  -----------------------------------------------------
@@ -501,7 +503,7 @@ cn_worldsec_plot
 # define parameters
 cntry <-"AUS"
 node <- paste0(cntry,"_",sect_focus)
-q <-  0.002
+q <-  0.001
 depth <- 3
 S1 <- Rounds$Round1
 
@@ -524,7 +526,7 @@ cn_plot
 # generate exposure networks for the most fossil-exposed sectors of selected countries
 
 # select a country and number of top exposed sectors to include
-cntry <- "DEU"
+cntry <- "USA"
 n_exp <- 3
 
 # select sectors that are most exposed to fossil stranding (total or external, i.e. only to foreign fossil sectors)
@@ -544,3 +546,4 @@ cn_exp_plot <- plot_network(network = cn_exp_vis_dat, node_height = 70, node_dis
 cn_exp_plot
 # export
 visExport(cn_exp_plot, type = "png") # or pdf  
+

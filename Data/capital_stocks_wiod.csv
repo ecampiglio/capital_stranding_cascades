@@ -1,0 +1,2409 @@
+﻿country;variable;description;code;2014
+AUS;K;Crop and animal production, hunting and related service activities;A01;125 137
+AUS;K;Forestry and logging;A02;6 443
+AUS;K;Fishing and aquaculture;A03;7 777
+AUS;K;Mining and quarrying;B;815 665
+AUS;K;Manufacture of food products, beverages and tobacco products;C10-C12;49 380
+AUS;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;5 939
+AUS;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;9 872
+AUS;K;Manufacture of paper and paper products;C17;4 411
+AUS;K;Printing and reproduction of recorded media;C18;5 448
+AUS;K;Manufacture of coke and refined petroleum products ;C19;6 462
+AUS;K;Manufacture of chemicals and chemical products ;C20;11 838
+AUS;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;7 458
+AUS;K;Manufacture of rubber and plastic products;C22;7 655
+AUS;K;Manufacture of other non-metallic mineral products;C23;8 834
+AUS;K;Manufacture of basic metals;C24;11 958
+AUS;K;Manufacture of fabricated metal products, except machinery and equipment;C25;25 372
+AUS;K;Manufacture of computer, electronic and optical products;C26;6 191
+AUS;K;Manufacture of electrical equipment;C27;3 492
+AUS;K;Manufacture of machinery and equipment n.e.c.;C28;5 464
+AUS;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;3 609
+AUS;K;Manufacture of other transport equipment;C30;4 081
+AUS;K;"Manufacture of furniture; other manufacturing";C31_C32;1 388
+AUS;K;Repair and installation of machinery and equipment;C33;0
+AUS;K;Electricity, gas, steam and air conditioning supply;D35;200 618
+AUS;K;Water collection, treatment and supply;E36;92 855
+AUS;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;30 462
+AUS;K;Construction;F;60 372
+AUS;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;6 686
+AUS;K;Wholesale trade, except of motor vehicles and motorcycles;G46;57 082
+AUS;K;Retail trade, except of motor vehicles and motorcycles;G47;62 544
+AUS;K;Land transport and transport via pipelines;H49;29 251
+AUS;K;Water transport;H50;3 639
+AUS;K;Air transport;H51;6 541
+AUS;K;Warehousing and support activities for transportation;H52;28 424
+AUS;K;Postal and courier activities;H53;4 842
+AUS;K;Accommodation and food service activities;I;395 732
+AUS;K;Publishing activities;J58;14 601
+AUS;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;16 068
+AUS;K;Telecommunications;J61;46 372
+AUS;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;61 168
+AUS;K;Financial service activities, except insurance and pension funding;K64;77 039
+AUS;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;14 642
+AUS;K;Activities auxiliary to financial services and insurance activities;K66;19 395
+AUS;K;Real estate activities;L68;2 278 733
+AUS;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;63 107
+AUS;K;"Architectural and engineering activities; technical testing and analysis";M71;0
+AUS;K;Scientific research and development;M72;0
+AUS;K;Advertising and market research;M73;0
+AUS;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;0
+AUS;K;Administrative and support service activities;N;21 214
+AUS;K;"Public administration and defence; compulsory social security";O84;236 756
+AUS;K;Education;P85;156 226
+AUS;K;Human health and social work activities;Q;136 471
+AUS;K;Other service activities;R_S;78 189
+AUS;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+AUS;K;Activities of extraterritorial organizations and bodies;U;0
+AUT;K;Crop and animal production, hunting and related service activities;A01;38 237
+AUT;K;Forestry and logging;A02;3 422
+AUT;K;Fishing and aquaculture;A03;471
+AUT;K;Mining and quarrying;B;3 466
+AUT;K;Manufacture of food products, beverages and tobacco products;C10-C12;11 267
+AUT;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;2 430
+AUT;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;5 013
+AUT;K;Manufacture of paper and paper products;C17;4 363
+AUT;K;Printing and reproduction of recorded media;C18;2 319
+AUT;K;Manufacture of coke and refined petroleum products ;C19;1 390
+AUT;K;Manufacture of chemicals and chemical products ;C20;5 726
+AUT;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;5 030
+AUT;K;Manufacture of rubber and plastic products;C22;4 285
+AUT;K;Manufacture of other non-metallic mineral products;C23;6 577
+AUT;K;Manufacture of basic metals;C24;8 460
+AUT;K;Manufacture of fabricated metal products, except machinery and equipment;C25;9 023
+AUT;K;Manufacture of computer, electronic and optical products;C26;7 375
+AUT;K;Manufacture of electrical equipment;C27;8 597
+AUT;K;Manufacture of machinery and equipment n.e.c.;C28;10 534
+AUT;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;9 519
+AUT;K;Manufacture of other transport equipment;C30;1 308
+AUT;K;"Manufacture of furniture; other manufacturing";C31_C32;4 400
+AUT;K;Repair and installation of machinery and equipment;C33;1 653
+AUT;K;Electricity, gas, steam and air conditioning supply;D35;30 490
+AUT;K;Water collection, treatment and supply;E36;6 216
+AUT;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;26 888
+AUT;K;Construction;F;34 391
+AUT;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;5 577
+AUT;K;Wholesale trade, except of motor vehicles and motorcycles;G46;22 963
+AUT;K;Retail trade, except of motor vehicles and motorcycles;G47;18 902
+AUT;K;Land transport and transport via pipelines;H49;28 644
+AUT;K;Water transport;H50;114
+AUT;K;Air transport;H51;1 867
+AUT;K;Warehousing and support activities for transportation;H52;59 310
+AUT;K;Postal and courier activities;H53;851
+AUT;K;Accommodation and food service activities;I;27 321
+AUT;K;Publishing activities;J58;683
+AUT;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;1 279
+AUT;K;Telecommunications;J61;13 477
+AUT;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;4 377
+AUT;K;Financial service activities, except insurance and pension funding;K64;17 688
+AUT;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;5 648
+AUT;K;Activities auxiliary to financial services and insurance activities;K66;435
+AUT;K;Real estate activities;L68;640 256
+AUT;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;6 522
+AUT;K;"Architectural and engineering activities; technical testing and analysis";M71;6 360
+AUT;K;Scientific research and development;M72;2 667
+AUT;K;Advertising and market research;M73;1 096
+AUT;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;894
+AUT;K;Administrative and support service activities;N;31 955
+AUT;K;"Public administration and defence; compulsory social security";O84;63 847
+AUT;K;Education;P85;35 794
+AUT;K;Human health and social work activities;Q;48 019
+AUT;K;Other service activities;R_S;26 956
+AUT;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+AUT;K;Activities of extraterritorial organizations and bodies;U;0
+BEL;K;Crop and animal production, hunting and related service activities;A01;8 525
+BEL;K;Forestry and logging;A02;292
+BEL;K;Fishing and aquaculture;A03;139
+BEL;K;Mining and quarrying;B;726
+BEL;K;Manufacture of food products, beverages and tobacco products;C10-C12;16 649
+BEL;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;2 939
+BEL;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;2 210
+BEL;K;Manufacture of paper and paper products;C17;3 045
+BEL;K;Printing and reproduction of recorded media;C18;3 280
+BEL;K;Manufacture of coke and refined petroleum products ;C19;3 025
+BEL;K;Manufacture of chemicals and chemical products ;C20;15 592
+BEL;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;18 322
+BEL;K;Manufacture of rubber and plastic products;C22;4 541
+BEL;K;Manufacture of other non-metallic mineral products;C23;5 214
+BEL;K;Manufacture of basic metals;C24;5 081
+BEL;K;Manufacture of fabricated metal products, except machinery and equipment;C25;7 537
+BEL;K;Manufacture of computer, electronic and optical products;C26;3 521
+BEL;K;Manufacture of electrical equipment;C27;2 477
+BEL;K;Manufacture of machinery and equipment n.e.c.;C28;4 481
+BEL;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;6 278
+BEL;K;Manufacture of other transport equipment;C30;1 716
+BEL;K;"Manufacture of furniture; other manufacturing";C31_C32;1 497
+BEL;K;Repair and installation of machinery and equipment;C33;1 834
+BEL;K;Electricity, gas, steam and air conditioning supply;D35;26 949
+BEL;K;Water collection, treatment and supply;E36;4 371
+BEL;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;11 337
+BEL;K;Construction;F;31 481
+BEL;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;7 558
+BEL;K;Wholesale trade, except of motor vehicles and motorcycles;G46;28 982
+BEL;K;Retail trade, except of motor vehicles and motorcycles;G47;21 268
+BEL;K;Land transport and transport via pipelines;H49;37 830
+BEL;K;Water transport;H50;2 132
+BEL;K;Air transport;H51;2 246
+BEL;K;Warehousing and support activities for transportation;H52;52 174
+BEL;K;Postal and courier activities;H53;11 373
+BEL;K;Accommodation and food service activities;I;10 928
+BEL;K;Publishing activities;J58;1 499
+BEL;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;2 607
+BEL;K;Telecommunications;J61;10 320
+BEL;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;6 228
+BEL;K;Financial service activities, except insurance and pension funding;K64;18 019
+BEL;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;5 275
+BEL;K;Activities auxiliary to financial services and insurance activities;K66;4 487
+BEL;K;Real estate activities;L68;573 902
+BEL;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;23 216
+BEL;K;"Architectural and engineering activities; technical testing and analysis";M71;3 435
+BEL;K;Scientific research and development;M72;5 972
+BEL;K;Advertising and market research;M73;2 570
+BEL;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;1 573
+BEL;K;Administrative and support service activities;N;24 584
+BEL;K;"Public administration and defence; compulsory social security";O84;54 450
+BEL;K;Education;P85;36 641
+BEL;K;Human health and social work activities;Q;37 399
+BEL;K;Other service activities;R_S;10 921
+BEL;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+BEL;K;Activities of extraterritorial organizations and bodies;U;0
+BGR;K;Crop and animal production, hunting and related service activities;A01;18 565
+BGR;K;Forestry and logging;A02;1 111
+BGR;K;Fishing and aquaculture;A03;87
+BGR;K;Mining and quarrying;B;5 824
+BGR;K;Manufacture of food products, beverages and tobacco products;C10-C12;5 120
+BGR;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;4 279
+BGR;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;506
+BGR;K;Manufacture of paper and paper products;C17;448
+BGR;K;Printing and reproduction of recorded media;C18;588
+BGR;K;Manufacture of coke and refined petroleum products ;C19;3 050
+BGR;K;Manufacture of chemicals and chemical products ;C20;1 340
+BGR;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;525
+BGR;K;Manufacture of rubber and plastic products;C22;756
+BGR;K;Manufacture of other non-metallic mineral products;C23;1 873
+BGR;K;Manufacture of basic metals;C24;1 641
+BGR;K;Manufacture of fabricated metal products, except machinery and equipment;C25;2 393
+BGR;K;Manufacture of computer, electronic and optical products;C26;383
+BGR;K;Manufacture of electrical equipment;C27;689
+BGR;K;Manufacture of machinery and equipment n.e.c.;C28;1 294
+BGR;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;167
+BGR;K;Manufacture of other transport equipment;C30;170
+BGR;K;"Manufacture of furniture; other manufacturing";C31_C32;752
+BGR;K;Repair and installation of machinery and equipment;C33;1 133
+BGR;K;Electricity, gas, steam and air conditioning supply;D35;7 105
+BGR;K;Water collection, treatment and supply;E36;1 410
+BGR;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;757
+BGR;K;Construction;F;16 381
+BGR;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;1 760
+BGR;K;Wholesale trade, except of motor vehicles and motorcycles;G46;10 005
+BGR;K;Retail trade, except of motor vehicles and motorcycles;G47;11 864
+BGR;K;Land transport and transport via pipelines;H49;8 685
+BGR;K;Water transport;H50;954
+BGR;K;Air transport;H51;249
+BGR;K;Warehousing and support activities for transportation;H52;2 795
+BGR;K;Postal and courier activities;H53;1 892
+BGR;K;Accommodation and food service activities;I;4 051
+BGR;K;Publishing activities;J58;1 119
+BGR;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;671
+BGR;K;Telecommunications;J61;5 706
+BGR;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;1 926
+BGR;K;Financial service activities, except insurance and pension funding;K64;9 649
+BGR;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;2 078
+BGR;K;Activities auxiliary to financial services and insurance activities;K66;460
+BGR;K;Real estate activities;L68;95 556
+BGR;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;774
+BGR;K;"Architectural and engineering activities; technical testing and analysis";M71;646
+BGR;K;Scientific research and development;M72;8 322
+BGR;K;Advertising and market research;M73;419
+BGR;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;442
+BGR;K;Administrative and support service activities;N;3 913
+BGR;K;"Public administration and defence; compulsory social security";O84;22 806
+BGR;K;Education;P85;8 126
+BGR;K;Human health and social work activities;Q;2 400
+BGR;K;Other service activities;R_S;6 080
+BGR;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+BGR;K;Activities of extraterritorial organizations and bodies;U;0
+BRA;K;Crop and animal production, hunting and related service activities;A01;644 233
+BRA;K;Forestry and logging;A02;48 495
+BRA;K;Fishing and aquaculture;A03;18 318
+BRA;K;Mining and quarrying;B;1 520 494
+BRA;K;Manufacture of food products, beverages and tobacco products;C10-C12;481 152
+BRA;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;135 009
+BRA;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;86 931
+BRA;K;Manufacture of paper and paper products;C17;273 319
+BRA;K;Printing and reproduction of recorded media;C18;140 661
+BRA;K;Manufacture of coke and refined petroleum products ;C19;239 744
+BRA;K;Manufacture of chemicals and chemical products ;C20;183 073
+BRA;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;128 825
+BRA;K;Manufacture of rubber and plastic products;C22;91 078
+BRA;K;Manufacture of other non-metallic mineral products;C23;61 374
+BRA;K;Manufacture of basic metals;C24;128 987
+BRA;K;Manufacture of fabricated metal products, except machinery and equipment;C25;161 879
+BRA;K;Manufacture of computer, electronic and optical products;C26;27 740
+BRA;K;Manufacture of electrical equipment;C27;29 186
+BRA;K;Manufacture of machinery and equipment n.e.c.;C28;71 447
+BRA;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;289 466
+BRA;K;Manufacture of other transport equipment;C30;48 493
+BRA;K;"Manufacture of furniture; other manufacturing";C31_C32;60 992
+BRA;K;Repair and installation of machinery and equipment;C33;0
+BRA;K;Electricity, gas, steam and air conditioning supply;D35;239 656
+BRA;K;Water collection, treatment and supply;E36;96 402
+BRA;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;0
+BRA;K;Construction;F;380 037
+BRA;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;138 391
+BRA;K;Wholesale trade, except of motor vehicles and motorcycles;G46;187 762
+BRA;K;Retail trade, except of motor vehicles and motorcycles;G47;255 225
+BRA;K;Land transport and transport via pipelines;H49;276 761
+BRA;K;Water transport;H50;13 359
+BRA;K;Air transport;H51;23 048
+BRA;K;Warehousing and support activities for transportation;H52;112 068
+BRA;K;Postal and courier activities;H53;0
+BRA;K;Accommodation and food service activities;I;219 301
+BRA;K;Publishing activities;J58;165 819
+BRA;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;218 448
+BRA;K;Telecommunications;J61;55 839
+BRA;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;72 907
+BRA;K;Financial service activities, except insurance and pension funding;K64;78 702
+BRA;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;0
+BRA;K;Activities auxiliary to financial services and insurance activities;K66;0
+BRA;K;Real estate activities;L68;7 072 763
+BRA;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;160 685
+BRA;K;"Architectural and engineering activities; technical testing and analysis";M71;63 779
+BRA;K;Scientific research and development;M72;40 231
+BRA;K;Advertising and market research;M73;0
+BRA;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;0
+BRA;K;Administrative and support service activities;N;257 364
+BRA;K;"Public administration and defence; compulsory social security";O84;2 100 431
+BRA;K;Education;P85;50 157
+BRA;K;Human health and social work activities;Q;221 191
+BRA;K;Other service activities;R_S;173 982
+BRA;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+BRA;K;Activities of extraterritorial organizations and bodies;U;0
+CAN;K;Crop and animal production, hunting and related service activities;A01;43 014
+CAN;K;Forestry and logging;A02;2 362
+CAN;K;Fishing and aquaculture;A03;1 286
+CAN;K;Mining and quarrying;B;690 861
+CAN;K;Manufacture of food products, beverages and tobacco products;C10-C12;14 400
+CAN;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;1 543
+CAN;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;6 484
+CAN;K;Manufacture of paper and paper products;C17;9 855
+CAN;K;Printing and reproduction of recorded media;C18;2 075
+CAN;K;Manufacture of coke and refined petroleum products ;C19;16 528
+CAN;K;Manufacture of chemicals and chemical products ;C20;11 142
+CAN;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;6 935
+CAN;K;Manufacture of rubber and plastic products;C22;4 975
+CAN;K;Manufacture of other non-metallic mineral products;C23;4 807
+CAN;K;Manufacture of basic metals;C24;20 480
+CAN;K;Manufacture of fabricated metal products, except machinery and equipment;C25;5 046
+CAN;K;Manufacture of computer, electronic and optical products;C26;5 033
+CAN;K;Manufacture of electrical equipment;C27;2 142
+CAN;K;Manufacture of machinery and equipment n.e.c.;C28;5 950
+CAN;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;13 262
+CAN;K;Manufacture of other transport equipment;C30;8 475
+CAN;K;"Manufacture of furniture; other manufacturing";C31_C32;3 272
+CAN;K;Repair and installation of machinery and equipment;C33;0
+CAN;K;Electricity, gas, steam and air conditioning supply;D35;237 369
+CAN;K;Water collection, treatment and supply;E36;0
+CAN;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;32 201
+CAN;K;Construction;F;34 419
+CAN;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;12 673
+CAN;K;Wholesale trade, except of motor vehicles and motorcycles;G46;39 910
+CAN;K;Retail trade, except of motor vehicles and motorcycles;G47;29 646
+CAN;K;Land transport and transport via pipelines;H49;100 908
+CAN;K;Water transport;H50;4 381
+CAN;K;Air transport;H51;14 652
+CAN;K;Warehousing and support activities for transportation;H52;32 190
+CAN;K;Postal and courier activities;H53;18 179
+CAN;K;Accommodation and food service activities;I;26 433
+CAN;K;Publishing activities;J58;1 808
+CAN;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;4 715
+CAN;K;Telecommunications;J61;24 224
+CAN;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;21 170
+CAN;K;Financial service activities, except insurance and pension funding;K64;35 188
+CAN;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;14 701
+CAN;K;Activities auxiliary to financial services and insurance activities;K66;0
+CAN;K;Real estate activities;L68;2 122 066
+CAN;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;8 189
+CAN;K;"Architectural and engineering activities; technical testing and analysis";M71;7 027
+CAN;K;Scientific research and development;M72;4 246
+CAN;K;Advertising and market research;M73;1 185
+CAN;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;4 096
+CAN;K;Administrative and support service activities;N;11 710
+CAN;K;"Public administration and defence; compulsory social security";O84;364 832
+CAN;K;Education;P85;128 493
+CAN;K;Human health and social work activities;Q;84 505
+CAN;K;Other service activities;R_S;18 556
+CAN;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+CAN;K;Activities of extraterritorial organizations and bodies;U;0
+CHE;K;Crop and animal production, hunting and related service activities;A01;40 288
+CHE;K;Forestry and logging;A02;1 360
+CHE;K;Fishing and aquaculture;A03;197
+CHE;K;Mining and quarrying;B;2 118
+CHE;K;Manufacture of food products, beverages and tobacco products;C10-C12;14 177
+CHE;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;1 241
+CHE;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;3 426
+CHE;K;Manufacture of paper and paper products;C17;1 419
+CHE;K;Printing and reproduction of recorded media;C18;2 144
+CHE;K;Manufacture of coke and refined petroleum products ;C19;961
+CHE;K;Manufacture of chemicals and chemical products ;C20;10 931
+CHE;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;60 634
+CHE;K;Manufacture of rubber and plastic products;C22;3 162
+CHE;K;Manufacture of other non-metallic mineral products;C23;3 332
+CHE;K;Manufacture of basic metals;C24;2 568
+CHE;K;Manufacture of fabricated metal products, except machinery and equipment;C25;7 436
+CHE;K;Manufacture of computer, electronic and optical products;C26;42 861
+CHE;K;Manufacture of electrical equipment;C27;4 525
+CHE;K;Manufacture of machinery and equipment n.e.c.;C28;11 441
+CHE;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;1 158
+CHE;K;Manufacture of other transport equipment;C30;3 214
+CHE;K;"Manufacture of furniture; other manufacturing";C31_C32;4 301
+CHE;K;Repair and installation of machinery and equipment;C33;898
+CHE;K;Electricity, gas, steam and air conditioning supply;D35;29 872
+CHE;K;Water collection, treatment and supply;E36;19 159
+CHE;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;0
+CHE;K;Construction;F;13 647
+CHE;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;6 264
+CHE;K;Wholesale trade, except of motor vehicles and motorcycles;G46;48 947
+CHE;K;Retail trade, except of motor vehicles and motorcycles;G47;23 864
+CHE;K;Land transport and transport via pipelines;H49;24 863
+CHE;K;Water transport;H50;2 508
+CHE;K;Air transport;H51;5 213
+CHE;K;Warehousing and support activities for transportation;H52;25 401
+CHE;K;Postal and courier activities;H53;2 863
+CHE;K;Accommodation and food service activities;I;13 881
+CHE;K;Publishing activities;J58;1 345
+CHE;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;0
+CHE;K;Telecommunications;J61;17 670
+CHE;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;7 238
+CHE;K;Financial service activities, except insurance and pension funding;K64;46 573
+CHE;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;50 725
+CHE;K;Activities auxiliary to financial services and insurance activities;K66;0
+CHE;K;Real estate activities;L68;812 082
+CHE;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;20 216
+CHE;K;"Architectural and engineering activities; technical testing and analysis";M71;0
+CHE;K;Scientific research and development;M72;24 110
+CHE;K;Advertising and market research;M73;0
+CHE;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;1 309
+CHE;K;Administrative and support service activities;N;35 235
+CHE;K;"Public administration and defence; compulsory social security";O84;170 126
+CHE;K;Education;P85;81 665
+CHE;K;Human health and social work activities;Q;103 372
+CHE;K;Other service activities;R_S;30 387
+CHE;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+CHE;K;Activities of extraterritorial organizations and bodies;U;0
+CHN;K;Crop and animal production, hunting and related service activities;A01;5 608 576
+CHN;K;Forestry and logging;A02;288 202
+CHN;K;Fishing and aquaculture;A03;636 988
+CHN;K;Mining and quarrying;B;9 107 111
+CHN;K;Manufacture of food products, beverages and tobacco products;C10-C12;7 107 846
+CHN;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;4 866 248
+CHN;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;1 360 774
+CHN;K;Manufacture of paper and paper products;C17;1 075 089
+CHN;K;Printing and reproduction of recorded media;C18;712 262
+CHN;K;Manufacture of coke and refined petroleum products ;C19;2 083 335
+CHN;K;Manufacture of chemicals and chemical products ;C20;4 868 035
+CHN;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;1 537 731
+CHN;K;Manufacture of rubber and plastic products;C22;2 028 673
+CHN;K;Manufacture of other non-metallic mineral products;C23;3 063 176
+CHN;K;Manufacture of basic metals;C24;5 708 954
+CHN;K;Manufacture of fabricated metal products, except machinery and equipment;C25;2 014 119
+CHN;K;Manufacture of computer, electronic and optical products;C26;4 367 151
+CHN;K;Manufacture of electrical equipment;C27;2 887 840
+CHN;K;Manufacture of machinery and equipment n.e.c.;C28;4 622 183
+CHN;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;2 772 181
+CHN;K;Manufacture of other transport equipment;C30;1 020 421
+CHN;K;"Manufacture of furniture; other manufacturing";C31_C32;2 743 008
+CHN;K;Repair and installation of machinery and equipment;C33;0
+CHN;K;Electricity, gas, steam and air conditioning supply;D35;10 389 803
+CHN;K;Water collection, treatment and supply;E36;623 703
+CHN;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;782 312
+CHN;K;Construction;F;2 267 963
+CHN;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;0
+CHN;K;Wholesale trade, except of motor vehicles and motorcycles;G46;3 537 625
+CHN;K;Retail trade, except of motor vehicles and motorcycles;G47;824 196
+CHN;K;Land transport and transport via pipelines;H49;7 378 412
+CHN;K;Water transport;H50;3 243 918
+CHN;K;Air transport;H51;763 390
+CHN;K;Warehousing and support activities for transportation;H52;343 441
+CHN;K;Postal and courier activities;H53;417 202
+CHN;K;Accommodation and food service activities;I;2 324 722
+CHN;K;Publishing activities;J58;0
+CHN;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;0
+CHN;K;Telecommunications;J61;3 769 641
+CHN;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;227 170
+CHN;K;Financial service activities, except insurance and pension funding;K64;314 352
+CHN;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;26 652
+CHN;K;Activities auxiliary to financial services and insurance activities;K66;0
+CHN;K;Real estate activities;L68;59 664 903
+CHN;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;1 735 841
+CHN;K;"Architectural and engineering activities; technical testing and analysis";M71;0
+CHN;K;Scientific research and development;M72;278 014
+CHN;K;Advertising and market research;M73;0
+CHN;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;1 010 456
+CHN;K;Administrative and support service activities;N;259 802
+CHN;K;"Public administration and defence; compulsory social security";O84;5 334 969
+CHN;K;Education;P85;3 595 765
+CHN;K;Human health and social work activities;Q;1 384 558
+CHN;K;Other service activities;R_S;21 131 294
+CHN;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+CHN;K;Activities of extraterritorial organizations and bodies;U;0
+CYP;K;Crop and animal production, hunting and related service activities;A01;738
+CYP;K;Forestry and logging;A02;6
+CYP;K;Fishing and aquaculture;A03;59
+CYP;K;Mining and quarrying;B;133
+CYP;K;Manufacture of food products, beverages and tobacco products;C10-C12;862
+CYP;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;97
+CYP;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;108
+CYP;K;Manufacture of paper and paper products;C17;34
+CYP;K;Printing and reproduction of recorded media;C18;69
+CYP;K;Manufacture of coke and refined petroleum products ;C19;0
+CYP;K;Manufacture of chemicals and chemical products ;C20;63
+CYP;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;128
+CYP;K;Manufacture of rubber and plastic products;C22;66
+CYP;K;Manufacture of other non-metallic mineral products;C23;353
+CYP;K;Manufacture of basic metals;C24;37
+CYP;K;Manufacture of fabricated metal products, except machinery and equipment;C25;152
+CYP;K;Manufacture of computer, electronic and optical products;C26;4
+CYP;K;Manufacture of electrical equipment;C27;15
+CYP;K;Manufacture of machinery and equipment n.e.c.;C28;21
+CYP;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;9
+CYP;K;Manufacture of other transport equipment;C30;1
+CYP;K;"Manufacture of furniture; other manufacturing";C31_C32;90
+CYP;K;Repair and installation of machinery and equipment;C33;30
+CYP;K;Electricity, gas, steam and air conditioning supply;D35;2 136
+CYP;K;Water collection, treatment and supply;E36;456
+CYP;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;609
+CYP;K;Construction;F;875
+CYP;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;329
+CYP;K;Wholesale trade, except of motor vehicles and motorcycles;G46;1 160
+CYP;K;Retail trade, except of motor vehicles and motorcycles;G47;1 130
+CYP;K;Land transport and transport via pipelines;H49;469
+CYP;K;Water transport;H50;1 558
+CYP;K;Air transport;H51;348
+CYP;K;Warehousing and support activities for transportation;H52;1 089
+CYP;K;Postal and courier activities;H53;88
+CYP;K;Accommodation and food service activities;I;1 141
+CYP;K;Publishing activities;J58;138
+CYP;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;150
+CYP;K;Telecommunications;J61;1 032
+CYP;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;433
+CYP;K;Financial service activities, except insurance and pension funding;K64;345
+CYP;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;29
+CYP;K;Activities auxiliary to financial services and insurance activities;K66;29
+CYP;K;Real estate activities;L68;22 916
+CYP;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;3 625
+CYP;K;"Architectural and engineering activities; technical testing and analysis";M71;462
+CYP;K;Scientific research and development;M72;26
+CYP;K;Advertising and market research;M73;218
+CYP;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;186
+CYP;K;Administrative and support service activities;N;805
+CYP;K;"Public administration and defence; compulsory social security";O84;7 078
+CYP;K;Education;P85;1 458
+CYP;K;Human health and social work activities;Q;487
+CYP;K;Other service activities;R_S;1 351
+CYP;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+CYP;K;Activities of extraterritorial organizations and bodies;U;0
+CZE;K;Crop and animal production, hunting and related service activities;A01;263 253
+CZE;K;Forestry and logging;A02;40 056
+CZE;K;Fishing and aquaculture;A03;2 711
+CZE;K;Mining and quarrying;B;189 787
+CZE;K;Manufacture of food products, beverages and tobacco products;C10-C12;233 171
+CZE;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;69 187
+CZE;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;61 558
+CZE;K;Manufacture of paper and paper products;C17;60 346
+CZE;K;Printing and reproduction of recorded media;C18;34 139
+CZE;K;Manufacture of coke and refined petroleum products ;C19;33 794
+CZE;K;Manufacture of chemicals and chemical products ;C20;129 629
+CZE;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;39 530
+CZE;K;Manufacture of rubber and plastic products;C22;134 620
+CZE;K;Manufacture of other non-metallic mineral products;C23;165 033
+CZE;K;Manufacture of basic metals;C24;143 196
+CZE;K;Manufacture of fabricated metal products, except machinery and equipment;C25;222 121
+CZE;K;Manufacture of computer, electronic and optical products;C26;179 731
+CZE;K;Manufacture of electrical equipment;C27;125 131
+CZE;K;Manufacture of machinery and equipment n.e.c.;C28;237 057
+CZE;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;435 464
+CZE;K;Manufacture of other transport equipment;C30;47 532
+CZE;K;"Manufacture of furniture; other manufacturing";C31_C32;67 921
+CZE;K;Repair and installation of machinery and equipment;C33;62 009
+CZE;K;Electricity, gas, steam and air conditioning supply;D35;759 664
+CZE;K;Water collection, treatment and supply;E36;248 508
+CZE;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;110 234
+CZE;K;Construction;F;312 036
+CZE;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;82 641
+CZE;K;Wholesale trade, except of motor vehicles and motorcycles;G46;311 366
+CZE;K;Retail trade, except of motor vehicles and motorcycles;G47;330 465
+CZE;K;Land transport and transport via pipelines;H49;529 631
+CZE;K;Water transport;H50;2 763
+CZE;K;Air transport;H51;19 827
+CZE;K;Warehousing and support activities for transportation;H52;941 725
+CZE;K;Postal and courier activities;H53;22 799
+CZE;K;Accommodation and food service activities;I;190 898
+CZE;K;Publishing activities;J58;20 906
+CZE;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;44 224
+CZE;K;Telecommunications;J61;293 715
+CZE;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;82 364
+CZE;K;Financial service activities, except insurance and pension funding;K64;183 391
+CZE;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;25 190
+CZE;K;Activities auxiliary to financial services and insurance activities;K66;6 140
+CZE;K;Real estate activities;L68;5 481 823
+CZE;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;73 856
+CZE;K;"Architectural and engineering activities; technical testing and analysis";M71;152 394
+CZE;K;Scientific research and development;M72;123 264
+CZE;K;Advertising and market research;M73;24 799
+CZE;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;47 070
+CZE;K;Administrative and support service activities;N;140 498
+CZE;K;"Public administration and defence; compulsory social security";O84;2 543 664
+CZE;K;Education;P85;1 028 543
+CZE;K;Human health and social work activities;Q;440 282
+CZE;K;Other service activities;R_S;344 097
+CZE;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+CZE;K;Activities of extraterritorial organizations and bodies;U;0
+DEU;K;Crop and animal production, hunting and related service activities;A01;147 201
+DEU;K;Forestry and logging;A02;7 764
+DEU;K;Fishing and aquaculture;A03;1 319
+DEU;K;Mining and quarrying;B;13 722
+DEU;K;Manufacture of food products, beverages and tobacco products;C10-C12;54 094
+DEU;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;7 965
+DEU;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;7 251
+DEU;K;Manufacture of paper and paper products;C17;14 766
+DEU;K;Printing and reproduction of recorded media;C18;9 607
+DEU;K;Manufacture of coke and refined petroleum products ;C19;7 892
+DEU;K;Manufacture of chemicals and chemical products ;C20;80 517
+DEU;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;58 301
+DEU;K;Manufacture of rubber and plastic products;C22;29 576
+DEU;K;Manufacture of other non-metallic mineral products;C23;18 853
+DEU;K;Manufacture of basic metals;C24;28 583
+DEU;K;Manufacture of fabricated metal products, except machinery and equipment;C25;42 494
+DEU;K;Manufacture of computer, electronic and optical products;C26;59 858
+DEU;K;Manufacture of electrical equipment;C27;36 131
+DEU;K;Manufacture of machinery and equipment n.e.c.;C28;92 442
+DEU;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;158 929
+DEU;K;Manufacture of other transport equipment;C30;20 426
+DEU;K;"Manufacture of furniture; other manufacturing";C31_C32;20 692
+DEU;K;Repair and installation of machinery and equipment;C33;8 208
+DEU;K;Electricity, gas, steam and air conditioning supply;D35;183 877
+DEU;K;Water collection, treatment and supply;E36;57 731
+DEU;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;229 777
+DEU;K;Construction;F;50 028
+DEU;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;35 836
+DEU;K;Wholesale trade, except of motor vehicles and motorcycles;G46;97 332
+DEU;K;Retail trade, except of motor vehicles and motorcycles;G47;81 607
+DEU;K;Land transport and transport via pipelines;H49;84 754
+DEU;K;Water transport;H50;51 256
+DEU;K;Air transport;H51;15 134
+DEU;K;Warehousing and support activities for transportation;H52;247 207
+DEU;K;Postal and courier activities;H53;12 721
+DEU;K;Accommodation and food service activities;I;51 253
+DEU;K;Publishing activities;J58;5 821
+DEU;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;17 334
+DEU;K;Telecommunications;J61;59 802
+DEU;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;35 677
+DEU;K;Financial service activities, except insurance and pension funding;K64;93 738
+DEU;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;52 949
+DEU;K;Activities auxiliary to financial services and insurance activities;K66;1 288
+DEU;K;Real estate activities;L68;5 005 755
+DEU;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;45 015
+DEU;K;"Architectural and engineering activities; technical testing and analysis";M71;16 184
+DEU;K;Scientific research and development;M72;74 227
+DEU;K;Advertising and market research;M73;2 867
+DEU;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;4 714
+DEU;K;Administrative and support service activities;N;268 309
+DEU;K;"Public administration and defence; compulsory social security";O84;723 753
+DEU;K;Education;P85;316 895
+DEU;K;Human health and social work activities;Q;443 887
+DEU;K;Other service activities;R_S;225 339
+DEU;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+DEU;K;Activities of extraterritorial organizations and bodies;U;0
+DNK;K;Crop and animal production, hunting and related service activities;A01;202 066
+DNK;K;Forestry and logging;A02;5 030
+DNK;K;Fishing and aquaculture;A03;7 969
+DNK;K;Mining and quarrying;B;95 599
+DNK;K;Manufacture of food products, beverages and tobacco products;C10-C12;93 403
+DNK;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;7 738
+DNK;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;9 762
+DNK;K;Manufacture of paper and paper products;C17;8 457
+DNK;K;Printing and reproduction of recorded media;C18;8 499
+DNK;K;Manufacture of coke and refined petroleum products ;C19;9 040
+DNK;K;Manufacture of chemicals and chemical products ;C20;34 441
+DNK;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;94 496
+DNK;K;Manufacture of rubber and plastic products;C22;18 985
+DNK;K;Manufacture of other non-metallic mineral products;C23;17 111
+DNK;K;Manufacture of basic metals;C24;6 287
+DNK;K;Manufacture of fabricated metal products, except machinery and equipment;C25;24 368
+DNK;K;Manufacture of computer, electronic and optical products;C26;28 713
+DNK;K;Manufacture of electrical equipment;C27;9 531
+DNK;K;Manufacture of machinery and equipment n.e.c.;C28;64 799
+DNK;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;4 229
+DNK;K;Manufacture of other transport equipment;C30;3 090
+DNK;K;"Manufacture of furniture; other manufacturing";C31_C32;25 271
+DNK;K;Repair and installation of machinery and equipment;C33;5 430
+DNK;K;Electricity, gas, steam and air conditioning supply;D35;237 124
+DNK;K;Water collection, treatment and supply;E36;20 570
+DNK;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;103 808
+DNK;K;Construction;F;55 913
+DNK;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;32 264
+DNK;K;Wholesale trade, except of motor vehicles and motorcycles;G46;98 734
+DNK;K;Retail trade, except of motor vehicles and motorcycles;G47;59 209
+DNK;K;Land transport and transport via pipelines;H49;102 942
+DNK;K;Water transport;H50;150 326
+DNK;K;Air transport;H51;22 425
+DNK;K;Warehousing and support activities for transportation;H52;161 888
+DNK;K;Postal and courier activities;H53;9 066
+DNK;K;Accommodation and food service activities;I;33 074
+DNK;K;Publishing activities;J58;13 256
+DNK;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;24 262
+DNK;K;Telecommunications;J61;92 614
+DNK;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;30 322
+DNK;K;Financial service activities, except insurance and pension funding;K64;55 427
+DNK;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;11 809
+DNK;K;Activities auxiliary to financial services and insurance activities;K66;10 464
+DNK;K;Real estate activities;L68;3 044 921
+DNK;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;21 126
+DNK;K;"Architectural and engineering activities; technical testing and analysis";M71;14 003
+DNK;K;Scientific research and development;M72;39 182
+DNK;K;Advertising and market research;M73;2 993
+DNK;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;4 543
+DNK;K;Administrative and support service activities;N;65 201
+DNK;K;"Public administration and defence; compulsory social security";O84;341 316
+DNK;K;Education;P85;273 325
+DNK;K;Human health and social work activities;Q;211 341
+DNK;K;Other service activities;R_S;122 508
+DNK;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+DNK;K;Activities of extraterritorial organizations and bodies;U;0
+ESP;K;Crop and animal production, hunting and related service activities;A01;52 373
+ESP;K;Forestry and logging;A02;1 813
+ESP;K;Fishing and aquaculture;A03;2 912
+ESP;K;Mining and quarrying;B;11 424
+ESP;K;Manufacture of food products, beverages and tobacco products;C10-C12;55 004
+ESP;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;7 790
+ESP;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;4 525
+ESP;K;Manufacture of paper and paper products;C17;8 103
+ESP;K;Printing and reproduction of recorded media;C18;8 409
+ESP;K;Manufacture of coke and refined petroleum products ;C19;13 156
+ESP;K;Manufacture of chemicals and chemical products ;C20;16 189
+ESP;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;8 482
+ESP;K;Manufacture of rubber and plastic products;C22;16 646
+ESP;K;Manufacture of other non-metallic mineral products;C23;14 872
+ESP;K;Manufacture of basic metals;C24;14 722
+ESP;K;Manufacture of fabricated metal products, except machinery and equipment;C25;24 035
+ESP;K;Manufacture of computer, electronic and optical products;C26;4 406
+ESP;K;Manufacture of electrical equipment;C27;6 035
+ESP;K;Manufacture of machinery and equipment n.e.c.;C28;6 338
+ESP;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;9 634
+ESP;K;Manufacture of other transport equipment;C30;6 631
+ESP;K;"Manufacture of furniture; other manufacturing";C31_C32;4 072
+ESP;K;Repair and installation of machinery and equipment;C33;4 446
+ESP;K;Electricity, gas, steam and air conditioning supply;D35;127 562
+ESP;K;Water collection, treatment and supply;E36;26 827
+ESP;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;34 403
+ESP;K;Construction;F;352 411
+ESP;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;20 498
+ESP;K;Wholesale trade, except of motor vehicles and motorcycles;G46;71 098
+ESP;K;Retail trade, except of motor vehicles and motorcycles;G47;69 824
+ESP;K;Land transport and transport via pipelines;H49;86 450
+ESP;K;Water transport;H50;3 607
+ESP;K;Air transport;H51;10 496
+ESP;K;Warehousing and support activities for transportation;H52;67 085
+ESP;K;Postal and courier activities;H53;9 164
+ESP;K;Accommodation and food service activities;I;47 405
+ESP;K;Publishing activities;J58;7 899
+ESP;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;12 741
+ESP;K;Telecommunications;J61;55 389
+ESP;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;10 969
+ESP;K;Financial service activities, except insurance and pension funding;K64;36 331
+ESP;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;11 362
+ESP;K;Activities auxiliary to financial services and insurance activities;K66;5 758
+ESP;K;Real estate activities;L68;1 207 701
+ESP;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;23 483
+ESP;K;"Architectural and engineering activities; technical testing and analysis";M71;14 514
+ESP;K;Scientific research and development;M72;5 401
+ESP;K;Advertising and market research;M73;5 072
+ESP;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;4 369
+ESP;K;Administrative and support service activities;N;37 255
+ESP;K;"Public administration and defence; compulsory social security";O84;334 378
+ESP;K;Education;P85;78 730
+ESP;K;Human health and social work activities;Q;64 316
+ESP;K;Other service activities;R_S;89 321
+ESP;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+ESP;K;Activities of extraterritorial organizations and bodies;U;0
+EST;K;Crop and animal production, hunting and related service activities;A01;1 165
+EST;K;Forestry and logging;A02;755
+EST;K;Fishing and aquaculture;A03;137
+EST;K;Mining and quarrying;B;496
+EST;K;Manufacture of food products, beverages and tobacco products;C10-C12;1 257
+EST;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;264
+EST;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;789
+EST;K;Manufacture of paper and paper products;C17;105
+EST;K;Printing and reproduction of recorded media;C18;143
+EST;K;Manufacture of coke and refined petroleum products ;C19;221
+EST;K;Manufacture of chemicals and chemical products ;C20;301
+EST;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;37
+EST;K;Manufacture of rubber and plastic products;C22;171
+EST;K;Manufacture of other non-metallic mineral products;C23;383
+EST;K;Manufacture of basic metals;C24;32
+EST;K;Manufacture of fabricated metal products, except machinery and equipment;C25;590
+EST;K;Manufacture of computer, electronic and optical products;C26;217
+EST;K;Manufacture of electrical equipment;C27;200
+EST;K;Manufacture of machinery and equipment n.e.c.;C28;197
+EST;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;174
+EST;K;Manufacture of other transport equipment;C30;37
+EST;K;"Manufacture of furniture; other manufacturing";C31_C32;283
+EST;K;Repair and installation of machinery and equipment;C33;209
+EST;K;Electricity, gas, steam and air conditioning supply;D35;5 191
+EST;K;Water collection, treatment and supply;E36;790
+EST;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;617
+EST;K;Construction;F;1 281
+EST;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;381
+EST;K;Wholesale trade, except of motor vehicles and motorcycles;G46;1 320
+EST;K;Retail trade, except of motor vehicles and motorcycles;G47;1 071
+EST;K;Land transport and transport via pipelines;H49;1 746
+EST;K;Water transport;H50;150
+EST;K;Air transport;H51;40
+EST;K;Warehousing and support activities for transportation;H52;2 419
+EST;K;Postal and courier activities;H53;165
+EST;K;Accommodation and food service activities;I;526
+EST;K;Publishing activities;J58;78
+EST;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;95
+EST;K;Telecommunications;J61;305
+EST;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;681
+EST;K;Financial service activities, except insurance and pension funding;K64;229
+EST;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;34
+EST;K;Activities auxiliary to financial services and insurance activities;K66;28
+EST;K;Real estate activities;L68;22 780
+EST;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;744
+EST;K;"Architectural and engineering activities; technical testing and analysis";M71;324
+EST;K;Scientific research and development;M72;389
+EST;K;Advertising and market research;M73;236
+EST;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;119
+EST;K;Administrative and support service activities;N;747
+EST;K;"Public administration and defence; compulsory social security";O84;4 757
+EST;K;Education;P85;1 982
+EST;K;Human health and social work activities;Q;1 079
+EST;K;Other service activities;R_S;1 529
+EST;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+EST;K;Activities of extraterritorial organizations and bodies;U;0
+FIN;K;Crop and animal production, hunting and related service activities;A01;15 219
+FIN;K;Forestry and logging;A02;4 813
+FIN;K;Fishing and aquaculture;A03;64
+FIN;K;Mining and quarrying;B;3 065
+FIN;K;Manufacture of food products, beverages and tobacco products;C10-C12;5 215
+FIN;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;315
+FIN;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;2 302
+FIN;K;Manufacture of paper and paper products;C17;9 838
+FIN;K;Printing and reproduction of recorded media;C18;701
+FIN;K;Manufacture of coke and refined petroleum products ;C19;2 495
+FIN;K;Manufacture of chemicals and chemical products ;C20;4 419
+FIN;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;2 382
+FIN;K;Manufacture of rubber and plastic products;C22;1 407
+FIN;K;Manufacture of other non-metallic mineral products;C23;1 671
+FIN;K;Manufacture of basic metals;C24;4 505
+FIN;K;Manufacture of fabricated metal products, except machinery and equipment;C25;2 540
+FIN;K;Manufacture of computer, electronic and optical products;C26;13 003
+FIN;K;Manufacture of electrical equipment;C27;1 780
+FIN;K;Manufacture of machinery and equipment n.e.c.;C28;4 253
+FIN;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;672
+FIN;K;Manufacture of other transport equipment;C30;775
+FIN;K;"Manufacture of furniture; other manufacturing";C31_C32;656
+FIN;K;Repair and installation of machinery and equipment;C33;732
+FIN;K;Electricity, gas, steam and air conditioning supply;D35;24 935
+FIN;K;Water collection, treatment and supply;E36;3 987
+FIN;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;5 857
+FIN;K;Construction;F;5 183
+FIN;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;1 908
+FIN;K;Wholesale trade, except of motor vehicles and motorcycles;G46;6 697
+FIN;K;Retail trade, except of motor vehicles and motorcycles;G47;6 071
+FIN;K;Land transport and transport via pipelines;H49;4 809
+FIN;K;Water transport;H50;3 112
+FIN;K;Air transport;H51;1 630
+FIN;K;Warehousing and support activities for transportation;H52;6 286
+FIN;K;Postal and courier activities;H53;674
+FIN;K;Accommodation and food service activities;I;2 272
+FIN;K;Publishing activities;J58;1 021
+FIN;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;1 289
+FIN;K;Telecommunications;J61;5 287
+FIN;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;2 573
+FIN;K;Financial service activities, except insurance and pension funding;K64;656
+FIN;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;836
+FIN;K;Activities auxiliary to financial services and insurance activities;K66;106
+FIN;K;Real estate activities;L68;360 279
+FIN;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;818
+FIN;K;"Architectural and engineering activities; technical testing and analysis";M71;1 373
+FIN;K;Scientific research and development;M72;4 026
+FIN;K;Advertising and market research;M73;197
+FIN;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;265
+FIN;K;Administrative and support service activities;N;3 587
+FIN;K;"Public administration and defence; compulsory social security";O84;69 128
+FIN;K;Education;P85;22 028
+FIN;K;Human health and social work activities;Q;18 490
+FIN;K;Other service activities;R_S;15 748
+FIN;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+FIN;K;Activities of extraterritorial organizations and bodies;U;0
+FRA;K;Crop and animal production, hunting and related service activities;A01;106 277
+FRA;K;Forestry and logging;A02;8 630
+FRA;K;Fishing and aquaculture;A03;2 653
+FRA;K;Mining and quarrying;B;16 087
+FRA;K;Manufacture of food products, beverages and tobacco products;C10-C12;40 424
+FRA;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;4 689
+FRA;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;4 421
+FRA;K;Manufacture of paper and paper products;C17;6 439
+FRA;K;Printing and reproduction of recorded media;C18;6 003
+FRA;K;Manufacture of coke and refined petroleum products ;C19;4 873
+FRA;K;Manufacture of chemicals and chemical products ;C20;30 245
+FRA;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;24 445
+FRA;K;Manufacture of rubber and plastic products;C22;13 459
+FRA;K;Manufacture of other non-metallic mineral products;C23;9 081
+FRA;K;Manufacture of basic metals;C24;7 575
+FRA;K;Manufacture of fabricated metal products, except machinery and equipment;C25;31 608
+FRA;K;Manufacture of computer, electronic and optical products;C26;34 296
+FRA;K;Manufacture of electrical equipment;C27;8 252
+FRA;K;Manufacture of machinery and equipment n.e.c.;C28;13 465
+FRA;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;27 607
+FRA;K;Manufacture of other transport equipment;C30;37 115
+FRA;K;"Manufacture of furniture; other manufacturing";C31_C32;4 685
+FRA;K;Repair and installation of machinery and equipment;C33;15 997
+FRA;K;Electricity, gas, steam and air conditioning supply;D35;121 679
+FRA;K;Water collection, treatment and supply;E36;14 872
+FRA;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;49 803
+FRA;K;Construction;F;48 087
+FRA;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;13 452
+FRA;K;Wholesale trade, except of motor vehicles and motorcycles;G46;48 104
+FRA;K;Retail trade, except of motor vehicles and motorcycles;G47;42 815
+FRA;K;Land transport and transport via pipelines;H49;67 340
+FRA;K;Water transport;H50;2 774
+FRA;K;Air transport;H51;12 980
+FRA;K;Warehousing and support activities for transportation;H52;54 421
+FRA;K;Postal and courier activities;H53;14 161
+FRA;K;Accommodation and food service activities;I;37 896
+FRA;K;Publishing activities;J58;12 957
+FRA;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;11 927
+FRA;K;Telecommunications;J61;46 276
+FRA;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;35 563
+FRA;K;Financial service activities, except insurance and pension funding;K64;56 522
+FRA;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;13 687
+FRA;K;Activities auxiliary to financial services and insurance activities;K66;15 912
+FRA;K;Real estate activities;L68;4 680 166
+FRA;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;37 912
+FRA;K;"Architectural and engineering activities; technical testing and analysis";M71;15 259
+FRA;K;Scientific research and development;M72;93 417
+FRA;K;Advertising and market research;M73;4 625
+FRA;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;3 188
+FRA;K;Administrative and support service activities;N;68 448
+FRA;K;"Public administration and defence; compulsory social security";O84;725 754
+FRA;K;Education;P85;126 334
+FRA;K;Human health and social work activities;Q;129 454
+FRA;K;Other service activities;R_S;105 627
+FRA;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+FRA;K;Activities of extraterritorial organizations and bodies;U;0
+GBR;K;Crop and animal production, hunting and related service activities;A01;36 224
+GBR;K;Forestry and logging;A02;1 376
+GBR;K;Fishing and aquaculture;A03;1 261
+GBR;K;Mining and quarrying;B;75 079
+GBR;K;Manufacture of food products, beverages and tobacco products;C10-C12;40 651
+GBR;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;4 481
+GBR;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;2 651
+GBR;K;Manufacture of paper and paper products;C17;5 591
+GBR;K;Printing and reproduction of recorded media;C18;8 907
+GBR;K;Manufacture of coke and refined petroleum products ;C19;5 956
+GBR;K;Manufacture of chemicals and chemical products ;C20;24 997
+GBR;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;14 744
+GBR;K;Manufacture of rubber and plastic products;C22;9 983
+GBR;K;Manufacture of other non-metallic mineral products;C23;8 456
+GBR;K;Manufacture of basic metals;C24;25 317
+GBR;K;Manufacture of fabricated metal products, except machinery and equipment;C25;15 806
+GBR;K;Manufacture of computer, electronic and optical products;C26;11 322
+GBR;K;Manufacture of electrical equipment;C27;6 038
+GBR;K;Manufacture of machinery and equipment n.e.c.;C28;11 916
+GBR;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;28 770
+GBR;K;Manufacture of other transport equipment;C30;13 719
+GBR;K;"Manufacture of furniture; other manufacturing";C31_C32;6 080
+GBR;K;Repair and installation of machinery and equipment;C33;5 416
+GBR;K;Electricity, gas, steam and air conditioning supply;D35;101 399
+GBR;K;Water collection, treatment and supply;E36;58 894
+GBR;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;61 621
+GBR;K;Construction;F;396 838
+GBR;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;17 560
+GBR;K;Wholesale trade, except of motor vehicles and motorcycles;G46;49 113
+GBR;K;Retail trade, except of motor vehicles and motorcycles;G47;139 023
+GBR;K;Land transport and transport via pipelines;H49;131 669
+GBR;K;Water transport;H50;2 820
+GBR;K;Air transport;H51;12 591
+GBR;K;Warehousing and support activities for transportation;H52;119 407
+GBR;K;Postal and courier activities;H53;3 596
+GBR;K;Accommodation and food service activities;I;80 898
+GBR;K;Publishing activities;J58;13 597
+GBR;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;47 842
+GBR;K;Telecommunications;J61;70 247
+GBR;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;18 379
+GBR;K;Financial service activities, except insurance and pension funding;K64;53 983
+GBR;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;53 620
+GBR;K;Activities auxiliary to financial services and insurance activities;K66;12 314
+GBR;K;Real estate activities;L68;1 514 922
+GBR;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;21 405
+GBR;K;"Architectural and engineering activities; technical testing and analysis";M71;12 016
+GBR;K;Scientific research and development;M72;14 041
+GBR;K;Advertising and market research;M73;3 830
+GBR;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;5 397
+GBR;K;Administrative and support service activities;N;312 384
+GBR;K;"Public administration and defence; compulsory social security";O84;180 928
+GBR;K;Education;P85;140 551
+GBR;K;Human health and social work activities;Q;113 568
+GBR;K;Other service activities;R_S;83 107
+GBR;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+GBR;K;Activities of extraterritorial organizations and bodies;U;0
+GRC;K;Crop and animal production, hunting and related service activities;A01;11 095
+GRC;K;Forestry and logging;A02;361
+GRC;K;Fishing and aquaculture;A03;1 087
+GRC;K;Mining and quarrying;B;2 004
+GRC;K;Manufacture of food products, beverages and tobacco products;C10-C12;3 926
+GRC;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;1 385
+GRC;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;256
+GRC;K;Manufacture of paper and paper products;C17;398
+GRC;K;Printing and reproduction of recorded media;C18;347
+GRC;K;Manufacture of coke and refined petroleum products ;C19;963
+GRC;K;Manufacture of chemicals and chemical products ;C20;836
+GRC;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;758
+GRC;K;Manufacture of rubber and plastic products;C22;755
+GRC;K;Manufacture of other non-metallic mineral products;C23;987
+GRC;K;Manufacture of basic metals;C24;1 249
+GRC;K;Manufacture of fabricated metal products, except machinery and equipment;C25;1 239
+GRC;K;Manufacture of computer, electronic and optical products;C26;243
+GRC;K;Manufacture of electrical equipment;C27;462
+GRC;K;Manufacture of machinery and equipment n.e.c.;C28;484
+GRC;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;70
+GRC;K;Manufacture of other transport equipment;C30;203
+GRC;K;"Manufacture of furniture; other manufacturing";C31_C32;466
+GRC;K;Repair and installation of machinery and equipment;C33;146
+GRC;K;Electricity, gas, steam and air conditioning supply;D35;12 399
+GRC;K;Water collection, treatment and supply;E36;3 051
+GRC;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;1 871
+GRC;K;Construction;F;6 815
+GRC;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;1 471
+GRC;K;Wholesale trade, except of motor vehicles and motorcycles;G46;6 868
+GRC;K;Retail trade, except of motor vehicles and motorcycles;G47;7 846
+GRC;K;Land transport and transport via pipelines;H49;12 606
+GRC;K;Water transport;H50;19 713
+GRC;K;Air transport;H51;641
+GRC;K;Warehousing and support activities for transportation;H52;893
+GRC;K;Postal and courier activities;H53;479
+GRC;K;Accommodation and food service activities;I;9 870
+GRC;K;Publishing activities;J58;744
+GRC;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;1 168
+GRC;K;Telecommunications;J61;11 832
+GRC;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;998
+GRC;K;Financial service activities, except insurance and pension funding;K64;2 100
+GRC;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;211
+GRC;K;Activities auxiliary to financial services and insurance activities;K66;130
+GRC;K;Real estate activities;L68;242 081
+GRC;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;1 571
+GRC;K;"Architectural and engineering activities; technical testing and analysis";M71;386
+GRC;K;Scientific research and development;M72;1 266
+GRC;K;Advertising and market research;M73;294
+GRC;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;207
+GRC;K;Administrative and support service activities;N;3 625
+GRC;K;"Public administration and defence; compulsory social security";O84;72 279
+GRC;K;Education;P85;8 807
+GRC;K;Human health and social work activities;Q;3 820
+GRC;K;Other service activities;R_S;8 595
+GRC;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+GRC;K;Activities of extraterritorial organizations and bodies;U;0
+HRV;K;Crop and animal production, hunting and related service activities;A01;22 302
+HRV;K;Forestry and logging;A02;3 819
+HRV;K;Fishing and aquaculture;A03;2 252
+HRV;K;Mining and quarrying;B;31 925
+HRV;K;Manufacture of food products, beverages and tobacco products;C10-C12;23 777
+HRV;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;3 349
+HRV;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;3 523
+HRV;K;Manufacture of paper and paper products;C17;1 920
+HRV;K;Printing and reproduction of recorded media;C18;3 227
+HRV;K;Manufacture of coke and refined petroleum products ;C19;342
+HRV;K;Manufacture of chemicals and chemical products ;C20;2 195
+HRV;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;4 381
+HRV;K;Manufacture of rubber and plastic products;C22;4 591
+HRV;K;Manufacture of other non-metallic mineral products;C23;7 270
+HRV;K;Manufacture of basic metals;C24;1 386
+HRV;K;Manufacture of fabricated metal products, except machinery and equipment;C25;10 770
+HRV;K;Manufacture of computer, electronic and optical products;C26;1 847
+HRV;K;Manufacture of electrical equipment;C27;2 200
+HRV;K;Manufacture of machinery and equipment n.e.c.;C28;1 400
+HRV;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;303
+HRV;K;Manufacture of other transport equipment;C30;1 253
+HRV;K;"Manufacture of furniture; other manufacturing";C31_C32;1 198
+HRV;K;Repair and installation of machinery and equipment;C33;1 151
+HRV;K;Electricity, gas, steam and air conditioning supply;D35;40 033
+HRV;K;Water collection, treatment and supply;E36;9 590
+HRV;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;11 338
+HRV;K;Construction;F;94 039
+HRV;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;4 220
+HRV;K;Wholesale trade, except of motor vehicles and motorcycles;G46;21 461
+HRV;K;Retail trade, except of motor vehicles and motorcycles;G47;18 312
+HRV;K;Land transport and transport via pipelines;H49;19 711
+HRV;K;Water transport;H50;4 346
+HRV;K;Air transport;H51;1 038
+HRV;K;Warehousing and support activities for transportation;H52;13 998
+HRV;K;Postal and courier activities;H53;5 237
+HRV;K;Accommodation and food service activities;I;10 128
+HRV;K;Publishing activities;J58;2 968
+HRV;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;3 722
+HRV;K;Telecommunications;J61;20 856
+HRV;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;2 386
+HRV;K;Financial service activities, except insurance and pension funding;K64;18 202
+HRV;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;3 123
+HRV;K;Activities auxiliary to financial services and insurance activities;K66;2 219
+HRV;K;Real estate activities;L68;302 739
+HRV;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;9 970
+HRV;K;"Architectural and engineering activities; technical testing and analysis";M71;6 765
+HRV;K;Scientific research and development;M72;1 805
+HRV;K;Advertising and market research;M73;1 626
+HRV;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;1 097
+HRV;K;Administrative and support service activities;N;7 530
+HRV;K;"Public administration and defence; compulsory social security";O84;83 675
+HRV;K;Education;P85;17 548
+HRV;K;Human health and social work activities;Q;13 678
+HRV;K;Other service activities;R_S;22 460
+HRV;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+HRV;K;Activities of extraterritorial organizations and bodies;U;0
+HUN;K;Crop and animal production, hunting and related service activities;A01;5 848 064
+HUN;K;Forestry and logging;A02;309 769
+HUN;K;Fishing and aquaculture;A03;28 167
+HUN;K;Mining and quarrying;B;387 000
+HUN;K;Manufacture of food products, beverages and tobacco products;C10-C12;2 807 941
+HUN;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;308 242
+HUN;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;187 358
+HUN;K;Manufacture of paper and paper products;C17;284 431
+HUN;K;Printing and reproduction of recorded media;C18;196 767
+HUN;K;Manufacture of coke and refined petroleum products ;C19;1 624 874
+HUN;K;Manufacture of chemicals and chemical products ;C20;869 650
+HUN;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;1 280 014
+HUN;K;Manufacture of rubber and plastic products;C22;1 082 577
+HUN;K;Manufacture of other non-metallic mineral products;C23;612 926
+HUN;K;Manufacture of basic metals;C24;411 945
+HUN;K;Manufacture of fabricated metal products, except machinery and equipment;C25;1 205 307
+HUN;K;Manufacture of computer, electronic and optical products;C26;992 170
+HUN;K;Manufacture of electrical equipment;C27;581 674
+HUN;K;Manufacture of machinery and equipment n.e.c.;C28;1 693 480
+HUN;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;2 766 927
+HUN;K;Manufacture of other transport equipment;C30;126 386
+HUN;K;"Manufacture of furniture; other manufacturing";C31_C32;334 531
+HUN;K;Repair and installation of machinery and equipment;C33;247 801
+HUN;K;Electricity, gas, steam and air conditioning supply;D35;4 036 000
+HUN;K;Water collection, treatment and supply;E36;1 023 121
+HUN;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;1 628 879
+HUN;K;Construction;F;1 932 000
+HUN;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;585 547
+HUN;K;Wholesale trade, except of motor vehicles and motorcycles;G46;2 773 756
+HUN;K;Retail trade, except of motor vehicles and motorcycles;G47;2 186 697
+HUN;K;Land transport and transport via pipelines;H49;4 672 875
+HUN;K;Water transport;H50;20 632
+HUN;K;Air transport;H51;473 110
+HUN;K;Warehousing and support activities for transportation;H52;3 291 986
+HUN;K;Postal and courier activities;H53;818 397
+HUN;K;Accommodation and food service activities;I;1 048 000
+HUN;K;Publishing activities;J58;546 151
+HUN;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;874 070
+HUN;K;Telecommunications;J61;1 958 366
+HUN;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;2 839 413
+HUN;K;Financial service activities, except insurance and pension funding;K64;905 326
+HUN;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;98 049
+HUN;K;Activities auxiliary to financial services and insurance activities;K66;187 625
+HUN;K;Real estate activities;L68;35 528 000
+HUN;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;808 192
+HUN;K;"Architectural and engineering activities; technical testing and analysis";M71;384 815
+HUN;K;Scientific research and development;M72;303 108
+HUN;K;Advertising and market research;M73;134 544
+HUN;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;227 342
+HUN;K;Administrative and support service activities;N;1 133 000
+HUN;K;"Public administration and defence; compulsory social security";O84;24 320 000
+HUN;K;Education;P85;3 194 000
+HUN;K;Human health and social work activities;Q;1 997 000
+HUN;K;Other service activities;R_S;2 478 000
+HUN;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+HUN;K;Activities of extraterritorial organizations and bodies;U;0
+IDN;K;Crop and animal production, hunting and related service activities;A01;867 789 030
+IDN;K;Forestry and logging;A02;70 213 129
+IDN;K;Fishing and aquaculture;A03;167 146 420
+IDN;K;Mining and quarrying;B;707 886 360
+IDN;K;Manufacture of food products, beverages and tobacco products;C10-C12;597 494 540
+IDN;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;315 673 490
+IDN;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;175 333 760
+IDN;K;Manufacture of paper and paper products;C17;256 896 540
+IDN;K;Printing and reproduction of recorded media;C18;10 995 001
+IDN;K;Manufacture of coke and refined petroleum products ;C19;205 504 350
+IDN;K;Manufacture of chemicals and chemical products ;C20;302 509 650
+IDN;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;114 639 340
+IDN;K;Manufacture of rubber and plastic products;C22;156 176 510
+IDN;K;Manufacture of other non-metallic mineral products;C23;373 158 360
+IDN;K;Manufacture of basic metals;C24;1 153 957 600
+IDN;K;Manufacture of fabricated metal products, except machinery and equipment;C25;1 135 785 600
+IDN;K;Manufacture of computer, electronic and optical products;C26;7 695 459
+IDN;K;Manufacture of electrical equipment;C27;5 921 696
+IDN;K;Manufacture of machinery and equipment n.e.c.;C28;9 269 457
+IDN;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;7 686 402
+IDN;K;Manufacture of other transport equipment;C30;463 665
+IDN;K;"Manufacture of furniture; other manufacturing";C31_C32;6 024 190
+IDN;K;Repair and installation of machinery and equipment;C33;0
+IDN;K;Electricity, gas, steam and air conditioning supply;D35;3 923 637 100
+IDN;K;Water collection, treatment and supply;E36;333 519 000
+IDN;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;0
+IDN;K;Construction;F;293 357 850
+IDN;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;512 917 610
+IDN;K;Wholesale trade, except of motor vehicles and motorcycles;G46;1 298 914 700
+IDN;K;Retail trade, except of motor vehicles and motorcycles;G47;762 524 870
+IDN;K;Land transport and transport via pipelines;H49;1 055 114 600
+IDN;K;Water transport;H50;301 090 970
+IDN;K;Air transport;H51;237 685 000
+IDN;K;Warehousing and support activities for transportation;H52;191 515 580
+IDN;K;Postal and courier activities;H53;139 475 950
+IDN;K;Accommodation and food service activities;I;530 040 960
+IDN;K;Publishing activities;J58;68 635 700
+IDN;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;104 054 400
+IDN;K;Telecommunications;J61;3 484 857 600
+IDN;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;140 198 480
+IDN;K;Financial service activities, except insurance and pension funding;K64;2 139 151 800
+IDN;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;577 214 360
+IDN;K;Activities auxiliary to financial services and insurance activities;K66;0
+IDN;K;Real estate activities;L68;1 962 099 800
+IDN;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;511 486 270
+IDN;K;"Architectural and engineering activities; technical testing and analysis";M71;0
+IDN;K;Scientific research and development;M72;0
+IDN;K;Advertising and market research;M73;0
+IDN;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;0
+IDN;K;Administrative and support service activities;N;584 721 300
+IDN;K;"Public administration and defence; compulsory social security";O84;5 504 171 900
+IDN;K;Education;P85;927 706 890
+IDN;K;Human health and social work activities;Q;218 295 650
+IDN;K;Other service activities;R_S;1 029 211 200
+IDN;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+IDN;K;Activities of extraterritorial organizations and bodies;U;0
+IND;K;Crop and animal production, hunting and related service activities;A01;28 933 473
+IND;K;Forestry and logging;A02;2 878 745
+IND;K;Fishing and aquaculture;A03;1 807 980
+IND;K;Mining and quarrying;B;9 368 119
+IND;K;Manufacture of food products, beverages and tobacco products;C10-C12;9 159 043
+IND;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;12 188 094
+IND;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;1 543 635
+IND;K;Manufacture of paper and paper products;C17;2 293 473
+IND;K;Printing and reproduction of recorded media;C18;2 198 390
+IND;K;Manufacture of coke and refined petroleum products ;C19;6 422 694
+IND;K;Manufacture of chemicals and chemical products ;C20;7 534 963
+IND;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;1 110 231
+IND;K;Manufacture of rubber and plastic products;C22;3 412 905
+IND;K;Manufacture of other non-metallic mineral products;C23;6 002 532
+IND;K;Manufacture of basic metals;C24;8 680 857
+IND;K;Manufacture of fabricated metal products, except machinery and equipment;C25;5 375 225
+IND;K;Manufacture of computer, electronic and optical products;C26;1 429 357
+IND;K;Manufacture of electrical equipment;C27;2 943 630
+IND;K;Manufacture of machinery and equipment n.e.c.;C28;4 640 585
+IND;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;5 272 186
+IND;K;Manufacture of other transport equipment;C30;1 847 744
+IND;K;"Manufacture of furniture; other manufacturing";C31_C32;5 173 654
+IND;K;Repair and installation of machinery and equipment;C33;0
+IND;K;Electricity, gas, steam and air conditioning supply;D35;23 048 840
+IND;K;Water collection, treatment and supply;E36;3 163 365
+IND;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;0
+IND;K;Construction;F;11 553 404
+IND;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;1 282 567
+IND;K;Wholesale trade, except of motor vehicles and motorcycles;G46;8 974 832
+IND;K;Retail trade, except of motor vehicles and motorcycles;G47;16 120 219
+IND;K;Land transport and transport via pipelines;H49;16 847 214
+IND;K;Water transport;H50;250 815
+IND;K;Air transport;H51;368 530
+IND;K;Warehousing and support activities for transportation;H52;991 779
+IND;K;Postal and courier activities;H53;0
+IND;K;Accommodation and food service activities;I;4 780 102
+IND;K;Publishing activities;J58;0
+IND;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;0
+IND;K;Telecommunications;J61;11 162 325
+IND;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;12 714 986
+IND;K;Financial service activities, except insurance and pension funding;K64;1 987 194
+IND;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;452 438
+IND;K;Activities auxiliary to financial services and insurance activities;K66;0
+IND;K;Real estate activities;L68;56 761 278
+IND;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;1 319 424
+IND;K;"Architectural and engineering activities; technical testing and analysis";M71;3 835 944
+IND;K;Scientific research and development;M72;0
+IND;K;Advertising and market research;M73;0
+IND;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;0
+IND;K;Administrative and support service activities;N;337 417
+IND;K;"Public administration and defence; compulsory social security";O84;46 407 813
+IND;K;Education;P85;11 108 482
+IND;K;Human health and social work activities;Q;4 488 634
+IND;K;Other service activities;R_S;8 033 203
+IND;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+IND;K;Activities of extraterritorial organizations and bodies;U;0
+IRL;K;Crop and animal production, hunting and related service activities;A01;6 935
+IRL;K;Forestry and logging;A02;1 708
+IRL;K;Fishing and aquaculture;A03;761
+IRL;K;Mining and quarrying;B;1 762
+IRL;K;Manufacture of food products, beverages and tobacco products;C10-C12;10 421
+IRL;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;162
+IRL;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;182
+IRL;K;Manufacture of paper and paper products;C17;23
+IRL;K;Printing and reproduction of recorded media;C18;121
+IRL;K;Manufacture of coke and refined petroleum products ;C19;15
+IRL;K;Manufacture of chemicals and chemical products ;C20;1 312
+IRL;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;5 198
+IRL;K;Manufacture of rubber and plastic products;C22;618
+IRL;K;Manufacture of other non-metallic mineral products;C23;711
+IRL;K;Manufacture of basic metals;C24;111
+IRL;K;Manufacture of fabricated metal products, except machinery and equipment;C25;479
+IRL;K;Manufacture of computer, electronic and optical products;C26;2 275
+IRL;K;Manufacture of electrical equipment;C27;221
+IRL;K;Manufacture of machinery and equipment n.e.c.;C28;786
+IRL;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;242
+IRL;K;Manufacture of other transport equipment;C30;3
+IRL;K;"Manufacture of furniture; other manufacturing";C31_C32;13 711
+IRL;K;Repair and installation of machinery and equipment;C33;1 137
+IRL;K;Electricity, gas, steam and air conditioning supply;D35;13 124
+IRL;K;Water collection, treatment and supply;E36;1 701
+IRL;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;6 469
+IRL;K;Construction;F;2 159
+IRL;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;936
+IRL;K;Wholesale trade, except of motor vehicles and motorcycles;G46;4 729
+IRL;K;Retail trade, except of motor vehicles and motorcycles;G47;5 262
+IRL;K;Land transport and transport via pipelines;H49;4 986
+IRL;K;Water transport;H50;421
+IRL;K;Air transport;H51;6 433
+IRL;K;Warehousing and support activities for transportation;H52;3 769
+IRL;K;Postal and courier activities;H53;1 638
+IRL;K;Accommodation and food service activities;I;3 943
+IRL;K;Publishing activities;J58;9 523
+IRL;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;288
+IRL;K;Telecommunications;J61;2 733
+IRL;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;9 564
+IRL;K;Financial service activities, except insurance and pension funding;K64;4 751
+IRL;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;1 773
+IRL;K;Activities auxiliary to financial services and insurance activities;K66;819
+IRL;K;Real estate activities;L68;226 456
+IRL;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;3 512
+IRL;K;"Architectural and engineering activities; technical testing and analysis";M71;1 603
+IRL;K;Scientific research and development;M72;349
+IRL;K;Advertising and market research;M73;272
+IRL;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;1 222
+IRL;K;Administrative and support service activities;N;52 604
+IRL;K;"Public administration and defence; compulsory social security";O84;39 784
+IRL;K;Education;P85;9 772
+IRL;K;Human health and social work activities;Q;6 981
+IRL;K;Other service activities;R_S;2 893
+IRL;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+IRL;K;Activities of extraterritorial organizations and bodies;U;0
+ITA;K;Crop and animal production, hunting and related service activities;A01;191 680
+ITA;K;Forestry and logging;A02;7 718
+ITA;K;Fishing and aquaculture;A03;5 684
+ITA;K;Mining and quarrying;B;25 802
+ITA;K;Manufacture of food products, beverages and tobacco products;C10-C12;51 932
+ITA;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;27 295
+ITA;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;8 771
+ITA;K;Manufacture of paper and paper products;C17;9 004
+ITA;K;Printing and reproduction of recorded media;C18;8 192
+ITA;K;Manufacture of coke and refined petroleum products ;C19;31 260
+ITA;K;Manufacture of chemicals and chemical products ;C20;30 981
+ITA;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;15 278
+ITA;K;Manufacture of rubber and plastic products;C22;26 164
+ITA;K;Manufacture of other non-metallic mineral products;C23;22 592
+ITA;K;Manufacture of basic metals;C24;14 934
+ITA;K;Manufacture of fabricated metal products, except machinery and equipment;C25;58 019
+ITA;K;Manufacture of computer, electronic and optical products;C26;18 503
+ITA;K;Manufacture of electrical equipment;C27;18 762
+ITA;K;Manufacture of machinery and equipment n.e.c.;C28;44 738
+ITA;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;28 763
+ITA;K;Manufacture of other transport equipment;C30;15 725
+ITA;K;"Manufacture of furniture; other manufacturing";C31_C32;18 540
+ITA;K;Repair and installation of machinery and equipment;C33;13 362
+ITA;K;Electricity, gas, steam and air conditioning supply;D35;222 906
+ITA;K;Water collection, treatment and supply;E36;14 408
+ITA;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;40 091
+ITA;K;Construction;F;69 952
+ITA;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;16 580
+ITA;K;Wholesale trade, except of motor vehicles and motorcycles;G46;79 925
+ITA;K;Retail trade, except of motor vehicles and motorcycles;G47;75 908
+ITA;K;Land transport and transport via pipelines;H49;211 195
+ITA;K;Water transport;H50;12 722
+ITA;K;Air transport;H51;2 807
+ITA;K;Warehousing and support activities for transportation;H52;129 645
+ITA;K;Postal and courier activities;H53;19 109
+ITA;K;Accommodation and food service activities;I;102 423
+ITA;K;Publishing activities;J58;6 429
+ITA;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;12 085
+ITA;K;Telecommunications;J61;44 987
+ITA;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;24 717
+ITA;K;Financial service activities, except insurance and pension funding;K64;59 168
+ITA;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;9 443
+ITA;K;Activities auxiliary to financial services and insurance activities;K66;18 314
+ITA;K;Real estate activities;L68;2 995 566
+ITA;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;19 976
+ITA;K;"Architectural and engineering activities; technical testing and analysis";M71;8 325
+ITA;K;Scientific research and development;M72;13 584
+ITA;K;Advertising and market research;M73;2 520
+ITA;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;9 852
+ITA;K;Administrative and support service activities;N;63 919
+ITA;K;"Public administration and defence; compulsory social security";O84;601 358
+ITA;K;Education;P85;37 911
+ITA;K;Human health and social work activities;Q;90 291
+ITA;K;Other service activities;R_S;60 468
+ITA;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+ITA;K;Activities of extraterritorial organizations and bodies;U;0
+JPN;K;Crop and animal production, hunting and related service activities;A01;68 584 139
+JPN;K;Forestry and logging;A02;8 657 069
+JPN;K;Fishing and aquaculture;A03;5 909 065
+JPN;K;Mining and quarrying;B;2 856 478
+JPN;K;Manufacture of food products, beverages and tobacco products;C10-C12;21 125 385
+JPN;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;6 380 079
+JPN;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;1 460 642
+JPN;K;Manufacture of paper and paper products;C17;7 068 078
+JPN;K;Printing and reproduction of recorded media;C18;4 919 606
+JPN;K;Manufacture of coke and refined petroleum products ;C19;7 858 900
+JPN;K;Manufacture of chemicals and chemical products ;C20;20 298 456
+JPN;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;7 149 865
+JPN;K;Manufacture of rubber and plastic products;C22;10 750 358
+JPN;K;Manufacture of other non-metallic mineral products;C23;6 249 300
+JPN;K;Manufacture of basic metals;C24;28 700 349
+JPN;K;Manufacture of fabricated metal products, except machinery and equipment;C25;16 289 626
+JPN;K;Manufacture of computer, electronic and optical products;C26;32 177 976
+JPN;K;Manufacture of electrical equipment;C27;18 224 245
+JPN;K;Manufacture of machinery and equipment n.e.c.;C28;15 231 223
+JPN;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;27 669 347
+JPN;K;Manufacture of other transport equipment;C30;6 543 860
+JPN;K;"Manufacture of furniture; other manufacturing";C31_C32;6 326 725
+JPN;K;Repair and installation of machinery and equipment;C33;0
+JPN;K;Electricity, gas, steam and air conditioning supply;D35;87 258 424
+JPN;K;Water collection, treatment and supply;E36;37 420 669
+JPN;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;2 597 289
+JPN;K;Construction;F;24 072 955
+JPN;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;4 447 661
+JPN;K;Wholesale trade, except of motor vehicles and motorcycles;G46;27 356 020
+JPN;K;Retail trade, except of motor vehicles and motorcycles;G47;29 951 528
+JPN;K;Land transport and transport via pipelines;H49;80 994 183
+JPN;K;Water transport;H50;10 080 940
+JPN;K;Air transport;H51;9 543 683
+JPN;K;Warehousing and support activities for transportation;H52;42 182 947
+JPN;K;Postal and courier activities;H53;1 459 262
+JPN;K;Accommodation and food service activities;I;22 601 114
+JPN;K;Publishing activities;J58;2 878 996
+JPN;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;6 055 257
+JPN;K;Telecommunications;J61;52 407 884
+JPN;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;8 389 726
+JPN;K;Financial service activities, except insurance and pension funding;K64;17 627 870
+JPN;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;6 737 572
+JPN;K;Activities auxiliary to financial services and insurance activities;K66;0
+JPN;K;Real estate activities;L68;393 519 730
+JPN;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;0
+JPN;K;"Architectural and engineering activities; technical testing and analysis";M71;0
+JPN;K;Scientific research and development;M72;3 683 776
+JPN;K;Advertising and market research;M73;3 009 110
+JPN;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;9 878 402
+JPN;K;Administrative and support service activities;N;47 499 414
+JPN;K;"Public administration and defence; compulsory social security";O84;111 251 670
+JPN;K;Education;P85;29 291 633
+JPN;K;Human health and social work activities;Q;48 159 102
+JPN;K;Other service activities;R_S;25 913 111
+JPN;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+JPN;K;Activities of extraterritorial organizations and bodies;U;0
+KOR;K;Crop and animal production, hunting and related service activities;A01;100 272 690
+KOR;K;Forestry and logging;A02;3 155 977
+KOR;K;Fishing and aquaculture;A03;5 394 936
+KOR;K;Mining and quarrying;B;2 022 533
+KOR;K;Manufacture of food products, beverages and tobacco products;C10-C12;50 269 407
+KOR;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;52 287 140
+KOR;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;6 727 022
+KOR;K;Manufacture of paper and paper products;C17;25 608 559
+KOR;K;Printing and reproduction of recorded media;C18;9 953 219
+KOR;K;Manufacture of coke and refined petroleum products ;C19;16 108 102
+KOR;K;Manufacture of chemicals and chemical products ;C20;121 396 630
+KOR;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;27 908 425
+KOR;K;Manufacture of rubber and plastic products;C22;30 176 736
+KOR;K;Manufacture of other non-metallic mineral products;C23;22 580 309
+KOR;K;Manufacture of basic metals;C24;140 846 060
+KOR;K;Manufacture of fabricated metal products, except machinery and equipment;C25;60 980 251
+KOR;K;Manufacture of computer, electronic and optical products;C26;381 546 610
+KOR;K;Manufacture of electrical equipment;C27;32 877 749
+KOR;K;Manufacture of machinery and equipment n.e.c.;C28;150 690 870
+KOR;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;108 676 020
+KOR;K;Manufacture of other transport equipment;C30;142 077 000
+KOR;K;"Manufacture of furniture; other manufacturing";C31_C32;14 477 976
+KOR;K;Repair and installation of machinery and equipment;C33;0
+KOR;K;Electricity, gas, steam and air conditioning supply;D35;296 498 120
+KOR;K;Water collection, treatment and supply;E36;110 951 200
+KOR;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;1 565 407
+KOR;K;Construction;F;77 523 686
+KOR;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;14 553 175
+KOR;K;Wholesale trade, except of motor vehicles and motorcycles;G46;43 296 144
+KOR;K;Retail trade, except of motor vehicles and motorcycles;G47;95 396 463
+KOR;K;Land transport and transport via pipelines;H49;319 852 700
+KOR;K;Water transport;H50;39 125 643
+KOR;K;Air transport;H51;81 077 195
+KOR;K;Warehousing and support activities for transportation;H52;279 567 460
+KOR;K;Postal and courier activities;H53;15 329 369
+KOR;K;Accommodation and food service activities;I;154 330 320
+KOR;K;Publishing activities;J58;15 176 139
+KOR;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;181 351 850
+KOR;K;Telecommunications;J61;60 189 543
+KOR;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;10 430 474
+KOR;K;Financial service activities, except insurance and pension funding;K64;63 361 426
+KOR;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;20 800 088
+KOR;K;Activities auxiliary to financial services and insurance activities;K66;5 971 871
+KOR;K;Real estate activities;L68;971 106 940
+KOR;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;5 147 109
+KOR;K;"Architectural and engineering activities; technical testing and analysis";M71;8 584 527
+KOR;K;Scientific research and development;M72;29 599 793
+KOR;K;Advertising and market research;M73;647 814
+KOR;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;4 052 345
+KOR;K;Administrative and support service activities;N;364 024 940
+KOR;K;"Public administration and defence; compulsory social security";O84;1 190 458 600
+KOR;K;Education;P85;151 108 730
+KOR;K;Human health and social work activities;Q;84 605 694
+KOR;K;Other service activities;R_S;140 217 420
+KOR;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+KOR;K;Activities of extraterritorial organizations and bodies;U;0
+LTU;K;Crop and animal production, hunting and related service activities;A01;3 974
+LTU;K;Forestry and logging;A02;659
+LTU;K;Fishing and aquaculture;A03;94
+LTU;K;Mining and quarrying;B;393
+LTU;K;Manufacture of food products, beverages and tobacco products;C10-C12;3 319
+LTU;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;424
+LTU;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;389
+LTU;K;Manufacture of paper and paper products;C17;184
+LTU;K;Printing and reproduction of recorded media;C18;156
+LTU;K;Manufacture of coke and refined petroleum products ;C19;504
+LTU;K;Manufacture of chemicals and chemical products ;C20;1 043
+LTU;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;219
+LTU;K;Manufacture of rubber and plastic products;C22;225
+LTU;K;Manufacture of other non-metallic mineral products;C23;572
+LTU;K;Manufacture of basic metals;C24;47
+LTU;K;Manufacture of fabricated metal products, except machinery and equipment;C25;341
+LTU;K;Manufacture of computer, electronic and optical products;C26;183
+LTU;K;Manufacture of electrical equipment;C27;169
+LTU;K;Manufacture of machinery and equipment n.e.c.;C28;268
+LTU;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;77
+LTU;K;Manufacture of other transport equipment;C30;92
+LTU;K;"Manufacture of furniture; other manufacturing";C31_C32;610
+LTU;K;Repair and installation of machinery and equipment;C33;174
+LTU;K;Electricity, gas, steam and air conditioning supply;D35;4 920
+LTU;K;Water collection, treatment and supply;E36;804
+LTU;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;1 660
+LTU;K;Construction;F;3 513
+LTU;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;583
+LTU;K;Wholesale trade, except of motor vehicles and motorcycles;G46;2 469
+LTU;K;Retail trade, except of motor vehicles and motorcycles;G47;2 188
+LTU;K;Land transport and transport via pipelines;H49;5 405
+LTU;K;Water transport;H50;215
+LTU;K;Air transport;H51;56
+LTU;K;Warehousing and support activities for transportation;H52;2 952
+LTU;K;Postal and courier activities;H53;182
+LTU;K;Accommodation and food service activities;I;760
+LTU;K;Publishing activities;J58;377
+LTU;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;266
+LTU;K;Telecommunications;J61;1 910
+LTU;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;1 478
+LTU;K;Financial service activities, except insurance and pension funding;K64;651
+LTU;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;152
+LTU;K;Activities auxiliary to financial services and insurance activities;K66;48
+LTU;K;Real estate activities;L68;30 571
+LTU;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;693
+LTU;K;"Architectural and engineering activities; technical testing and analysis";M71;302
+LTU;K;Scientific research and development;M72;61
+LTU;K;Advertising and market research;M73;286
+LTU;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;104
+LTU;K;Administrative and support service activities;N;1 748
+LTU;K;"Public administration and defence; compulsory social security";O84;20 496
+LTU;K;Education;P85;2 147
+LTU;K;Human health and social work activities;Q;937
+LTU;K;Other service activities;R_S;661
+LTU;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+LTU;K;Activities of extraterritorial organizations and bodies;U;0
+LUX;K;Crop and animal production, hunting and related service activities;A01;1 406
+LUX;K;Forestry and logging;A02;38
+LUX;K;Fishing and aquaculture;A03;0
+LUX;K;Mining and quarrying;B;82
+LUX;K;Manufacture of food products, beverages and tobacco products;C10-C12;753
+LUX;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;289
+LUX;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;147
+LUX;K;Manufacture of paper and paper products;C17;70
+LUX;K;Printing and reproduction of recorded media;C18;81
+LUX;K;Manufacture of coke and refined petroleum products ;C19;0
+LUX;K;Manufacture of chemicals and chemical products ;C20;193
+LUX;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;395
+LUX;K;Manufacture of rubber and plastic products;C22;752
+LUX;K;Manufacture of other non-metallic mineral products;C23;911
+LUX;K;Manufacture of basic metals;C24;691
+LUX;K;Manufacture of fabricated metal products, except machinery and equipment;C25;1 218
+LUX;K;Manufacture of computer, electronic and optical products;C26;119
+LUX;K;Manufacture of electrical equipment;C27;120
+LUX;K;Manufacture of machinery and equipment n.e.c.;C28;327
+LUX;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;49
+LUX;K;Manufacture of other transport equipment;C30;16
+LUX;K;"Manufacture of furniture; other manufacturing";C31_C32;44
+LUX;K;Repair and installation of machinery and equipment;C33;41
+LUX;K;Electricity, gas, steam and air conditioning supply;D35;3 772
+LUX;K;Water collection, treatment and supply;E36;717
+LUX;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;1 525
+LUX;K;Construction;F;1 647
+LUX;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;594
+LUX;K;Wholesale trade, except of motor vehicles and motorcycles;G46;2 068
+LUX;K;Retail trade, except of motor vehicles and motorcycles;G47;1 410
+LUX;K;Land transport and transport via pipelines;H49;2 586
+LUX;K;Water transport;H50;438
+LUX;K;Air transport;H51;634
+LUX;K;Warehousing and support activities for transportation;H52;625
+LUX;K;Postal and courier activities;H53;2 383
+LUX;K;Accommodation and food service activities;I;952
+LUX;K;Publishing activities;J58;133
+LUX;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;182
+LUX;K;Telecommunications;J61;3 577
+LUX;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;1 840
+LUX;K;Financial service activities, except insurance and pension funding;K64;4 130
+LUX;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;245
+LUX;K;Activities auxiliary to financial services and insurance activities;K66;176
+LUX;K;Real estate activities;L68;38 522
+LUX;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;641
+LUX;K;"Architectural and engineering activities; technical testing and analysis";M71;360
+LUX;K;Scientific research and development;M72;251
+LUX;K;Advertising and market research;M73;45
+LUX;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;55
+LUX;K;Administrative and support service activities;N;2 363
+LUX;K;"Public administration and defence; compulsory social security";O84;17 834
+LUX;K;Education;P85;4 448
+LUX;K;Human health and social work activities;Q;3 226
+LUX;K;Other service activities;R_S;2 712
+LUX;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+LUX;K;Activities of extraterritorial organizations and bodies;U;0
+LVA;K;Crop and animal production, hunting and related service activities;A01;2 335
+LVA;K;Forestry and logging;A02;1 858
+LVA;K;Fishing and aquaculture;A03;196
+LVA;K;Mining and quarrying;B;349
+LVA;K;Manufacture of food products, beverages and tobacco products;C10-C12;2 536
+LVA;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;393
+LVA;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;3 057
+LVA;K;Manufacture of paper and paper products;C17;107
+LVA;K;Printing and reproduction of recorded media;C18;210
+LVA;K;Manufacture of coke and refined petroleum products ;C19;0
+LVA;K;Manufacture of chemicals and chemical products ;C20;178
+LVA;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;175
+LVA;K;Manufacture of rubber and plastic products;C22;223
+LVA;K;Manufacture of other non-metallic mineral products;C23;975
+LVA;K;Manufacture of basic metals;C24;198
+LVA;K;Manufacture of fabricated metal products, except machinery and equipment;C25;488
+LVA;K;Manufacture of computer, electronic and optical products;C26;69
+LVA;K;Manufacture of electrical equipment;C27;65
+LVA;K;Manufacture of machinery and equipment n.e.c.;C28;128
+LVA;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;52
+LVA;K;Manufacture of other transport equipment;C30;60
+LVA;K;"Manufacture of furniture; other manufacturing";C31_C32;232
+LVA;K;Repair and installation of machinery and equipment;C33;280
+LVA;K;Electricity, gas, steam and air conditioning supply;D35;4 863
+LVA;K;Water collection, treatment and supply;E36;317
+LVA;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;968
+LVA;K;Construction;F;2 996
+LVA;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;257
+LVA;K;Wholesale trade, except of motor vehicles and motorcycles;G46;1 699
+LVA;K;Retail trade, except of motor vehicles and motorcycles;G47;2 697
+LVA;K;Land transport and transport via pipelines;H49;3 916
+LVA;K;Water transport;H50;2 012
+LVA;K;Air transport;H51;217
+LVA;K;Warehousing and support activities for transportation;H52;2 926
+LVA;K;Postal and courier activities;H53;184
+LVA;K;Accommodation and food service activities;I;802
+LVA;K;Publishing activities;J58;227
+LVA;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;204
+LVA;K;Telecommunications;J61;1 152
+LVA;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;857
+LVA;K;Financial service activities, except insurance and pension funding;K64;519
+LVA;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;81
+LVA;K;Activities auxiliary to financial services and insurance activities;K66;47
+LVA;K;Real estate activities;L68;12 197
+LVA;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;1 426
+LVA;K;"Architectural and engineering activities; technical testing and analysis";M71;904
+LVA;K;Scientific research and development;M72;419
+LVA;K;Advertising and market research;M73;726
+LVA;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;304
+LVA;K;Administrative and support service activities;N;1 275
+LVA;K;"Public administration and defence; compulsory social security";O84;8 038
+LVA;K;Education;P85;1 393
+LVA;K;Human health and social work activities;Q;907
+LVA;K;Other service activities;R_S;1 511
+LVA;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+LVA;K;Activities of extraterritorial organizations and bodies;U;0
+MEX;K;Crop and animal production, hunting and related service activities;A01;1 296 912
+MEX;K;Forestry and logging;A02;2 477
+MEX;K;Fishing and aquaculture;A03;17 033
+MEX;K;Mining and quarrying;B;3 206 930
+MEX;K;Manufacture of food products, beverages and tobacco products;C10-C12;693 839
+MEX;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;164 195
+MEX;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;168 853
+MEX;K;Manufacture of paper and paper products;C17;498 847
+MEX;K;Printing and reproduction of recorded media;C18;111 582
+MEX;K;Manufacture of coke and refined petroleum products ;C19;9 587
+MEX;K;Manufacture of chemicals and chemical products ;C20;73 496
+MEX;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;30 221
+MEX;K;Manufacture of rubber and plastic products;C22;22 937
+MEX;K;Manufacture of other non-metallic mineral products;C23;272 330
+MEX;K;Manufacture of basic metals;C24;543 406
+MEX;K;Manufacture of fabricated metal products, except machinery and equipment;C25;234 090
+MEX;K;Manufacture of computer, electronic and optical products;C26;113 358
+MEX;K;Manufacture of electrical equipment;C27;178 408
+MEX;K;Manufacture of machinery and equipment n.e.c.;C28;185 254
+MEX;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;370 992
+MEX;K;Manufacture of other transport equipment;C30;28 140
+MEX;K;"Manufacture of furniture; other manufacturing";C31_C32;1 038 136
+MEX;K;Repair and installation of machinery and equipment;C33;298 210
+MEX;K;Electricity, gas, steam and air conditioning supply;D35;1 013 365
+MEX;K;Water collection, treatment and supply;E36;178 908
+MEX;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;5 512
+MEX;K;Construction;F;160 449
+MEX;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;62 931
+MEX;K;Wholesale trade, except of motor vehicles and motorcycles;G46;504 122
+MEX;K;Retail trade, except of motor vehicles and motorcycles;G47;452 518
+MEX;K;Land transport and transport via pipelines;H49;10 348
+MEX;K;Water transport;H50;264 352
+MEX;K;Air transport;H51;4 746
+MEX;K;Warehousing and support activities for transportation;H52;26 646
+MEX;K;Postal and courier activities;H53;64 866
+MEX;K;Accommodation and food service activities;I;325 508
+MEX;K;Publishing activities;J58;90 278
+MEX;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;21 316 222
+MEX;K;Telecommunications;J61;7 658
+MEX;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;225
+MEX;K;Financial service activities, except insurance and pension funding;K64;167 453
+MEX;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;13 511
+MEX;K;Activities auxiliary to financial services and insurance activities;K66;15 758
+MEX;K;Real estate activities;L68;0
+MEX;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;189 102
+MEX;K;"Architectural and engineering activities; technical testing and analysis";M71;120 708
+MEX;K;Scientific research and development;M72;214 460
+MEX;K;Advertising and market research;M73;0
+MEX;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;15 321
+MEX;K;Administrative and support service activities;N;2 903 076
+MEX;K;"Public administration and defence; compulsory social security";O84;186 424
+MEX;K;Education;P85;535 993
+MEX;K;Human health and social work activities;Q;162 434
+MEX;K;Other service activities;R_S;0
+MEX;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;5 157 463
+MEX;K;Activities of extraterritorial organizations and bodies;U;786
+MLT;K;Crop and animal production, hunting and related service activities;A01;229
+MLT;K;Forestry and logging;A02;0
+MLT;K;Fishing and aquaculture;A03;39
+MLT;K;Mining and quarrying;B;63
+MLT;K;Manufacture of food products, beverages and tobacco products;C10-C12;437
+MLT;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;137
+MLT;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;4
+MLT;K;Manufacture of paper and paper products;C17;17
+MLT;K;Printing and reproduction of recorded media;C18;151
+MLT;K;Manufacture of coke and refined petroleum products ;C19;62
+MLT;K;Manufacture of chemicals and chemical products ;C20;414
+MLT;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;671
+MLT;K;Manufacture of rubber and plastic products;C22;97
+MLT;K;Manufacture of other non-metallic mineral products;C23;233
+MLT;K;Manufacture of basic metals;C24;6
+MLT;K;Manufacture of fabricated metal products, except machinery and equipment;C25;95
+MLT;K;Manufacture of computer, electronic and optical products;C26;39
+MLT;K;Manufacture of electrical equipment;C27;81
+MLT;K;Manufacture of machinery and equipment n.e.c.;C28;154
+MLT;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;25
+MLT;K;Manufacture of other transport equipment;C30;18
+MLT;K;"Manufacture of furniture; other manufacturing";C31_C32;171
+MLT;K;Repair and installation of machinery and equipment;C33;122
+MLT;K;Electricity, gas, steam and air conditioning supply;D35;550
+MLT;K;Water collection, treatment and supply;E36;217
+MLT;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;322
+MLT;K;Construction;F;832
+MLT;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;178
+MLT;K;Wholesale trade, except of motor vehicles and motorcycles;G46;564
+MLT;K;Retail trade, except of motor vehicles and motorcycles;G47;590
+MLT;K;Land transport and transport via pipelines;H49;354
+MLT;K;Water transport;H50;86
+MLT;K;Air transport;H51;184
+MLT;K;Warehousing and support activities for transportation;H52;1 159
+MLT;K;Postal and courier activities;H53;137
+MLT;K;Accommodation and food service activities;I;692
+MLT;K;Publishing activities;J58;35
+MLT;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;57
+MLT;K;Telecommunications;J61;301
+MLT;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;534
+MLT;K;Financial service activities, except insurance and pension funding;K64;217
+MLT;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;37
+MLT;K;Activities auxiliary to financial services and insurance activities;K66;46
+MLT;K;Real estate activities;L68;6 095
+MLT;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;567
+MLT;K;"Architectural and engineering activities; technical testing and analysis";M71;165
+MLT;K;Scientific research and development;M72;0
+MLT;K;Advertising and market research;M73;97
+MLT;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;48
+MLT;K;Administrative and support service activities;N;997
+MLT;K;"Public administration and defence; compulsory social security";O84;2 409
+MLT;K;Education;P85;453
+MLT;K;Human health and social work activities;Q;767
+MLT;K;Other service activities;R_S;873
+MLT;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+MLT;K;Activities of extraterritorial organizations and bodies;U;0
+NLD;K;Crop and animal production, hunting and related service activities;A01;50 825
+NLD;K;Forestry and logging;A02;548
+NLD;K;Fishing and aquaculture;A03;1 255
+NLD;K;Mining and quarrying;B;41 707
+NLD;K;Manufacture of food products, beverages and tobacco products;C10-C12;25 994
+NLD;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;1 987
+NLD;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;2 510
+NLD;K;Manufacture of paper and paper products;C17;4 694
+NLD;K;Printing and reproduction of recorded media;C18;4 652
+NLD;K;Manufacture of coke and refined petroleum products ;C19;7 507
+NLD;K;Manufacture of chemicals and chemical products ;C20;35 126
+NLD;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;7 966
+NLD;K;Manufacture of rubber and plastic products;C22;6 214
+NLD;K;Manufacture of other non-metallic mineral products;C23;3 825
+NLD;K;Manufacture of basic metals;C24;3 299
+NLD;K;Manufacture of fabricated metal products, except machinery and equipment;C25;10 372
+NLD;K;Manufacture of computer, electronic and optical products;C26;6 116
+NLD;K;Manufacture of electrical equipment;C27;5 417
+NLD;K;Manufacture of machinery and equipment n.e.c.;C28;12 384
+NLD;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;3 185
+NLD;K;Manufacture of other transport equipment;C30;2 811
+NLD;K;"Manufacture of furniture; other manufacturing";C31_C32;6 094
+NLD;K;Repair and installation of machinery and equipment;C33;3 805
+NLD;K;Electricity, gas, steam and air conditioning supply;D35;51 804
+NLD;K;Water collection, treatment and supply;E36;5 794
+NLD;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;12 990
+NLD;K;Construction;F;22 163
+NLD;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;5 263
+NLD;K;Wholesale trade, except of motor vehicles and motorcycles;G46;34 904
+NLD;K;Retail trade, except of motor vehicles and motorcycles;G47;16 180
+NLD;K;Land transport and transport via pipelines;H49;38 253
+NLD;K;Water transport;H50;7 000
+NLD;K;Air transport;H51;7 551
+NLD;K;Warehousing and support activities for transportation;H52;31 179
+NLD;K;Postal and courier activities;H53;7 628
+NLD;K;Accommodation and food service activities;I;7 318
+NLD;K;Publishing activities;J58;1 871
+NLD;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;1 394
+NLD;K;Telecommunications;J61;22 250
+NLD;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;6 023
+NLD;K;Financial service activities, except insurance and pension funding;K64;31 572
+NLD;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;7 196
+NLD;K;Activities auxiliary to financial services and insurance activities;K66;3 602
+NLD;K;Real estate activities;L68;939 114
+NLD;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;10 620
+NLD;K;"Architectural and engineering activities; technical testing and analysis";M71;3 126
+NLD;K;Scientific research and development;M72;10 819
+NLD;K;Advertising and market research;M73;1 748
+NLD;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;1 615
+NLD;K;Administrative and support service activities;N;21 565
+NLD;K;"Public administration and defence; compulsory social security";O84;317 490
+NLD;K;Education;P85;55 047
+NLD;K;Human health and social work activities;Q;67 929
+NLD;K;Other service activities;R_S;12 740
+NLD;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+NLD;K;Activities of extraterritorial organizations and bodies;U;0
+NOR;K;Crop and animal production, hunting and related service activities;A01;142 329
+NOR;K;Forestry and logging;A02;16 782
+NOR;K;Fishing and aquaculture;A03;29 255
+NOR;K;Mining and quarrying;B;1 556 748
+NOR;K;Manufacture of food products, beverages and tobacco products;C10-C12;77 376
+NOR;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;3 075
+NOR;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;13 673
+NOR;K;Manufacture of paper and paper products;C17;14 621
+NOR;K;Printing and reproduction of recorded media;C18;5 662
+NOR;K;Manufacture of coke and refined petroleum products ;C19;48 763
+NOR;K;Manufacture of chemicals and chemical products ;C20;26 412
+NOR;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;6 029
+NOR;K;Manufacture of rubber and plastic products;C22;5 585
+NOR;K;Manufacture of other non-metallic mineral products;C23;17 154
+NOR;K;Manufacture of basic metals;C24;40 608
+NOR;K;Manufacture of fabricated metal products, except machinery and equipment;C25;16 540
+NOR;K;Manufacture of computer, electronic and optical products;C26;14 852
+NOR;K;Manufacture of electrical equipment;C27;8 399
+NOR;K;Manufacture of machinery and equipment n.e.c.;C28;17 645
+NOR;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;4 209
+NOR;K;Manufacture of other transport equipment;C30;19 756
+NOR;K;"Manufacture of furniture; other manufacturing";C31_C32;7 434
+NOR;K;Repair and installation of machinery and equipment;C33;13 420
+NOR;K;Electricity, gas, steam and air conditioning supply;D35;315 344
+NOR;K;Water collection, treatment and supply;E36;63 663
+NOR;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;101 399
+NOR;K;Construction;F;155 658
+NOR;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;21 598
+NOR;K;Wholesale trade, except of motor vehicles and motorcycles;G46;75 012
+NOR;K;Retail trade, except of motor vehicles and motorcycles;G47;58 232
+NOR;K;Land transport and transport via pipelines;H49;178 058
+NOR;K;Water transport;H50;151 009
+NOR;K;Air transport;H51;27 906
+NOR;K;Warehousing and support activities for transportation;H52;72 312
+NOR;K;Postal and courier activities;H53;5 138
+NOR;K;Accommodation and food service activities;I;45 016
+NOR;K;Publishing activities;J58;15 356
+NOR;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;9 860
+NOR;K;Telecommunications;J61;64 017
+NOR;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;22 997
+NOR;K;Financial service activities, except insurance and pension funding;K64;26 195
+NOR;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;90 294
+NOR;K;Activities auxiliary to financial services and insurance activities;K66;8 849
+NOR;K;Real estate activities;L68;3 724 774
+NOR;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;6 234
+NOR;K;"Architectural and engineering activities; technical testing and analysis";M71;32 154
+NOR;K;Scientific research and development;M72;28 644
+NOR;K;Advertising and market research;M73;1 524
+NOR;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;4 672
+NOR;K;Administrative and support service activities;N;47 834
+NOR;K;"Public administration and defence; compulsory social security";O84;980 683
+NOR;K;Education;P85;322 883
+NOR;K;Human health and social work activities;Q;331 309
+NOR;K;Other service activities;R_S;144 026
+NOR;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+NOR;K;Activities of extraterritorial organizations and bodies;U;0
+POL;K;Crop and animal production, hunting and related service activities;A01;73 080
+POL;K;Forestry and logging;A02;9 044
+POL;K;Fishing and aquaculture;A03;370
+POL;K;Mining and quarrying;B;40 216
+POL;K;Manufacture of food products, beverages and tobacco products;C10-C12;74 857
+POL;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;10 131
+POL;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;10 607
+POL;K;Manufacture of paper and paper products;C17;8 269
+POL;K;Printing and reproduction of recorded media;C18;4 966
+POL;K;Manufacture of coke and refined petroleum products ;C19;25 085
+POL;K;Manufacture of chemicals and chemical products ;C20;22 416
+POL;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;8 131
+POL;K;Manufacture of rubber and plastic products;C22;23 770
+POL;K;Manufacture of other non-metallic mineral products;C23;21 708
+POL;K;Manufacture of basic metals;C24;12 600
+POL;K;Manufacture of fabricated metal products, except machinery and equipment;C25;48 170
+POL;K;Manufacture of computer, electronic and optical products;C26;4 989
+POL;K;Manufacture of electrical equipment;C27;8 553
+POL;K;Manufacture of machinery and equipment n.e.c.;C28;10 941
+POL;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;35 874
+POL;K;Manufacture of other transport equipment;C30;9 776
+POL;K;"Manufacture of furniture; other manufacturing";C31_C32;12 865
+POL;K;Repair and installation of machinery and equipment;C33;11 934
+POL;K;Electricity, gas, steam and air conditioning supply;D35;200 098
+POL;K;Water collection, treatment and supply;E36;31 223
+POL;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;83 933
+POL;K;Construction;F;43 839
+POL;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;31 559
+POL;K;Wholesale trade, except of motor vehicles and motorcycles;G46;56 188
+POL;K;Retail trade, except of motor vehicles and motorcycles;G47;53 549
+POL;K;Land transport and transport via pipelines;H49;207 424
+POL;K;Water transport;H50;5 319
+POL;K;Air transport;H51;3 977
+POL;K;Warehousing and support activities for transportation;H52;115 030
+POL;K;Postal and courier activities;H53;24 420
+POL;K;Accommodation and food service activities;I;27 819
+POL;K;Publishing activities;J58;10 813
+POL;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;10 306
+POL;K;Telecommunications;J61;29 539
+POL;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;29 343
+POL;K;Financial service activities, except insurance and pension funding;K64;28 448
+POL;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;4 196
+POL;K;Activities auxiliary to financial services and insurance activities;K66;3 905
+POL;K;Real estate activities;L68;709 936
+POL;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;13 087
+POL;K;"Architectural and engineering activities; technical testing and analysis";M71;7 872
+POL;K;Scientific research and development;M72;3 775
+POL;K;Advertising and market research;M73;7 872
+POL;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;3 223
+POL;K;Administrative and support service activities;N;18 725
+POL;K;"Public administration and defence; compulsory social security";O84;108 787
+POL;K;Education;P85;100 126
+POL;K;Human health and social work activities;Q;54 374
+POL;K;Other service activities;R_S;53 414
+POL;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+POL;K;Activities of extraterritorial organizations and bodies;U;0
+PRT;K;Crop and animal production, hunting and related service activities;A01;8 594
+PRT;K;Forestry and logging;A02;2 183
+PRT;K;Fishing and aquaculture;A03;695
+PRT;K;Mining and quarrying;B;3 028
+PRT;K;Manufacture of food products, beverages and tobacco products;C10-C12;7 018
+PRT;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;4 669
+PRT;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;2 031
+PRT;K;Manufacture of paper and paper products;C17;1 365
+PRT;K;Printing and reproduction of recorded media;C18;883
+PRT;K;Manufacture of coke and refined petroleum products ;C19;9 286
+PRT;K;Manufacture of chemicals and chemical products ;C20;2 467
+PRT;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;1 549
+PRT;K;Manufacture of rubber and plastic products;C22;3 487
+PRT;K;Manufacture of other non-metallic mineral products;C23;3 033
+PRT;K;Manufacture of basic metals;C24;517
+PRT;K;Manufacture of fabricated metal products, except machinery and equipment;C25;3 466
+PRT;K;Manufacture of computer, electronic and optical products;C26;2 650
+PRT;K;Manufacture of electrical equipment;C27;2 313
+PRT;K;Manufacture of machinery and equipment n.e.c.;C28;1 785
+PRT;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;1 720
+PRT;K;Manufacture of other transport equipment;C30;216
+PRT;K;"Manufacture of furniture; other manufacturing";C31_C32;1 666
+PRT;K;Repair and installation of machinery and equipment;C33;-873
+PRT;K;Electricity, gas, steam and air conditioning supply;D35;16 860
+PRT;K;Water collection, treatment and supply;E36;4 670
+PRT;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;5 921
+PRT;K;Construction;F;20 962
+PRT;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;3 000
+PRT;K;Wholesale trade, except of motor vehicles and motorcycles;G46;14 587
+PRT;K;Retail trade, except of motor vehicles and motorcycles;G47;16 744
+PRT;K;Land transport and transport via pipelines;H49;15 281
+PRT;K;Water transport;H50;574
+PRT;K;Air transport;H51;3 082
+PRT;K;Warehousing and support activities for transportation;H52;8 807
+PRT;K;Postal and courier activities;H53;1 820
+PRT;K;Accommodation and food service activities;I;12 463
+PRT;K;Publishing activities;J58;898
+PRT;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;1 007
+PRT;K;Telecommunications;J61;11 472
+PRT;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;3 185
+PRT;K;Financial service activities, except insurance and pension funding;K64;13 809
+PRT;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;4 178
+PRT;K;Activities auxiliary to financial services and insurance activities;K66;3 105
+PRT;K;Real estate activities;L68;221 761
+PRT;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;8 389
+PRT;K;"Architectural and engineering activities; technical testing and analysis";M71;3 213
+PRT;K;Scientific research and development;M72;1 195
+PRT;K;Advertising and market research;M73;1 256
+PRT;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;830
+PRT;K;Administrative and support service activities;N;11 058
+PRT;K;"Public administration and defence; compulsory social security";O84;70 991
+PRT;K;Education;P85;12 605
+PRT;K;Human health and social work activities;Q;20 688
+PRT;K;Other service activities;R_S;13 643
+PRT;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+PRT;K;Activities of extraterritorial organizations and bodies;U;0
+ROU;K;Crop and animal production, hunting and related service activities;A01;150 485
+ROU;K;Forestry and logging;A02;9 719
+ROU;K;Fishing and aquaculture;A03;484
+ROU;K;Mining and quarrying;B;35 986
+ROU;K;Manufacture of food products, beverages and tobacco products;C10-C12;94 862
+ROU;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;35 071
+ROU;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;11 783
+ROU;K;Manufacture of paper and paper products;C17;5 228
+ROU;K;Printing and reproduction of recorded media;C18;6 245
+ROU;K;Manufacture of coke and refined petroleum products ;C19;14 267
+ROU;K;Manufacture of chemicals and chemical products ;C20;10 216
+ROU;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;3 292
+ROU;K;Manufacture of rubber and plastic products;C22;11 040
+ROU;K;Manufacture of other non-metallic mineral products;C23;16 036
+ROU;K;Manufacture of basic metals;C24;15 194
+ROU;K;Manufacture of fabricated metal products, except machinery and equipment;C25;20 661
+ROU;K;Manufacture of computer, electronic and optical products;C26;12 163
+ROU;K;Manufacture of electrical equipment;C27;13 757
+ROU;K;Manufacture of machinery and equipment n.e.c.;C28;14 075
+ROU;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;24 886
+ROU;K;Manufacture of other transport equipment;C30;5 309
+ROU;K;"Manufacture of furniture; other manufacturing";C31_C32;14 221
+ROU;K;Repair and installation of machinery and equipment;C33;8 952
+ROU;K;Electricity, gas, steam and air conditioning supply;D35;57 322
+ROU;K;Water collection, treatment and supply;E36;4 406
+ROU;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;11 532
+ROU;K;Construction;F;155 877
+ROU;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;42 722
+ROU;K;Wholesale trade, except of motor vehicles and motorcycles;G46;80 331
+ROU;K;Retail trade, except of motor vehicles and motorcycles;G47;51 745
+ROU;K;Land transport and transport via pipelines;H49;93 757
+ROU;K;Water transport;H50;3 661
+ROU;K;Air transport;H51;3 857
+ROU;K;Warehousing and support activities for transportation;H52;20 509
+ROU;K;Postal and courier activities;H53;4 589
+ROU;K;Accommodation and food service activities;I;30 207
+ROU;K;Publishing activities;J58;3 606
+ROU;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;5 131
+ROU;K;Telecommunications;J61;28 371
+ROU;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;16 025
+ROU;K;Financial service activities, except insurance and pension funding;K64;24 645
+ROU;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;4 563
+ROU;K;Activities auxiliary to financial services and insurance activities;K66;9 361
+ROU;K;Real estate activities;L68;577 588
+ROU;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;12 321
+ROU;K;"Architectural and engineering activities; technical testing and analysis";M71;9 073
+ROU;K;Scientific research and development;M72;2 836
+ROU;K;Advertising and market research;M73;4 614
+ROU;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;2 203
+ROU;K;Administrative and support service activities;N;14 508
+ROU;K;"Public administration and defence; compulsory social security";O84;104 210
+ROU;K;Education;P85;63 711
+ROU;K;Human health and social work activities;Q;39 962
+ROU;K;Other service activities;R_S;44 027
+ROU;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+ROU;K;Activities of extraterritorial organizations and bodies;U;0
+RUS;K;Crop and animal production, hunting and related service activities;A01;12 086 832
+RUS;K;Forestry and logging;A02;0
+RUS;K;Fishing and aquaculture;A03;0
+RUS;K;Mining and quarrying;B;21 820 174
+RUS;K;Manufacture of food products, beverages and tobacco products;C10-C12;3 180 055
+RUS;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;436 141
+RUS;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;605 225
+RUS;K;Manufacture of paper and paper products;C17;748 738
+RUS;K;Printing and reproduction of recorded media;C18;0
+RUS;K;Manufacture of coke and refined petroleum products ;C19;2 667 772
+RUS;K;Manufacture of chemicals and chemical products ;C20;2 448 684
+RUS;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;0
+RUS;K;Manufacture of rubber and plastic products;C22;531 023
+RUS;K;Manufacture of other non-metallic mineral products;C23;1 784 760
+RUS;K;Manufacture of basic metals;C24;3 776 369
+RUS;K;Manufacture of fabricated metal products, except machinery and equipment;C25;0
+RUS;K;Manufacture of computer, electronic and optical products;C26;1 012 504
+RUS;K;Manufacture of electrical equipment;C27;0
+RUS;K;Manufacture of machinery and equipment n.e.c.;C28;1 884 473
+RUS;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;2 459 386
+RUS;K;Manufacture of other transport equipment;C30;0
+RUS;K;"Manufacture of furniture; other manufacturing";C31_C32;388 042
+RUS;K;Repair and installation of machinery and equipment;C33;0
+RUS;K;Electricity, gas, steam and air conditioning supply;D35;13 119 035
+RUS;K;Water collection, treatment and supply;E36;0
+RUS;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;0
+RUS;K;Construction;F;5 066 023
+RUS;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;582 654
+RUS;K;Wholesale trade, except of motor vehicles and motorcycles;G46;2 661 351
+RUS;K;Retail trade, except of motor vehicles and motorcycles;G47;2 511 367
+RUS;K;Land transport and transport via pipelines;H49;20 815 981
+RUS;K;Water transport;H50;393 358
+RUS;K;Air transport;H51;1 332 996
+RUS;K;Warehousing and support activities for transportation;H52;6 412 361
+RUS;K;Postal and courier activities;H53;0
+RUS;K;Accommodation and food service activities;I;906 685
+RUS;K;Publishing activities;J58;0
+RUS;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;0
+RUS;K;Telecommunications;J61;3 580 787
+RUS;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;0
+RUS;K;Financial service activities, except insurance and pension funding;K64;1 304 028
+RUS;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;0
+RUS;K;Activities auxiliary to financial services and insurance activities;K66;0
+RUS;K;Real estate activities;L68;42 261 582
+RUS;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;0
+RUS;K;"Architectural and engineering activities; technical testing and analysis";M71;0
+RUS;K;Scientific research and development;M72;0
+RUS;K;Advertising and market research;M73;0
+RUS;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;0
+RUS;K;Administrative and support service activities;N;3 737 436
+RUS;K;"Public administration and defence; compulsory social security";O84;2 876 349
+RUS;K;Education;P85;4 018 540
+RUS;K;Human health and social work activities;Q;3 552 436
+RUS;K;Other service activities;R_S;3 916 952
+RUS;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+RUS;K;Activities of extraterritorial organizations and bodies;U;0
+SVK;K;Crop and animal production, hunting and related service activities;A01;7 414
+SVK;K;Forestry and logging;A02;1 838
+SVK;K;Fishing and aquaculture;A03;4
+SVK;K;Mining and quarrying;B;3 175
+SVK;K;Manufacture of food products, beverages and tobacco products;C10-C12;4 463
+SVK;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;1 118
+SVK;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;972
+SVK;K;Manufacture of paper and paper products;C17;2 423
+SVK;K;Printing and reproduction of recorded media;C18;525
+SVK;K;Manufacture of coke and refined petroleum products ;C19;4 231
+SVK;K;Manufacture of chemicals and chemical products ;C20;2 738
+SVK;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;600
+SVK;K;Manufacture of rubber and plastic products;C22;3 209
+SVK;K;Manufacture of other non-metallic mineral products;C23;3 118
+SVK;K;Manufacture of basic metals;C24;4 205
+SVK;K;Manufacture of fabricated metal products, except machinery and equipment;C25;3 084
+SVK;K;Manufacture of computer, electronic and optical products;C26;2 402
+SVK;K;Manufacture of electrical equipment;C27;2 843
+SVK;K;Manufacture of machinery and equipment n.e.c.;C28;3 571
+SVK;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;11 071
+SVK;K;Manufacture of other transport equipment;C30;305
+SVK;K;"Manufacture of furniture; other manufacturing";C31_C32;1 237
+SVK;K;Repair and installation of machinery and equipment;C33;945
+SVK;K;Electricity, gas, steam and air conditioning supply;D35;42 364
+SVK;K;Water collection, treatment and supply;E36;9 471
+SVK;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;1 119
+SVK;K;Construction;F;3 844
+SVK;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;1 427
+SVK;K;Wholesale trade, except of motor vehicles and motorcycles;G46;4 961
+SVK;K;Retail trade, except of motor vehicles and motorcycles;G47;6 973
+SVK;K;Land transport and transport via pipelines;H49;5 858
+SVK;K;Water transport;H50;155
+SVK;K;Air transport;H51;80
+SVK;K;Warehousing and support activities for transportation;H52;14 799
+SVK;K;Postal and courier activities;H53;819
+SVK;K;Accommodation and food service activities;I;2 363
+SVK;K;Publishing activities;J58;261
+SVK;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;617
+SVK;K;Telecommunications;J61;7 275
+SVK;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;814
+SVK;K;Financial service activities, except insurance and pension funding;K64;2 481
+SVK;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;364
+SVK;K;Activities auxiliary to financial services and insurance activities;K66;65
+SVK;K;Real estate activities;L68;89 006
+SVK;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;704
+SVK;K;"Architectural and engineering activities; technical testing and analysis";M71;1 421
+SVK;K;Scientific research and development;M72;793
+SVK;K;Advertising and market research;M73;160
+SVK;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;529
+SVK;K;Administrative and support service activities;N;5 954
+SVK;K;"Public administration and defence; compulsory social security";O84;54 954
+SVK;K;Education;P85;8 878
+SVK;K;Human health and social work activities;Q;5 299
+SVK;K;Other service activities;R_S;3 980
+SVK;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+SVK;K;Activities of extraterritorial organizations and bodies;U;0
+SVN;K;Crop and animal production, hunting and related service activities;A01;2 390
+SVN;K;Forestry and logging;A02;1 019
+SVN;K;Fishing and aquaculture;A03;20
+SVN;K;Mining and quarrying;B;372
+SVN;K;Manufacture of food products, beverages and tobacco products;C10-C12;1 549
+SVN;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;558
+SVN;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;620
+SVN;K;Manufacture of paper and paper products;C17;431
+SVN;K;Printing and reproduction of recorded media;C18;316
+SVN;K;Manufacture of coke and refined petroleum products ;C19;21
+SVN;K;Manufacture of chemicals and chemical products ;C20;1 060
+SVN;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;2 402
+SVN;K;Manufacture of rubber and plastic products;C22;1 472
+SVN;K;Manufacture of other non-metallic mineral products;C23;834
+SVN;K;Manufacture of basic metals;C24;890
+SVN;K;Manufacture of fabricated metal products, except machinery and equipment;C25;2 633
+SVN;K;Manufacture of computer, electronic and optical products;C26;398
+SVN;K;Manufacture of electrical equipment;C27;1 124
+SVN;K;Manufacture of machinery and equipment n.e.c.;C28;850
+SVN;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;1 441
+SVN;K;Manufacture of other transport equipment;C30;55
+SVN;K;"Manufacture of furniture; other manufacturing";C31_C32;617
+SVN;K;Repair and installation of machinery and equipment;C33;729
+SVN;K;Electricity, gas, steam and air conditioning supply;D35;7 877
+SVN;K;Water collection, treatment and supply;E36;1 173
+SVN;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;1 576
+SVN;K;Construction;F;2 464
+SVN;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;865
+SVN;K;Wholesale trade, except of motor vehicles and motorcycles;G46;3 217
+SVN;K;Retail trade, except of motor vehicles and motorcycles;G47;3 051
+SVN;K;Land transport and transport via pipelines;H49;4 878
+SVN;K;Water transport;H50;161
+SVN;K;Air transport;H51;160
+SVN;K;Warehousing and support activities for transportation;H52;3 203
+SVN;K;Postal and courier activities;H53;893
+SVN;K;Accommodation and food service activities;I;2 896
+SVN;K;Publishing activities;J58;250
+SVN;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;272
+SVN;K;Telecommunications;J61;1 211
+SVN;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;1 381
+SVN;K;Financial service activities, except insurance and pension funding;K64;1 389
+SVN;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;605
+SVN;K;Activities auxiliary to financial services and insurance activities;K66;134
+SVN;K;Real estate activities;L68;41 611
+SVN;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;1 367
+SVN;K;"Architectural and engineering activities; technical testing and analysis";M71;942
+SVN;K;Scientific research and development;M72;677
+SVN;K;Advertising and market research;M73;209
+SVN;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;657
+SVN;K;Administrative and support service activities;N;357
+SVN;K;"Public administration and defence; compulsory social security";O84;15 464
+SVN;K;Education;P85;3 801
+SVN;K;Human health and social work activities;Q;2 978
+SVN;K;Other service activities;R_S;1 988
+SVN;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+SVN;K;Activities of extraterritorial organizations and bodies;U;0
+SWE;K;Crop and animal production, hunting and related service activities;A01;191 469
+SWE;K;Forestry and logging;A02;120 840
+SWE;K;Fishing and aquaculture;A03;1 930
+SWE;K;Mining and quarrying;B;61 561
+SWE;K;Manufacture of food products, beverages and tobacco products;C10-C12;74 617
+SWE;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;10 761
+SWE;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;50 802
+SWE;K;Manufacture of paper and paper products;C17;111 390
+SWE;K;Printing and reproduction of recorded media;C18;16 353
+SWE;K;Manufacture of coke and refined petroleum products ;C19;14 064
+SWE;K;Manufacture of chemicals and chemical products ;C20;105 928
+SWE;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;56 756
+SWE;K;Manufacture of rubber and plastic products;C22;24 978
+SWE;K;Manufacture of other non-metallic mineral products;C23;26 542
+SWE;K;Manufacture of basic metals;C24;74 601
+SWE;K;Manufacture of fabricated metal products, except machinery and equipment;C25;64 266
+SWE;K;Manufacture of computer, electronic and optical products;C26;238 644
+SWE;K;Manufacture of electrical equipment;C27;33 185
+SWE;K;Manufacture of machinery and equipment n.e.c.;C28;108 265
+SWE;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;158 384
+SWE;K;Manufacture of other transport equipment;C30;42 726
+SWE;K;"Manufacture of furniture; other manufacturing";C31_C32;30 580
+SWE;K;Repair and installation of machinery and equipment;C33;23 989
+SWE;K;Electricity, gas, steam and air conditioning supply;D35;669 237
+SWE;K;Water collection, treatment and supply;E36;202 921
+SWE;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;35 857
+SWE;K;Construction;F;179 705
+SWE;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;68 228
+SWE;K;Wholesale trade, except of motor vehicles and motorcycles;G46;182 601
+SWE;K;Retail trade, except of motor vehicles and motorcycles;G47;147 854
+SWE;K;Land transport and transport via pipelines;H49;188 911
+SWE;K;Water transport;H50;35 314
+SWE;K;Air transport;H51;27 007
+SWE;K;Warehousing and support activities for transportation;H52;765 861
+SWE;K;Postal and courier activities;H53;0
+SWE;K;Accommodation and food service activities;I;70 571
+SWE;K;Publishing activities;J58;28 908
+SWE;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;10 461
+SWE;K;Telecommunications;J61;272 077
+SWE;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;69 105
+SWE;K;Financial service activities, except insurance and pension funding;K64;54 337
+SWE;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;73 038
+SWE;K;Activities auxiliary to financial services and insurance activities;K66;8 713
+SWE;K;Real estate activities;L68;5 278 028
+SWE;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;54 849
+SWE;K;"Architectural and engineering activities; technical testing and analysis";M71;51 583
+SWE;K;Scientific research and development;M72;190 229
+SWE;K;Advertising and market research;M73;10 479
+SWE;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;10 806
+SWE;K;Administrative and support service activities;N;106 625
+SWE;K;"Public administration and defence; compulsory social security";O84;1 132 161
+SWE;K;Education;P85;174 177
+SWE;K;Human health and social work activities;Q;313 357
+SWE;K;Other service activities;R_S;188 683
+SWE;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;0
+SWE;K;Activities of extraterritorial organizations and bodies;U;0
+TUR;K;Crop and animal production, hunting and related service activities;A01;181 400
+TUR;K;Forestry and logging;A02;5 124
+TUR;K;Fishing and aquaculture;A03;3 413
+TUR;K;Mining and quarrying;B;72 216
+TUR;K;Manufacture of food products, beverages and tobacco products;C10-C12;157 089
+TUR;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;261 722
+TUR;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;20 294
+TUR;K;Manufacture of paper and paper products;C17;18 203
+TUR;K;Printing and reproduction of recorded media;C18;20 101
+TUR;K;Manufacture of coke and refined petroleum products ;C19;4 563
+TUR;K;Manufacture of chemicals and chemical products ;C20;86 232
+TUR;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;0
+TUR;K;Manufacture of rubber and plastic products;C22;65 681
+TUR;K;Manufacture of other non-metallic mineral products;C23;96 609
+TUR;K;Manufacture of basic metals;C24;77 273
+TUR;K;Manufacture of fabricated metal products, except machinery and equipment;C25;46 082
+TUR;K;Manufacture of computer, electronic and optical products;C26;15 645
+TUR;K;Manufacture of electrical equipment;C27;21 324
+TUR;K;Manufacture of machinery and equipment n.e.c.;C28;57 605
+TUR;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;64 344
+TUR;K;Manufacture of other transport equipment;C30;15 494
+TUR;K;"Manufacture of furniture; other manufacturing";C31_C32;16 634
+TUR;K;Repair and installation of machinery and equipment;C33;0
+TUR;K;Electricity, gas, steam and air conditioning supply;D35;157 469
+TUR;K;Water collection, treatment and supply;E36;48 996
+TUR;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;5 841
+TUR;K;Construction;F;674 153
+TUR;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;30 646
+TUR;K;Wholesale trade, except of motor vehicles and motorcycles;G46;66 752
+TUR;K;Retail trade, except of motor vehicles and motorcycles;G47;72 392
+TUR;K;Land transport and transport via pipelines;H49;456 644
+TUR;K;Water transport;H50;53 192
+TUR;K;Air transport;H51;16 956
+TUR;K;Warehousing and support activities for transportation;H52;114 692
+TUR;K;Postal and courier activities;H53;0
+TUR;K;Accommodation and food service activities;I;36 242
+TUR;K;Publishing activities;J58;0
+TUR;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;0
+TUR;K;Telecommunications;J61;70 085
+TUR;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;1 279
+TUR;K;Financial service activities, except insurance and pension funding;K64;34 367
+TUR;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;1 879
+TUR;K;Activities auxiliary to financial services and insurance activities;K66;1 125
+TUR;K;Real estate activities;L68;249 681
+TUR;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;0
+TUR;K;"Architectural and engineering activities; technical testing and analysis";M71;0
+TUR;K;Scientific research and development;M72;14
+TUR;K;Advertising and market research;M73;0
+TUR;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;20 228
+TUR;K;Administrative and support service activities;N;13 519
+TUR;K;"Public administration and defence; compulsory social security";O84;74 833
+TUR;K;Education;P85;157 794
+TUR;K;Human health and social work activities;Q;165 093
+TUR;K;Other service activities;R_S;17 474
+TUR;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;2 824
+TUR;K;Activities of extraterritorial organizations and bodies;U;0
+TWN;K;Crop and animal production, hunting and related service activities;A01;329 850
+TWN;K;Forestry and logging;A02;2 557
+TWN;K;Fishing and aquaculture;A03;51 420
+TWN;K;Mining and quarrying;B;46 349
+TWN;K;Manufacture of food products, beverages and tobacco products;C10-C12;820 339
+TWN;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;786 149
+TWN;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;55 204
+TWN;K;Manufacture of paper and paper products;C17;163 483
+TWN;K;Printing and reproduction of recorded media;C18;142 088
+TWN;K;Manufacture of coke and refined petroleum products ;C19;1 072 721
+TWN;K;Manufacture of chemicals and chemical products ;C20;2 364 254
+TWN;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;307 839
+TWN;K;Manufacture of rubber and plastic products;C22;539 508
+TWN;K;Manufacture of other non-metallic mineral products;C23;339 567
+TWN;K;Manufacture of basic metals;C24;1 224 192
+TWN;K;Manufacture of fabricated metal products, except machinery and equipment;C25;1 207 309
+TWN;K;Manufacture of computer, electronic and optical products;C26;5 474 810
+TWN;K;Manufacture of electrical equipment;C27;346 380
+TWN;K;Manufacture of machinery and equipment n.e.c.;C28;357 074
+TWN;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;362 075
+TWN;K;Manufacture of other transport equipment;C30;245 418
+TWN;K;"Manufacture of furniture; other manufacturing";C31_C32;64 641
+TWN;K;Repair and installation of machinery and equipment;C33;440 926
+TWN;K;Electricity, gas, steam and air conditioning supply;D35;2 233 315
+TWN;K;Water collection, treatment and supply;E36;204 199
+TWN;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;720 833
+TWN;K;Construction;F;395 210
+TWN;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;75 645
+TWN;K;Wholesale trade, except of motor vehicles and motorcycles;G46;1 583 064
+TWN;K;Retail trade, except of motor vehicles and motorcycles;G47;1 058 138
+TWN;K;Land transport and transport via pipelines;H49;643 003
+TWN;K;Water transport;H50;210 537
+TWN;K;Air transport;H51;562 221
+TWN;K;Warehousing and support activities for transportation;H52;215 907
+TWN;K;Postal and courier activities;H53;173 605
+TWN;K;Accommodation and food service activities;I;414 561
+TWN;K;Publishing activities;J58;197 522
+TWN;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;209 899
+TWN;K;Telecommunications;J61;1 156 638
+TWN;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;186 391
+TWN;K;Financial service activities, except insurance and pension funding;K64;429 960
+TWN;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;172 843
+TWN;K;Activities auxiliary to financial services and insurance activities;K66;65 724
+TWN;K;Real estate activities;L68;8 508 488
+TWN;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;39 113
+TWN;K;"Architectural and engineering activities; technical testing and analysis";M71;65 902
+TWN;K;Scientific research and development;M72;216 149
+TWN;K;Advertising and market research;M73;66 716
+TWN;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;73 498
+TWN;K;Administrative and support service activities;N;316 907
+TWN;K;"Public administration and defence; compulsory social security";O84;4 872 252
+TWN;K;Education;P85;2 300 285
+TWN;K;Human health and social work activities;Q;504 969
+TWN;K;Other service activities;R_S;260 615
+TWN;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;43 426
+TWN;K;Activities of extraterritorial organizations and bodies;U;0
+USA;K;Crop and animal production, hunting and related service activities;A01;567 745
+USA;K;Forestry and logging;A02;38 669
+USA;K;Fishing and aquaculture;A03;23 615
+USA;K;Mining and quarrying;B;1 803 624
+USA;K;Manufacture of food products, beverages and tobacco products;C10-C12;336 442
+USA;K;Manufacture of textiles, wearing apparel and leather products;C13-C15;57 872
+USA;K;"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials";C16;42 552
+USA;K;Manufacture of paper and paper products;C17;120 682
+USA;K;Printing and reproduction of recorded media;C18;49 420
+USA;K;Manufacture of coke and refined petroleum products ;C19;221 031
+USA;K;Manufacture of chemicals and chemical products ;C20;663 121
+USA;K;Manufacture of basic pharmaceutical products and pharmaceutical preparations;C21;237 002
+USA;K;Manufacture of rubber and plastic products;C22;104 158
+USA;K;Manufacture of other non-metallic mineral products;C23;87 074
+USA;K;Manufacture of basic metals;C24;165 478
+USA;K;Manufacture of fabricated metal products, except machinery and equipment;C25;175 251
+USA;K;Manufacture of computer, electronic and optical products;C26;506 266
+USA;K;Manufacture of electrical equipment;C27;73 519
+USA;K;Manufacture of machinery and equipment n.e.c.;C28;234 355
+USA;K;Manufacture of motor vehicles, trailers and semi-trailers;C29;222 260
+USA;K;Manufacture of other transport equipment;C30;161 376
+USA;K;"Manufacture of furniture; other manufacturing";C31_C32;137 976
+USA;K;Repair and installation of machinery and equipment;C33;36 519
+USA;K;Electricity, gas, steam and air conditioning supply;D35;2 132 563
+USA;K;Water collection, treatment and supply;E36;72 860
+USA;K;"Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services ";E37-E39;102 273
+USA;K;Construction;F;284 566
+USA;K;Wholesale and retail trade and repair of motor vehicles and motorcycles;G45;118 628
+USA;K;Wholesale trade, except of motor vehicles and motorcycles;G46;590 103
+USA;K;Retail trade, except of motor vehicles and motorcycles;G47;1 236 373
+USA;K;Land transport and transport via pipelines;H49;821 298
+USA;K;Water transport;H50;45 583
+USA;K;Air transport;H51;249 115
+USA;K;Warehousing and support activities for transportation;H52;110 828
+USA;K;Postal and courier activities;H53;67 702
+USA;K;Accommodation and food service activities;I;608 181
+USA;K;Publishing activities;J58;196 548
+USA;K;"Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities";J59_J60;568 356
+USA;K;Telecommunications;J61;1 071 948
+USA;K;"Computer programming, consultancy and related activities; information service activities";J62_J63;242 613
+USA;K;Financial service activities, except insurance and pension funding;K64;845 008
+USA;K;Insurance, reinsurance and pension funding, except compulsory social security;K65;300 780
+USA;K;Activities auxiliary to financial services and insurance activities;K66;154 746
+USA;K;Real estate activities;L68;20 116 517
+USA;K;"Legal and accounting activities; activities of head offices; management consultancy activities";M69_M70;532 815
+USA;K;"Architectural and engineering activities; technical testing and analysis";M71;172 168
+USA;K;Scientific research and development;M72;92 763
+USA;K;Advertising and market research;M73;93 404
+USA;K;"Other professional, scientific and technical activities; veterinary activities";M74_M75;30 486
+USA;K;Administrative and support service activities;N;610 547
+USA;K;"Public administration and defence; compulsory social security";O84;13 238 400
+USA;K;Education;P85;557 731
+USA;K;Human health and social work activities;Q;1 428 125
+USA;K;Other service activities;R_S;767 886
+USA;K;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use";T;20 099
+USA;K;Activities of extraterritorial organizations and bodies;U;0

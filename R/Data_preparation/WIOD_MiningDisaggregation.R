@@ -13,7 +13,7 @@ load("Data/WIOT2014_October16_ROW.RData")
 load("Data/FossilRatios2014_ICIO.Rdata")
 
 # load the functions written in the library file, including the TRAS balancing function 
-source("R/Cascades2020_function_library.R")
+source("R/Cascades_function_library.R")
 
 ## define sectors
 # FOR REF: NACE default sectors: 
@@ -50,10 +50,10 @@ FD_base <- output_base - rowSums(Z_base)
 VA_base <- output_base - colSums(Z_base)
 
 # import capital stock data and transform it to US$
-k_raw <- read.csv("Cascades_2020_Revision_data/capital_stocks_wiod.csv",  dec=",", sep=";")
+k_raw <- read.csv("Data/capital_stocks_wiod.csv",  dec=",", sep=";")
 k_loc <- as.numeric(gsub(" ","",k_raw[,5]))
 names(k_loc) <- country_sec_base[1:2408]
-ex_rate <- read.csv("Cascades_2020_Revision_data/exchange_rate_wiod.csv",  dec=",", sep=";")
+ex_rate <- read.csv("Data/exchange_rate_wiod.csv",  dec=",", sep=";")
 ex_rate <- as.numeric(ex_rate[,2])
 names(ex_rate) <- countries[-length(countries)]
 k_base <- k_loc*rep(ex_rate, each=56)
@@ -107,4 +107,4 @@ FD <- IOT_TRAS$FD
 VA <- IOT_TRAS$VA
 
 # save results to am R object
-save(Z, FD, VA, output, k, file = "WIOT2014_disaggregated.Rdata")
+# save(Z, FD, VA, output, k, file = "WIOT2014_disaggregated.Rdata")
