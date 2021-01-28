@@ -18,7 +18,7 @@ To run the main code, it is not necessary to run the preparatory codes before.
 
 ## Results
 
-The [Results](/Results) folder contains several tables and figures contained in the paper. Below we show some key figures (see paper for more details)
+The [Results](/Results) folder contains several tables and figures contained in the paper. Below we show some key figures (see paper for more details).
 
 - __Stranding cascade__ caused by a marginal supply shock in the __global fossil mining sector__ ([download interactive version](/Results/figures/html/Cascades_global_sectors_HTML.html))\
 ![Stranding cascade from the global mining sector](/Results/figures/Cascades_global_sectors.png) 
