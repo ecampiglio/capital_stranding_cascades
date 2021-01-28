@@ -101,6 +101,7 @@ Q <- t(P)
 
 # finally, balance the IOT with the extended TRAS function (which takes out negative values of the matrix and adds them back in the end)
 # parameters: tol difines the tolereance for the algorithm convergence, maxiter the maximum number of iterations
+# NOTE: The algorithm should converge after about 370 iterations, which can take some time
 IOT_TRAS <- TRAS_extended(IOT=IOT, rowgoal=IOT_rowgoal, colgoal=IOT_colgoal, blockgoal=IOT_base, P= P, Q = Q, tol = 1e-3, maxiter = 1000, verbose = T)
 Z <- IOT_TRAS$Z
 FD <- IOT_TRAS$FD
