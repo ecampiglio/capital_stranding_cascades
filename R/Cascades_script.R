@@ -275,7 +275,7 @@ colnames(rank_strand_fos_comp_fin) <- c("Total stranding", "External stranding",
 # generate table for LaTex
 # xtable(rank_strand_fos_comp_fin[1:15,-2])
 # export
-write.xlsx(rank_strand_fos_comp_fin, file = "country_stranding_and_exposure.xlsx")
+# write.xlsx(rank_strand_fos_comp_fin, file = "country_stranding_and_exposure.xlsx")
 
 # 2.2a Lollipop charts ====
 
@@ -545,5 +545,5 @@ cn_exp_vis_dat <- layout_network(network = cn_exp,  type = "exposure", edgewidth
 cn_exp_plot <- plot_network(network = cn_exp_vis_dat, node_height = 70, node_dist = 180, layer_sep = 200, physics = T)
 cn_exp_plot
 # export
-visExport(cn_exp_plot, type = "png") # or pdf  
+# visExport(cn_exp_plot, type = "png") # or pdf  
 
