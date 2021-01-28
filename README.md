@@ -19,7 +19,7 @@ To run the main code, it is not necessary to run the preparatory codes before.
 
 The [Results](/Results) folder contains several tables and figures contained in the paper. Below we show some key figures (see paper for more details)
 
-- __Stranding cascade__ caused by a marginal supply shock in the __global fossil mining sector__ ([interactive verison](/Results/figures/html/Cascades_global_sectors_HTML.html))\
+- __Stranding cascade__ caused by a marginal supply shock in the __global fossil mining sector__ ([download interactive verison](/Results/figures/html/Cascades_global_sectors_HTML.html))\
 ![Stranding cascade from the global mining sector](/Results/figures/Cascades_global_sectors.png) 
 
 - __Stranding caused by domestic fossil sectors__ in other countries (Top 10 countries for external marginal stranding multipliers)  
