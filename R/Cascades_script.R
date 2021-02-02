@@ -5,11 +5,11 @@
 
 # Authors: Louison Cahen-Fourot, Emanuele Campiglio, Antoine Godin, Eric Kemp-Benedict & Stefan Trsek
 
-# Note: This script loads the file WIOT2014_disaggregated.Rdata, which is itself a result of the preparator scripts "WIOD_MiningDisaggregation.R" and "ICIO_FossilRatios.R". 
+# Note: This script loads the file WIOT2014_disaggregated.Rdata, which is itself a result of the preparatory scripts "WIOD_MiningDisaggregation.R" and "ICIO_FossilRatios.R". 
 # It also requires the functions from "Cascades_function_library.R"
 
 
-###  Strucure:
+###  Structure:
 # 0. Preamble
 # 1. Derivation of the matrix of stranding multipliers (S) and associated matrices
 # 2. Analysis of S
@@ -64,7 +64,7 @@ country_sec_noRoW <- country_sec[1:(43*length(sectors))]
 # define here the sector of focus (usually "MINfos")
 sect_focus <- "MINfos"
 
-# generate summation matrices for easy aggreagtion along sectors and countries
+# generate summation matrices for easy aggregation along sectors and countries
 sum_sec <- matrix(diag(length(sectors)), nrow=length(sectors), ncol=length(country_sec))
 sum_sec_noRoW <- matrix(diag(length(sectors)), nrow=length(sectors), ncol=length(country_sec_noRoW))
 sum_country <- matrix(rep(diag(length(countries)),each=length(sectors)),nrow=length(countries), ncol=length(country_sec), byrow=T)
@@ -123,7 +123,7 @@ k_fos <- k[grepl(paste0("_",sect_focus), names(k))]
 k_int <- k/output
 # capital intensity (aggregate sectors, does not contain RoW)
 k_int_worldsec <- k_worldsec/output_worldsec
-# capital intensity (aggregate countries, inclunding 0 for RoW)
+# capital intensity (aggregate countries, including 0 for RoW)
 k_int_country <- c(k_country/output_country)
 # extract capital intensity for fossil mining sectors
 k_int_fos <- k_int[grepl(paste0("_",sect_focus), names(k_int))]
@@ -218,7 +218,7 @@ strand_ext_fos <- colSums(S_fosCols_ext)
 
 # compute S_fos_country matrix of cross-country fossil stranding
 S_fos_country <- sum_country %*% S_fosCols; rownames(S_fos_country) <- countries
-# compute S_fos_country_ext (same as S_fos_country excluding stradning within the same country)
+# compute S_fos_country_ext (same as S_fos_country excluding stranding within the same country)
 S_fos_country_ext <- S_fos_country; diag(S_fos_country_ext) <-0
 # compute total & external stranding multipliers from cross-country perspective
 strand_tot_fos_country <- colSums(S_fos_country) # equivalent to strand_tot_fos!
@@ -231,7 +231,7 @@ S_fos_worldsec <- sum_sec %*% S_fosCols; rownames(S_fos_worldsec) <- sectors # i
 # compute S_fos_worldsec_ext (same as S_fos_worldsec but with row MINfos set to zero --> eliminates effects within the same SECTOR (=B))
 S_fos_worldsec_ext <- S_fos_worldsec ; S_fos_worldsec_ext[sect_focus,] <-0 
 # compute total & external stranding multipliers from cross-sector perspective
-strand_tot_fos_worldsec <- colSums(S_fos_worldsec)  # eqivalent to strand_tot_fos & strand_tot_fos_country!
+strand_tot_fos_worldsec <- colSums(S_fos_worldsec)  # equivalent to strand_tot_fos & strand_tot_fos_country!
 strand_ext_fos_worldsec <- colSums(S_fos_worldsec_ext)
 strand_exp_fos_worldsec <- rowSums(S_fos_worldsec)
 strand_exp_ext_fos_worldsec <- rowSums(S_fos_worldsec_ext)
@@ -261,7 +261,7 @@ rank_S_fos_country <- apply(S_fos_country, 2, rank_and_name)
 # S_fos_worldsec: rank each column to see IN WHICH GLOBAL SECTORS the most stranding is caused
 rank_S_fos_worldsec <- apply(S_fos_worldsec, 2, rank_and_name)
 
-## Tables for aggregate stranding mutlipliers from each country's MINfos sector:
+## Tables for aggregate stranding multipliers from each country's MINfos sector:
 # Comparing total & 3 forms of external stranding (excl. sector itself / all MINfos sectors / all national sectors)  
 strand_fos_comp <- cbind("Total Stranding" = strand_tot_fos, "External Stranding (excl. sector itself)" = strand_ext_fos, "External Stranding (excl. all fossil sectors)" = strand_ext_fos_worldsec, "External Stranding (excl. own country)" = strand_ext_fos_country)
 rownames(strand_fos_comp) <- countries
@@ -338,7 +338,7 @@ ggplot(S_fos_country_plot, aes(x = reorder(orig_country,value, mean, na.rm = TRU
 # ggsave(filename = paste0(path.expand(fig_path),"/","Lollipop_country",".pdf"))
 
 
-# for countries'exposure to all (foreign) MINfos sectors
+# for countries' exposure to all (foreign) MINfos sectors
 
 # select top countries
 top <- 10
@@ -383,7 +383,7 @@ ggplot(S_fos_country_plot, aes(x = reorder(aff_country, value, mean, na.rm = TRU
 
 # first create a list containing the first 8 powers of B_worldsec
 B_powers_worldsec <- list(diag(length(sectors)), B_worldsec) # the first two elements are given by the identity matrix and B(^1)
-# the loop adds elments to the series by multiplying the previous element with B
+# the loop adds elements to the series by multiplying the previous element with B
 for (j in 3:9){
  B_powers_worldsec[[j]] <- mat.mult(B_powers_worldsec[[j-1]], B_worldsec) # mat.mult from rfast package makes multiplication much faster
  dimnames(B_powers_worldsec[[j]]) <- list(sectors, sectors)
@@ -391,7 +391,7 @@ for (j in 3:9){
 names(B_powers_worldsec) <- paste0(rep("Round",9),0:8)
 B_powers_worldsec <- lapply(B_powers_worldsec, function(x){dimnames(x) <- dimnames(Z_worldsec); return(x)})
 
-# then pre-multiply the transpose of each power matrix with diagonalized k_int_worldsec (same but faster: t(x)*k_int_worldsec )
+# then pre-multiply the transpose of each power matrix with diagonalised k_int_worldsec (same but faster: t(x)*k_int_worldsec )
 Rounds_worldsec <- lapply(B_powers_worldsec, function(x) {
   Round <- t(x)*k_int_worldsec; dimnames(Round)<-dimnames(Gt_worldsec); return(Round) })
 Rounds_worldsec <- lapply(Rounds_worldsec, function(x){ 
@@ -417,10 +417,10 @@ Rounds <- lapply(Rounds, function(x){ x[is.na(x)] <- 0 ; return(x)}) # set NA's 
 
 # create a matrix containing the first 8 rounds of stranding from the MINfos sector
 fos_Rounds_worldsec <- sapply(Rounds_worldsec, function(x){return(x[,sect_focus])})
-# append a column of total stranding (columnMINfosof S_worldsec)
+# append a column of total stranding (column MINfosof S_worldsec)
 fos_Rounds_worldsec <- cbind(fos_Rounds_worldsec, "Total" = S_worldsec[,sect_focus])
 
-# set plotting colours
+# set plotting colors
 barchart_cols <- c("initial_shock" = 'rgba(13, 115, 108, 0.9)', "round1" = 'rgba(38, 24, 74, 0.9)', "round2" = 'rgba(38, 24, 74, 0.6)', "round3" = 'rgba(38, 24, 74, 0.4)', "further_rounds" = 'rgba(38, 24, 74, 0.2)')
 
 # plot the rounds as ordered barcharts, displaying first 3 rounds separately and remaining rounds as aggregate segment
@@ -441,7 +441,7 @@ cntry_focus <- "CAN"
 country_sect_focus <- paste0(cntry_focus,"_",sect_focus)
 # create a matrix containing the first 8 rounds of stranding from the focus country MINfos sector
 fos_Rounds_single <- sapply(Rounds, function(x){return(x[,country_sect_focus])})
-# append a column of total stranding (columnMINfosof S_worldsec)
+# append a column of total stranding
 fos_Rounds_single <- cbind(fos_Rounds_single, "Total" = S[,country_sect_focus])
 #plot
 bar_single <- plotly_barchart(Rounds_matrix = fos_Rounds_single, sector = country_sect_focus, aggregation = "none", internal_strand = T, initial_shock = T, top = 10, title = paste0("Exposure to stranding from the ",cntry_focus, " fossil sector"))
@@ -469,17 +469,17 @@ bar_single_worldsec
 # compute network for S_worldsec: stranding from world-level MINfos sector on other world-sectors
 
 # the function takes only the first stranding Round matrix and uses Bt to compute power-series-like input losses for each node 
-node <- sect_focus
-depth <- 3
-q <- 0.05
+node <- sect_focus # originating sector 
+depth <- 3 # maximum number of layers
+n_top <- 3 # threshold number of top stranding links selected
 S1_worldsec <- Rounds_worldsec$Round1
-cn_worldsec <- cascade_network_fin(matrix = S1_worldsec, node = node, q = q , depth = depth, B_matrix = B_worldsec) 
+cn_worldsec <- cascade_network_fin(matrix = S1_worldsec, node = node, n_top = n_top, depth = depth, B_matrix = B_worldsec) 
 
-## the function below transforms the iraph netwok object to a visNetowork dataframe and sets basic layout paramters (node / edge labels & attributes) within this dataframe
+## the function below transforms the igraph network object to a visNetwork dataframe and sets basic layout parameters (node / edge labels & attributes) within this dataframe
 # the type of the input network needs to be defined (either "worldsec", "standard", or "burden_sharing")
 # it also requires a "Rounds" argument according to this type, which is the Rounds list containing the total stranding multipliers per round, which are displayed in the nodes
 cn_worldsec_vis_dat <- layout_network(network = cn_worldsec,  type = "worldsec", strand_rounds = Rounds_worldsec, edgewidth_factor = 30)
-# optional: remove edge values lower than a given threshold (improve readybility)
+# optional: remove edge values lower than a given threshold (improve readability)
 cn_worldsec_vis_dat$edges$label[cn_worldsec_vis_dat$edges$label<0.001] <- NA
 
 ## plot network: this function plots the visNetwork, defining title, node spacing & size, as well as color attributes if they aren't already defined in the network dataframe
@@ -489,7 +489,7 @@ cn_worldsec_plot <- plot_network(network = cn_worldsec_vis_dat, # title = "World
              node_height = 80, node_dist = 140, layer_sep = 250, physics = T)
 cn_worldsec_plot
 
-# export (NOTE: the visExport command will open a window in which you can manually drag nodes as desiread and then export it to png by clicking the export button)
+# export (NOTE: the visExport command will open a window in which you can manually drag nodes as desired and then export it to png by clicking the export button)
 # visExport(cn_worldsec_plot, type = "png") # or pdf
 
 # optional: save as html
@@ -503,14 +503,14 @@ cn_worldsec_plot
 # define parameters
 cntry <-"AUS"
 node <- paste0(cntry,"_",sect_focus)
-q <-  0.001
+n_top <- 3
 depth <- 3
 S1 <- Rounds$Round1
 
 # compute network
-cn <- cascade_network_fin(matrix = S1, node = node, q = q , depth = depth, B_matrix = B)
+cn <- cascade_network_fin(matrix = S1, node = node, n_top = n_top, depth = depth, B_matrix = B)
 
-## transform the igraph netwok object to a visNetowork data frame and set layout paramters
+## transform the igraph network object to a visNetwork data frame and set layout parameters
 cn_vis_dat <- layout_network(network = cn, type = "standard", strand_rounds = Rounds, edgewidth_factor = 50)
 
 ## plot network
@@ -528,6 +528,7 @@ cn_plot
 # select a country and number of top exposed sectors to include
 cntry <- "USA"
 n_exp <- 3
+m_top <- 2
 
 # select sectors that are most exposed to fossil stranding (total or external, i.e. only to foreign fossil sectors)
 S_fos_exp_tot <- rowSums(S_fosCols[grepl(paste0(cntry,"_"), rownames(S_fosCols)),])
@@ -535,13 +536,13 @@ S_fos_exp_ext <- rowSums(S_fosCols[grepl(paste0(cntry,"_"), rownames(S_fosCols))
 exposed <- names(head(sort(S_fos_exp_ext[names(S_fos_exp_ext)!=paste0(cntry,"_",sect_focus)], decreasing = TRUE),n_exp))
 
 # generate network
-# the "top" argument specifies how many of the moste impratant 1-,2- and 3-step linlages arriving in the exposed sectors should be displayed
-# the depth argument (possible values: 2 or 3) defines wether only 2 or 3 steps should be displayed
+# the "m_top" argument specifies how many of the most important 1-, 2- and 3-step linkages arriving in the exposed sectors should be displayed
+# the depth argument (possible values: 2 or 3) defines whether only 2 or 3 steps should be displayed
 ## NOTE: if depth 3 is used, the computation takes several minutes (depending on your machine and the number of exposed sectors on the bottom)
-cn_exp <- exposure_network_fin(exposed = exposed, top = 2, depth = 2, S1 = S1, B = B, color_1 = 'rgba(0,0,102,0.75)', color_2 = 'rgba(255,0,0,0.75)', color_3 = 'rgba(250,210,0,0.75)')
-# transform the igraph netwok object to a visNetowork data frame and set layout paramters
+cn_exp <- exposure_network_fin(exposed = exposed, m_top = m_top, depth = 2, S1 = S1, B = B, color_1 = 'rgba(0,0,102,0.75)', color_2 = 'rgba(255,0,0,0.75)', color_3 = 'rgba(250,210,0,0.75)')
+# transform the igraph network object to a visNetwork data frame and set layout parameters
 cn_exp_vis_dat <- layout_network(network = cn_exp,  type = "exposure", edgewidth_factor = 30, edgelabel = TRUE)
-# plot (deactivating phisics lets you drag nodes manually)
+# plot (deactivating physics lets you drag nodes manually)
 cn_exp_plot <- plot_network(network = cn_exp_vis_dat, node_height = 70, node_dist = 180, layer_sep = 200, physics = T)
 cn_exp_plot
 # export

@@ -1,10 +1,10 @@
 
-############# Capital Stradning Cascades function library ##################
+############# Capital Stranding Cascades function library ##################
 
 ## Structure:
 # - Vector ranking & naming
 # - Disaggregation of the fossil sector (with ICIO ratios)
-# - Matrix balancing (TRAS algortithm)
+# - Matrix balancing (TRAS algorithm)
 # - Cascade network functions
 # - Exposure network functions
 # - Simplification of plotting chunks (barcharts & networks)
@@ -29,7 +29,6 @@ lapply(pkgs, library, character.only = TRUE)  %>% invisible()
 # Vector ranking & naming ------------------------------------------------------------
 
 ## this function takes a given vector x and returns a ranked vector with names and the corresponding (rounded) values in brackets (e.g. "AUT_B(1.433)")
-# date of writing: ST 13.05.2020
 rank_and_name <- function(x, round_digits=3, decreasing = TRUE){
   order<-x[order(x, decreasing = decreasing)]
   out <- paste0(names(order)," (",round(order,round_digits),")")
@@ -39,12 +38,12 @@ rank_and_name <- function(x, round_digits=3, decreasing = TRUE){
 
 # Disaggregation of the fossil sector ------------------------------------------------
 
-## function for the fossil disaggregation of Z into 3 subsectors using ratios from ICIO: 
+## function for the fossil disaggregation of Z into 3 sub-sectors using ratios from ICIO: 
 
 fossil_dissaggregate_ICIO <- function(Z_mat, RatiosCols, RatiosRows) { 
   
   # step 1: disaggregate the columns of Z with the FossilRatiosCols matrix
-  # note that if we start disaggregating with the columns, we need to take into account that rows of Z are not already disagrregated, so we need a version of the FossilRatiosCols matrix which has been computed with MIN+ in the rows
+  # note that if we start disaggregating with the columns, we need to take into account that rows of Z are not already disaggregated, so we need a version of the FossilRatiosCols matrix which has been computed with MIN+ in the rows
   
   Z_step1 <- matrix(0, nrow = length(country_sec_base), ncol = length(country_sec), dimnames = list(country_sec_base, country_sec))
   
@@ -110,7 +109,7 @@ fossil_dissaggregate_vect_ICIO <- function (input_vector, ratio_matrix){
 
 # Matrix balancing --------------------------------------------------------------------
 
-# TRAS ("two stage RAS"/"tripoportional RAS"), according to Gilchrist & St.Louis (2004)
+# TRAS ("two stage RAS"/"tri-poportional RAS"), according to Gilchrist & St.Louis (2004)
 # additionally to row and column targets, it takes a third target element: matrix "blockgoal", ensuring block totals of known aggregates of cells
 # the aggregation rules (leading from the disaggregated to the known aggregate matrix) are given by aggregation matrices P and Q
 
@@ -179,7 +178,7 @@ TRAS <- function(Z0, rowgoal, colgoal, blockgoal, P, Q, tol = 1e-5, maxiter = 10
 
 
 
-## extended TRAS allowing negative values --> used to balance whole IOT (inlcuding FD and VA which contain negative values)
+## extended TRAS allowing negative values --> used to balance whole IOT (including FD and VA which contain negative values)
 # it removes negative values from the matrix, adapts the given row/column/block targets accordingly and adds them back in the end
 TRAS_extended <- function(IOT, rowgoal, colgoal, blockgoal, P, Q, tol = 1e-3, maxiter = 300, verbose = T){
   
@@ -187,7 +186,7 @@ TRAS_extended <- function(IOT, rowgoal, colgoal, blockgoal, P, Q, tol = 1e-3, ma
   if(class(IOT)!="matrix") 
   {IOT <- data.matrix(IOT)}
   
-  # create sparse versions of the aggregation matrices (faster multiplications!!!)
+  # create sparse versions of the aggregation matrices (faster multiplications!)
   sP <- Matrix(P, sparse = T)
   sQ <- Matrix(Q, sparse = T)
   
@@ -198,7 +197,7 @@ TRAS_extended <- function(IOT, rowgoal, colgoal, blockgoal, P, Q, tol = 1e-3, ma
   IOT_pos <- IOT
   IOT_pos[IOT_pos < 0] <- 0
   
-  # adapt row, column and block targets to matrix withouth negative values
+  # adapt row, column and block targets to matrix without negative values
   rowgoal_pos <- rowgoal - rowSums(IOT_neg)
   colgoal_pos <- colgoal - colSums(IOT_neg)
   blockgoal_pos <- blockgoal #- as.matrix(sP %*% IOT_neg %*% sQ)
@@ -269,17 +268,17 @@ TRAS_extended <- function(IOT, rowgoal, colgoal, blockgoal, P, Q, tol = 1e-3, ma
 # Cascade network functions ---------------------------------------------------------------------------
 
 # Return a branching-tree type network starting from node
-# pick the top q items by weight for each node (so edges must have a "weight" attribute)
-# the returned network is directed, weighted, with a "layer" atrribute on vertices
+# pick the top n items by weight for each node (so edges must have a "weight" attribute)
+# the returned network is directed, weighted, with a "layer" attribute on vertices
 
-# final verison:
+# final version:
 # uses only first stranding round (S1 = diag(k_int)%*%Bt) matrix as main argument 
 # input loss is computed as loss of previous node multiplied by the corresponding element of Bt
-# if a node has several incoming stranding links, it's input loss parameter is the sum of input loss calulations from of all incoming links
+# if a node has several incoming stranding links, it's input loss parameter is the sum of input loss calculations from of all incoming links
 # sectors can appear multiple times in the network, but only once per layer
 # note that the layer name of the originating node is set to 0
 
-cascade_network_fin <- function(matrix, node, q = 0.1, depth = NA, B_matrix = B) {
+cascade_network_fin <- function(matrix, node, n_top = 3, depth = NA, B_matrix = B) {
   
   # first, take care of the case in which depth is not defined. 
   if (is.na(depth)) {
@@ -291,7 +290,7 @@ cascade_network_fin <- function(matrix, node, q = 0.1, depth = NA, B_matrix = B)
   # the root vertex is assigned two attributes: layer (=0) and input_loss (=1)
   V(cn.graph)[node]$layer <- 0 
   V(cn.graph)[node]$input_loss <- 1
-  # we start the loop that assignes vertices to layers (number of layers defined by "depth")
+  # we start the loop that assigns vertices to layers (number of layers defined by "depth")
   for (l in 0:(depth-1)) {
     # loop over all vertices in the previous layer
     for (v in V(cn.graph)[layer == l]$name) {
@@ -305,20 +304,19 @@ cascade_network_fin <- function(matrix, node, q = 0.1, depth = NA, B_matrix = B)
           v_sect_col[grepl(paste0("_", sect_focus), names(v_sect_col))] <- 0 }
       # apply input loss to the whole column
       v_sect_col_weighted <- v_sect_col*V(cn.graph)[layer==l][v]$input_loss
-      # and take the top q percentile stranding links in this column (excluding zeros)
-      q.val <- quantile(v_sect_col_weighted[v_sect_col_weighted > 0], 1-q) # q.val <- quantile(v_sect_col[v_sect_col>0], 1-q)
-      q.list <- subset(v_sect_col_weighted,v_sect_col_weighted >= q.val)
+      # and take the top n stranding links in this column (excluding zeros)
+      n.list <- head(sort(v_sect_col_weighted[v_sect_col_weighted > 0], decreasing = TRUE), n_top)
       
-      # now we add vertices given by the sectors in the ordered q.list (only if those sectors are not yet included)
-      for (s in names(q.list[order(q.list, decreasing=TRUE)])){ 
-        if (! s %in% V(cn.graph)[layer == l+1]$name  ) { # & q.list[s]>0
+      # now we add vertices given by the sectors in the ordered n.list (only if those sectors are not yet included)
+      for (s in names(n.list)){ 
+        if (! s %in% V(cn.graph)[layer == l+1]$name  ) { 
           cn.graph <- cn.graph + vertex(s, layer = l+1, input_loss = 0)
         }
         # and connect them with edges, simply given by the value in the matrix
         # i.e. the weight of the edge is the value [s,v] from the S matrix, filtered by the input_loss value of the origin vertex  
         # if (! s %in% V(cn.graph)[layer <= l]$name){ # remove this condition if upward links should be allowed as well!
         if (s %in% V(cn.graph)[layer == l+1]$name) { # this condition is not really necessary (tautology)
-          cn.graph <- cn.graph + edge(V(cn.graph)[layer==l][v],V(cn.graph)[layer==l+1][s], weight = q.list[s]) 
+          cn.graph <- cn.graph + edge(V(cn.graph)[layer==l][v],V(cn.graph)[layer==l+1][s], weight = n.list[s]) 
           # add input to input loss, also if the vertex already exists and only a new edge to it is drawn
           V(cn.graph)[layer == l+1][s]$input_loss <- V(cn.graph)[layer == l+1][s]$input_loss + V(cn.graph)[layer==l][v]$input_loss * t(B_matrix)[s,v]
         }
@@ -335,7 +333,7 @@ cascade_network_fin <- function(matrix, node, q = 0.1, depth = NA, B_matrix = B)
 # for each exposed sector on the bottom, identify the n most important incoming direct, 2-step and 3-step stranding linkages from fossil sectors
 # --> final version
 
-exposure_network_fin <- function(exposed, top = 2, depth = 2, B = B, S1 = S1, color_1 = 'rgba(0,0,102,0.75)', color_2 = 'rgba(255,0,102,0.75)', color_3 = 'rgba(230,210,60,0.75)') {
+exposure_network_fin <- function(exposed, m_top = 2, depth = 2, B = B, S1 = S1, color_1 = 'rgba(0,0,102,0.75)', color_2 = 'rgba(255,0,102,0.75)', color_3 = 'rgba(230,210,60,0.75)') {
   
   # first, take care of the case in which depth is not defined
   if (!depth %in% c(2,3)) {
@@ -361,7 +359,7 @@ exposure_network_fin <- function(exposed, top = 2, depth = 2, B = B, S1 = S1, co
     sect_focus_v <- paste0(substr(v,1,3),"_",sect_focus)
     v_S1_fos_row[sect_focus_v] <- 0
     # take the top sectors
-    top.list1 <- head(sort(v_S1_fos_row, decreasing = TRUE), top)
+    top.list1 <- head(sort(v_S1_fos_row, decreasing = TRUE), m_top)
     
     #now we add vertices given by the sectors in the ordered top.list (only if those sectors are not yet included)
     for (s in names(top.list1)){ 
@@ -373,10 +371,10 @@ exposure_network_fin <- function(exposed, top = 2, depth = 2, B = B, S1 = S1, co
     }
     
     ## step 2: 
-    # find the most significant 2-step incoming linkages for exposed sectors, place originating secotrs in layer 0 and intermdiate sectors in layer 1
+    # find the most significant 2-step incoming linkages for exposed sectors, place originating sectors in layer 0 and intermediate sectors in layer 1
     
-    # for this, create a matrix of all possible 2-step linkages ending in v, obtained by multipling the row of v in Bt as a column vector with Bt
-    # in this matrix, the elements represent the stranding in v that originates from a unitary shock in the column sectors, then passes on to the row sectors and finally arives in v
+    # for this, create a matrix of all possible 2-step linkages ending in v, obtained by multiplying the row of v in Bt as a column vector with Bt
+    # in this matrix, the elements represent the stranding in v that originates from a unitary shock in the column sectors, then passes on to the row sectors and finally arrives in v
     twostep_strand <- v_Bt_row * Bt * k_int[v]
     # exclude self-loops
     diag(twostep_strand) <- 0  
@@ -389,7 +387,7 @@ exposure_network_fin <- function(exposed, top = 2, depth = 2, B = B, S1 = S1, co
     twostep_strand_fos <- twostep_strand[,grepl(sect_focus, colnames(twostep_strand))]
     
     # select top values
-    top.list2 <- twostep_strand_fos %>% reshape2::melt(as.is = TRUE) %>% slice_max(order_by = value, n = top) %>%
+    top.list2 <- twostep_strand_fos %>% reshape2::melt(as.is = TRUE) %>% slice_max(order_by = value, n = m_top) %>%
       rename(inter1 = Var1, origin = Var2) %>% relocate (inter1, .after = origin)
     
     # now add vertices: the originating sector is the column sectors of top.list2
@@ -421,15 +419,15 @@ exposure_network_fin <- function(exposed, top = 2, depth = 2, B = B, S1 = S1, co
     ## step 3: 
     #find the most significant 3-step linkages from the sectors in the top layer to the exposed sectors at the bottom
       
-      # generate data.frame to save the "top" most imprtant 3-step linkages starting in each fossil sector and ending in v
+      # generate data.frame to save the m top most important 3-step linkages starting in each fossil sector and ending in v
       top.list3_all <- lapply(colnames(twostep_strand_fos)[colnames(twostep_strand_fos) != sect_focus_v], function(x){
-        # create a threestep strand matrix with originating sector i by multiplying the twostep_strand matrix row-wise with the column of i in Bt
-        threestep_strand <- t(t(twostep_strand)*Bt[,paste(x)]) %>% reshape2::melt(as.is = TRUE) %>% slice_max(order_by = value, n = top) %>%
+        # create a threestep_strand matrix with originating sector i by multiplying the twostep_strand matrix row-wise with the column of i in Bt
+        threestep_strand <- t(t(twostep_strand)*Bt[,paste(x)]) %>% reshape2::melt(as.is = TRUE) %>% slice_max(order_by = value, n = m_top) %>%
           rename(inter2 = Var1, inter1 = Var2) %>% relocate (inter2, .after = inter1) %>% # reformat columns
           mutate(origin = paste(x)) %>% relocate (origin, .before = inter1) %>%
           return(threestep_strand)}) %>% bind_rows()
       
-      # now select to linkages overall: 
+      # now select top linkages overall: 
       # excluding the MINfos sector of the target country
       top.list3_all$value[top.list3_all$inter1 == sect_focus_v] <- 0 
       top.list3_all$value[top.list3_all$inter2 == sect_focus_v] <- 0 
@@ -437,7 +435,7 @@ exposure_network_fin <- function(exposed, top = 2, depth = 2, B = B, S1 = S1, co
       top.list3_all$value[top.list3_all$origin == top.list3_all$inter1] <- 0 
       top.list3_all$value[top.list3_all$inter1 == top.list3_all$inter2] <- 0 
       # select top stranding paths
-      top.list3 <- top.list3_all %>% slice_max(order_by = value, n = top)
+      top.list3 <- top.list3_all %>% slice_max(order_by = value, n = m_top)
       
       # now add vertices given by of top.list3
       # add it only of the node does not yet exist in this layer
@@ -461,7 +459,7 @@ exposure_network_fin <- function(exposed, top = 2, depth = 2, B = B, S1 = S1, co
             # add edge (if not already existing)
             if (!isTRUE(try(E(exp.graph, P = list(V(exp.graph)[layer==1][b], V(exp.graph)[layer==2][c]))[origin == a][length == 3] %in% E(exp.graph), silent = T))) { 
               exp.graph <- exp.graph + edge(V(exp.graph)[layer==1][b], V(exp.graph)[layer==2][c], weight = Bt[b,a]*Bt[c,b]*k_int[c], origin = a, inter1 = b, color = color_3, length = 3)}
-            # and with exposed sectors at the bottom with weight taken from the top.list2 vector (only if this edge with the same path does not yet exist)
+            # and with exposed sectors at the bottom with weight taken from the top.list3 vector (only if this edge with the same path does not yet exist)
             if (!isTRUE(try(E(exp.graph, P = list(V(exp.graph)[layer==2][c], V(exp.graph)[layer==depth][v]))[origin == a][inter1 == b][length == 3] %in% E(exp.graph), silent = T))) { 
               exp.graph <- exp.graph + edge(V(exp.graph)[layer==2][c], V(exp.graph)[layer==depth][v], weight = top.list3$value[top.list3$origin == a & top.list3$inter1 == b & top.list3$inter2 == c], color = color_3, origin = a, inter1 = b, inter2 = c, length = 3, final = TRUE)}
           } 
@@ -483,7 +481,7 @@ exposure_network_fin <- function(exposed, top = 2, depth = 2, B = B, S1 = S1, co
 
 plotly_barchart <- function(Rounds_matrix, sector = sect_focus, internal_strand = T, initial_shock = T, top = 10, aggregation = "none", title = "", cols = barchart_cols){
   
-  # when internal straning is not displayed, the initial shock can't be desplayed either, so set initial_shock to F and return warning
+  # when internal stranding is not displayed, the initial shock can't be displayed either, so set initial_shock to F and return warning
   if (internal_strand == F & initial_shock == T ) {
     initial_shock <- F
     warning ("initial_shock set to FALSE if internal_strand is defined as FALSE")
@@ -491,12 +489,12 @@ plotly_barchart <- function(Rounds_matrix, sector = sect_focus, internal_strand 
   
   Rounds_mat <-  Rounds_matrix
   
-  # if internal_strand = F, reomove internal stranding (stranding all stranding within the sector of the shock origin)
+  # if internal_strand = F, remove internal stranding (stranding all stranding within the sector of the shock origin)
   if (internal_strand == F) {
     Rounds_mat[grepl(sector, rownames(Rounds_mat)),] <- 0 
   }
   
-  # if an arregation argument is defined, aggregate rows according to it
+  # if an aggregation argument is defined, aggregate rows according to it
   # note that an aggregation can only be conduced if the input matrix rows are not already aggregated, so stop if this is not the case
   if (!aggregation=="none" & nrow(Rounds_matrix)<100) {stop("Aggregation can only be conducted if the input matrix rows are not already aggregated and RoW is included")}
   if (aggregation == "country") {
@@ -558,7 +556,7 @@ layout_network <- function(network, type = "standard", strand_rounds, edgelabel 
   
   # first, append the layer names to the node names to make sure all node names are unique
   # this necessary because visNetwork only accepts unique node IDs (for the case the same sectors can appear more than once)
-  V(network)$name_orig <- V(network)$name # but make a copy of th eoriginal name first
+  V(network)$name_orig <- V(network)$name # but make a copy of th original name first
   V(network)$name <- paste0(V(network)$name,"~",V(network)$layer)
   # now transform to vis dataframe:  igraph node names are transformed to vis node IDs
   network_vis_dat <- toVisNetworkData(network)
@@ -631,7 +629,7 @@ layout_network <- function(network, type = "standard", strand_rounds, edgelabel 
   # in the case of burden_sharing, color the top node separately
   if (type == "burden_sharing") {network_vis_dat$nodes$color[1] <- "firebrick"}
   
-  # add a column containing the horizontal order of nodes in each layer (this corrects a bug in the visLayout algorythm)
+  # add a column containing the horizontal order of nodes in each layer (this corrects a bug in the visLayout algorithm)
   x<-c()
   for(lay in 0:(length(unique(V(network)$layer))-1)) {layorder<-1:length(V(network)[layer==lay]); x<-c(x,layorder)}
   network_vis_dat$nodes$x <- x
@@ -650,7 +648,7 @@ layout_network <- function(network, type = "standard", strand_rounds, edgelabel 
 }
 
 
-## simple function to conatain the visNetwork plotting chunk
+## simple function to contain the visNetwork plotting chunk
 
 plot_network <- function(network, title = "", node_background = "lightgrey", node_border = "grey", edge_color = "grey", node_name_color = "black", node_value_color = "darkblue", edge_vale_color = "seagreen", stroke_color = "white", highlight_color = "gold", node_dist = 160, node_height = 90, layer_sep = 240, physics = TRUE) {
   
