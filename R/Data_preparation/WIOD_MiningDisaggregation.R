@@ -1,4 +1,5 @@
-#### This script conducts the disaggregation of the WIOD mining sector and consequent balancing of the table #######
+
+###### Disaggregation of the WIOD mining sector and consequent balancing of the table #######
 
 # Note: This script loads the file "FossilRatios2014_ICIO.Rdata", which is itself the result of the script "ICIO_FossilRatios.R"
 
@@ -30,7 +31,7 @@ countries <- c("AUS", "AUT", "BEL", "BGR", "BRA", "CAN", "CHE", "CHN", "CYP", "C
 country_sec_base <- paste0(rep(countries, each=length(sectors_base)),"_",rep(sectors_base, length(countries)))
 country_sec <- paste0(rep(countries, each=length(sectors)),"_",rep(sectors, length(countries)))
 
-# fefine indexes for extraction of individual components of the WIOT (last row/column of the transcation matrix)
+# define indexes for extraction of individual components of the WIOT (last row/column of the transaction matrix)
 nrow_ind <- which(wiot[,1]=="II_fob")-1
 ncol_ind <- which(colnames(wiot)=="AUS57")-1
 
@@ -45,7 +46,7 @@ dimnames(Z_base) <- list(country_sec_base, country_sec_base)
 output_base <- as.numeric(wiot[nrow(wiot),6:ncol_ind])
 names(output_base) <- country_sec_base
 
-# compute final demand and value added vectors as rediduals to total output
+# compute final demand and value added vectors as residuals to total output
 FD_base <- output_base - rowSums(Z_base)
 VA_base <- output_base - colSums(Z_base)
 
@@ -59,7 +60,7 @@ names(ex_rate) <- countries[-length(countries)]
 k_base <- k_loc*rep(ex_rate, each=56)
 # add zeros for RoW
 k_base <- c(k_base, rep(0,length(sectors_base))); names(k_base) <- country_sec_base 
-# transform negative PRT_MANrep captial stock to positive value
+# transform negative PRT_MANrep capital stock to positive value
 k_base["PRT_MANrep"] <- -k_base["PRT_MANrep"]
 
 
@@ -79,7 +80,7 @@ k <- fossil_dissaggregate_vect_ICIO(input_vector = k_base, ratio_matrix = Fossil
 
 # 2. Balancing ---------------------------------------------------------------
 
-# the IOT is balanced as a whole (including VA and FD) - therfore "glue"  Z, FD and VA back together 
+# the IOT is balanced as a whole (including VA and FD) - therefore "glue"  Z, FD and VA back together 
 IOT <- cbind(Z, FD)
 IOT <- rbind(IOT, "VA" = c(VA,0))
 
@@ -91,7 +92,7 @@ IOT_base <- rbind(IOT_base, "VA" = c(VA_base,0))
 IOT_rowgoal <- c(output, sum(VA))
 IOT_colgoal <- c(output, sum(FD))
 
-# the TRAS balancing algorithm needs aggegation matrices/rules that aggregate the 3 diaggregated mining sub-sectors in the IOT to the original mining sector: matrices P and Q (= t(P)) 
+# the TRAS balancing algorithm needs aggregation matrices/rules that aggregate the 3 disaggregated mining sub-sectors in the IOT to the original mining sector: matrices P and Q (= t(P)) 
 P <- diag(ncol(Z)+1)
 sectors_agg <- c("AGRagr", "AGRfor", "AGRfis", "MIN+",  "MIN+",  "MIN+", "MANfoo", "MANtex", "MANwoo", "MANpap", "MANpri", "MANref", "MANche", "MANpha", "MANpla", "MANmin", "MANmet", "MANfmp", "MANcom", "MANele", "MANmac", "MANmot", "MANtra", "MANfur", "MANrep", "PWR+", "WATwat", "WATwst", "CNS+", "TRDmot", "TRDwho", "TRDret", "TRAinl", "TRAwat", "TRAair", "TRAwar", "TRApos", "FD+", "COMpub", "COMvid", "COMtel", "COMcom", "FINser", "FINins", "FINaux", "RES+", "PROleg", "PROeng", "PROsci", "PROadv", "PROoth", "ADM+", "PUB+", "EDU+", "HEA+", "ART+", "HOU+", "EXT+") #sectors_agg <- c("AGRagr", "AGRfor", "AGRfis", "MIN+",  "MIN+", "MANfoo", "MANtex", "MANwoo", "MANpap", "MANpri", "MANref", "MANche", "MANpha", "MANpla", "MANmin", "MANmet", "MANfmp", "MANcom", "MANele", "MANmac", "MANmot", "MANtra", "MANfur", "MANrep", "PWR+", "WATwat", "WATwst", "CNS+", "TRDmot", "TRDwho", "TRDret", "TRAinl", "TRAwat", "TRAair", "TRAwar", "TRApos", "FD+", "COMpub", "COMvid", "COMtel", "COMcom", "FINser", "FINins", "FINaux", "RES+", "PROleg", "PROeng", "PROsci", "PROadv", "PROoth", "ADM+", "PUB+", "EDU+", "HEA+", "ART+", "HOU+", "EXT+")
 country_sec_agg <- paste0(rep(countries, each=length(sectors)),"_",rep(sectors_agg, length(countries)))
@@ -100,8 +101,7 @@ P <- rowsum(P, group = c(country_sec_agg), reorder = F); colnames(P) <- c(countr
 Q <- t(P)
 
 # finally, balance the IOT with the extended TRAS function (which takes out negative values of the matrix and adds them back in the end)
-# parameters: tol difines the tolereance for the algorithm convergence, maxiter the maximum number of iterations
-# NOTE: The algorithm should converge after about 370 iterations, which can take some time
+# parameters: "tol" defines the tolerance for the algorithm convergence, "maxiter" the maximum number of iterations
 IOT_TRAS <- TRAS_extended(IOT=IOT, rowgoal=IOT_rowgoal, colgoal=IOT_colgoal, blockgoal=IOT_base, P= P, Q = Q, tol = 1e-3, maxiter = 1000, verbose = T)
 Z <- IOT_TRAS$Z
 FD <- IOT_TRAS$FD

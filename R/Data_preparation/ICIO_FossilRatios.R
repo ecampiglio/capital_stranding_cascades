@@ -1,3 +1,4 @@
+
 ######## Computation of fossil ratios from the OECD ICIO ##########
 
 # Structure of code: Ratios for...
@@ -8,7 +9,7 @@
 
 ### NOTE ####
 # This script requires the OECD ICIO table for the year 2014. To run the code, please download the ICIO table in csv format from https://www.oecd.org/sti/ind/inter-country-input-output-tables.htm.
-# It also requires the ICIO-WIOD sector correspondence sheet, ocntained in the Data folder
+# It also requires the ICIO-WIOD sector correspondence sheet, contained in the Data folder
 
 # load required packages
 library(openxlsx)
@@ -101,7 +102,7 @@ ICIO_MIN_va_agg <- ICIO_MIN_va_agg[match(countries_true, rownames(ICIO_MIN_va_ag
 # compute fossil ratios
 FossilRatiosVA_ICIO <- ICIO_MIN_va_agg/rowSums(ICIO_MIN_va_agg)
 
-# replace 0-ratios by 10e-10 (necesary for TRAS balancing algorithm to converge!)
+# replace 0-ratios by 10e-10 (necessary for TRAS balancing algorithm to converge!)
 FossilRatiosVA_ICIO[FossilRatiosVA_ICIO == 0] <- 10e-10
 min(FossilRatiosVA_ICIO)
 
@@ -118,18 +119,18 @@ ICIO_Z_agg <- t(rowsum(t(ICIO_Z_agg), group = Country_aggregate))
 #country_sec_true1 <- paste0(rep(countries_true, each = 36),"_",substring(rownames(ICIO_Z_agg),first = 5))
 #ICIO_Z_agg <- ICIO_Z_agg[match(country_sec_true1, rownames(ICIO_Z_agg)), match(country_sec_true1, colnames(ICIO_Z_agg))]
 
-# add the NACE U99 (EXT+) sector (includeded in WIOD but not ICIO) by adding rows/columns of zeros (will be split equally later)
+# add the NACE U99 (EXT+) sector (included in WIOD but not ICIO) by adding rows/columns of zeros (will be split equally later)
 ICIO_Z_agg <- cbind(ICIO_Z_agg, matrix(0, ncol = length(countries_true), nrow = nrow(ICIO_Z_agg), dimnames = list(NULL, paste0(countries_true,"_99"))))
 ICIO_Z_agg <- rbind(ICIO_Z_agg, matrix(0, ncol = ncol(ICIO_Z_agg), nrow = length(countries_true), dimnames = list(paste0(countries_true,"_99"), NULL)))
 
-## get matrix to same dimension as WIOD, plus disaggregation of MIN in 3 subsectors
+## get matrix to same dimension as WIOD, plus disaggregation of MIN in 3 sub-sectors
 # extract ICIO sector codes
 ICIO_sect <- unique(substring(rownames(ICIO_Z_agg),first = 5))
 # load ICIO to WIOD sector correspondence
 ICIO_to_WIOD <- read.xlsx("Data/ICIO_to_WIOD.xlsx", colNames = TRUE)
 #generate correspondence for every country
 country_sec_ICIOtoWIOD <- paste0(rep(countries_true,each=58),"_",rep(ICIO_to_WIOD$ICIO, 44))
-# expand ICIO to WIOD dinemsion, duplicating sectors with lower disaggregation (this is okay because we only take the relative ratios for disaggregation)
+# expand ICIO to WIOD dimension, duplicating sectors with lower disaggregation (this is okay because we only take the relative ratios for disaggregation)
 ICIO_Z_WIOD <- ICIO_Z_agg[match(country_sec_ICIOtoWIOD, rownames(ICIO_Z_agg)), match(country_sec_ICIOtoWIOD, colnames(ICIO_Z_agg)) ]
 
 # rename to WIOD names
@@ -142,7 +143,7 @@ dimnames(ICIO_Z_WIOD) <- list(country_sec_WIOD_disagg, country_sec_WIOD_disagg)
 
 # extract mining columns
 ICIO_Z_WIOD_MINcols <- ICIO_Z_WIOD[, grepl("MIN", colnames(ICIO_Z_WIOD))]
-# reaggregegate 3 mining sectors in rows
+# re-aggregate 3 mining sectors in rows
 MIN_aggregate_rows <- gsub("_MIN(.*)", "_MIN+", rownames(ICIO_Z_WIOD_MINcols))
 ICIO_Z_WIOD_MINcols <- rowsum(ICIO_Z_WIOD_MINcols, group=MIN_aggregate_rows, reorder=F)
 
@@ -158,17 +159,17 @@ ICIO_Z_WIOD_MINcols_sup_ratio <- ICIO_Z_WIOD_MINcols_sup / (ICIO_Z_WIOD_MINcols_
 FossilRatiosCols_ICIO <- array(c(ICIO_Z_WIOD_MINcols_fos_ratio, ICIO_Z_WIOD_MINcols_oth_ratio, ICIO_Z_WIOD_MINcols_sup_ratio), dim = c(nrow(ICIO_Z_WIOD_MINcols_fos), ncol(ICIO_Z_WIOD_MINcols_fos), 3))
 dimnames(FossilRatiosCols_ICIO) <- list(rownames(ICIO_Z_WIOD_MINcols_fos), countries_true, c("fos", "oth", "sup"))
 
-# replace NaNs by 1/3 (in absence of better information)
+# replace NaN's by 1/3 (in absence of better information)
 FossilRatiosCols_ICIO[is.nan(FossilRatiosCols_ICIO)] <- 1/3
 sum(!is.finite(FossilRatiosCols_ICIO))
 min(FossilRatiosCols_ICIO)
 # replace values < 0 by 0 (if there are any)
 FossilRatiosCols_ICIO[FossilRatiosCols_ICIO < 0] <- 0
-# check if ratios sum uo to 1 across the 3 subsectors
+# check if ratios sum up to 1 across the 3 sub-sectors
 check_cols <- apply(FossilRatiosCols_ICIO, c(1,2), sum)
 min(check_cols) ; max(check_cols)
 
-# replace 0-ratios by 10e-10 (necesary for TRAS balancing algorithm to converge)
+# replace 0-ratios by 10e-10 (necessary for TRAS balancing algorithm to converge)
 FossilRatiosCols_ICIO[FossilRatiosCols_ICIO == 0] <- 10e-10 
 #FossilRatiosCols_ICIO[FossilRatiosCols_ICIO == 1] <- 1 - 10e-10 # not necessary!
 min(FossilRatiosCols_ICIO)
@@ -179,7 +180,7 @@ min(FossilRatiosCols_ICIO)
 # extract mining rows
 ICIO_Z_WIOD_MINrows <- ICIO_Z_WIOD[grepl("MIN", colnames(ICIO_Z_WIOD)),]
 
-# compute fossil ratiosrows
+# compute fossil ratios for rows
 ICIO_Z_WIOD_MINrows_fos <- ICIO_Z_WIOD_MINrows[seq(1, by=3, length.out=44),]
 ICIO_Z_WIOD_MINrows_oth <- ICIO_Z_WIOD_MINrows[seq(2, by=3, length.out=44),]
 ICIO_Z_WIOD_MINrows_sup <- ICIO_Z_WIOD_MINrows[seq(3, by=3, length.out=44),]
@@ -191,17 +192,17 @@ ICIO_Z_WIOD_MINrows_sup_ratio <- ICIO_Z_WIOD_MINrows_sup / (ICIO_Z_WIOD_MINrows_
 FossilRatiosRows_ICIO <- array(c(ICIO_Z_WIOD_MINrows_fos_ratio, ICIO_Z_WIOD_MINrows_oth_ratio, ICIO_Z_WIOD_MINrows_sup_ratio), dim = c(nrow(ICIO_Z_WIOD_MINrows_fos), ncol(ICIO_Z_WIOD_MINrows_fos), 3))
 dimnames(FossilRatiosRows_ICIO) <- list(countries_true, colnames(ICIO_Z_WIOD_MINrows_fos), c("fos", "oth", "sup"))
 
-# replace NaNs by 1/3
+# replace NaN's by 1/3
 FossilRatiosRows_ICIO[is.nan(FossilRatiosRows_ICIO)] <- 1/3
 sum(!is.finite(FossilRatiosRows_ICIO))
 min(FossilRatiosRows_ICIO)
 # replace values < 0 by 0 (if there are any)
 FossilRatiosRows_ICIO[FossilRatiosRows_ICIO < 0] <- 0
-# check if all ratios sum uo to 1
+# check if all ratios sum up to 1
 check_rows <- apply(FossilRatiosRows_ICIO, c(1,2), sum)
 min(check_rows) ; max(check_rows)
 
-# replace 0-ratios by 10e-10 (necesary for TRAS balancing algorithm to converge)
+# replace 0-ratios by 10e-10 (necessary for TRAS balancing algorithm to converge)
 FossilRatiosRows_ICIO[FossilRatiosRows_ICIO == 0] <- 10e-10
 #FossilRatiosCols_ICIO[FossilRatiosCols_ICIO == 1] <- 1 - 10e-10 # not necessary!
 min(FossilRatiosRows_ICIO)
