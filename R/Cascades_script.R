@@ -468,21 +468,24 @@ bar_single_worldsec
 
 # compute network for S_worldsec: stranding from world-level MINfos sector on other world-sectors
 
-# the function takes only the first stranding Round matrix and uses Bt to compute power-series-like input losses for each node 
+# define parameters
 node <- sect_focus # originating sector 
 depth <- 3 # maximum number of layers
-n_top <- 3 # threshold number of top stranding links selected
+n_top <- 3 # threshold number "n" of top stranding links to be selected for each node
+
+# generate network 
+# the cascade_network function takes only the first stranding Round matrix and uses Bt to compute power-series-like input losses for each node 
 S1_worldsec <- Rounds_worldsec$Round1
 cn_worldsec <- cascade_network_fin(matrix = S1_worldsec, node = node, n_top = n_top, depth = depth, B_matrix = B_worldsec) 
 
-## the function below transforms the igraph network object to a visNetwork dataframe and sets basic layout parameters (node / edge labels & attributes) within this dataframe
-# the type of the input network needs to be defined (either "worldsec", "standard", or "burden_sharing")
+# the layout_network function below transforms the igraph network object to a visNetwork dataframe and sets basic layout parameters (node / edge labels & attributes) within this dataframe
+# the type of the input network needs to be defined (either "worldsec" for global sectors or "standard" for country-level sectors)
 # it also requires a "Rounds" argument according to this type, which is the Rounds list containing the total stranding multipliers per round, which are displayed in the nodes
 cn_worldsec_vis_dat <- layout_network(network = cn_worldsec,  type = "worldsec", strand_rounds = Rounds_worldsec, edgewidth_factor = 30)
 # optional: remove edge values lower than a given threshold (improve readability)
 cn_worldsec_vis_dat$edges$label[cn_worldsec_vis_dat$edges$label<0.001] <- NA
 
-## plot network: this function plots the visNetwork, defining title, node spacing & size, as well as color attributes if they aren't already defined in the network dataframe
+# plot network: this function plots the visNetwork, defining title, node spacing & size, as well as color attributes if they aren't already defined in the network dataframe
 cn_worldsec_plot <- plot_network(network = cn_worldsec_vis_dat, # title = "World sectors stranding from MINfos", 
              node_background = "rgba(190,190,190,0.75)", node_border = "rgba(190,190,190,0.75)", node_name_color = "black", node_value_color = "darkblue",
              edge_color = "rgba(120,120,120,0.5)", edge_vale_color = "rgba(0, 127, 127, 0.85)", stroke_color = "rgba(255,255,255,0.85)", highlight_color = "gold", 
@@ -501,19 +504,19 @@ cn_worldsec_plot
 # compute network for S: stranding from an individual country MINfos sector on other sectors within and outside the country
 
 # define parameters
-cntry <-"AUS"
+cntry <-"AUS" 
 node <- paste0(cntry,"_",sect_focus)
-n_top <- 3
 depth <- 3
+n_top <- 3
 S1 <- Rounds$Round1
 
-# compute network
+# generate network
 cn <- cascade_network_fin(matrix = S1, node = node, n_top = n_top, depth = depth, B_matrix = B)
 
-## transform the igraph network object to a visNetwork data frame and set layout parameters
+# transform the igraph network object to a visNetwork data frame and set layout parameters
 cn_vis_dat <- layout_network(network = cn, type = "standard", strand_rounds = Rounds, edgewidth_factor = 50)
 
-## plot network
+# plot network
 cn_plot <- plot_network(network = cn_vis_dat, title = paste0("Stranding from ", node), node_height = 100 )
 cn_plot
 
@@ -525,20 +528,21 @@ cn_plot
 
 # generate exposure networks for the most fossil-exposed sectors of selected countries
 
-# select a country and number of top exposed sectors to include
-cntry <- "USA"
-n_exp <- 3
+# define parameters 
+cntry <- "USA" # country to be investigated 
+n_exp <- 3 # number of top exposed sectors to include 
+# the "m_top" argument specifies how many ("m") of the most important 1-, 2- and 3-step linkages arriving in the exposed sectors should be displayed
 m_top <- 2
+# the depth argument (possible values: 2 or 3) defines whether only 2 or 3 steps should be displayed
+## NOTE: if depth 3 is used, the computation takes several minutes (depending on your machine and the number of exposed sectors on the bottom)
+depth <- 2
 
-# select sectors that are most exposed to fossil stranding (total or external, i.e. only to foreign fossil sectors)
+# extract sectors that are most exposed to fossil stranding (total or external, i.e. only to foreign fossil sectors)
 S_fos_exp_tot <- rowSums(S_fosCols[grepl(paste0(cntry,"_"), rownames(S_fosCols)),])
 S_fos_exp_ext <- rowSums(S_fosCols[grepl(paste0(cntry,"_"), rownames(S_fosCols)), colnames(S_fosCols) != paste0(cntry,"_",sect_focus)])
 exposed <- names(head(sort(S_fos_exp_ext[names(S_fos_exp_ext)!=paste0(cntry,"_",sect_focus)], decreasing = TRUE),n_exp))
 
 # generate network
-# the "m_top" argument specifies how many of the most important 1-, 2- and 3-step linkages arriving in the exposed sectors should be displayed
-# the depth argument (possible values: 2 or 3) defines whether only 2 or 3 steps should be displayed
-## NOTE: if depth 3 is used, the computation takes several minutes (depending on your machine and the number of exposed sectors on the bottom)
 cn_exp <- exposure_network_fin(exposed = exposed, m_top = m_top, depth = 2, S1 = S1, B = B, color_1 = 'rgba(0,0,102,0.75)', color_2 = 'rgba(255,0,0,0.75)', color_3 = 'rgba(250,210,0,0.75)')
 # transform the igraph network object to a visNetwork data frame and set layout parameters
 cn_exp_vis_dat <- layout_network(network = cn_exp,  type = "exposure", edgewidth_factor = 30, edgelabel = TRUE)
