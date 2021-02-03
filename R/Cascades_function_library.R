@@ -13,7 +13,7 @@
 # load packages used in the functions below
 
 # required package names
-pkgs <- c("Matrix")
+pkgs <- c("Matrix", "dplyr", "reshape2")
 
 # install packages not yet installed
 installed_pkgs <- pkgs %in% rownames(installed.packages())
@@ -22,7 +22,7 @@ if (any(installed_pkgs == FALSE)) {
 }
 
 # load packages
-lapply(pkgs, library, character.only = TRUE)  %>% invisible()
+invisible(lapply(pkgs, library, character.only = TRUE))
 
 
 
@@ -387,7 +387,8 @@ exposure_network_fin <- function(exposed, m_top = 2, depth = 2, B = B, S1 = S1, 
     twostep_strand_fos <- twostep_strand[,grepl(sect_focus, colnames(twostep_strand))]
     
     # select top values
-    top.list2 <- twostep_strand_fos %>% reshape2::melt(as.is = TRUE) %>% slice_max(order_by = value, n = m_top) %>%
+    top.list2 <- reshape2::melt(twostep_strand_fos, as.is = TRUE)
+    top.list2 <- head(top.list2[order(top.list2$value, decreasing=TRUE),], m_top) %>% # slice_max(top.list2, order_by = value, n = m_top) 
       rename(inter1 = Var1, origin = Var2) %>% relocate (inter1, .after = origin)
     
     # now add vertices: the originating sector is the column sectors of top.list2
@@ -422,7 +423,8 @@ exposure_network_fin <- function(exposed, m_top = 2, depth = 2, B = B, S1 = S1, 
       # generate data.frame to save the m top most important 3-step linkages starting in each fossil sector and ending in v
       top.list3_all <- lapply(colnames(twostep_strand_fos)[colnames(twostep_strand_fos) != sect_focus_v], function(x){
         # create a threestep_strand matrix with originating sector i by multiplying the twostep_strand matrix row-wise with the column of i in Bt
-        threestep_strand <- t(t(twostep_strand)*Bt[,paste(x)]) %>% reshape2::melt(as.is = TRUE) %>% slice_max(order_by = value, n = m_top) %>%
+        threestep_strand <- t(t(twostep_strand)*Bt[,paste(x)]) %>% reshape2::melt(as.is = TRUE) 
+        threestep_strand <- head(threestep_strand[order(threestep_strand$value, decreasing=TRUE),], m_top) %>% # slice_max(threestep_strand, order_by = value, n = m_top) 
           rename(inter2 = Var1, inter1 = Var2) %>% relocate (inter2, .after = inter1) %>% # reformat columns
           mutate(origin = paste(x)) %>% relocate (origin, .before = inter1) %>%
           return(threestep_strand)}) %>% bind_rows()
@@ -435,7 +437,8 @@ exposure_network_fin <- function(exposed, m_top = 2, depth = 2, B = B, S1 = S1, 
       top.list3_all$value[top.list3_all$origin == top.list3_all$inter1] <- 0 
       top.list3_all$value[top.list3_all$inter1 == top.list3_all$inter2] <- 0 
       # select top stranding paths
-      top.list3 <- top.list3_all %>% slice_max(order_by = value, n = m_top)
+      top.list3 <- head(top.list3_all[order(top.list3_all$value, decreasing=TRUE),], m_top) # slice_max(top.list3_all, order_by = value, n = m_top)
+      
       
       # now add vertices given by of top.list3
       # add it only of the node does not yet exist in this layer
