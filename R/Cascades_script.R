@@ -530,11 +530,11 @@ cn_plot
 
 # define parameters 
 cntry <- "USA" # country to be investigated 
-n_exp <- 3 # number of top exposed sectors to include 
+n_exp <- 3 # number of top exposed sectors to include
 # the "m_top" argument specifies how many ("m") of the most important 1-, 2- and 3-step linkages arriving in the exposed sectors should be displayed
 m_top <- 2
 # the depth argument (possible values: 2 or 3) defines whether only 2 or 3 steps should be displayed
-## NOTE: if depth 3 is used, the computation takes several minutes (depending on your machine and the number of exposed sectors on the bottom)
+## NOTE: if depth 3 is used, the computation can take several minutes (depending on your machine and the number of n_exp and m_top)
 depth <- 2
 
 # extract sectors that are most exposed to fossil stranding (total or external, i.e. only to foreign fossil sectors)
@@ -543,7 +543,7 @@ S_fos_exp_ext <- rowSums(S_fosCols[grepl(paste0(cntry,"_"), rownames(S_fosCols))
 exposed <- names(head(sort(S_fos_exp_ext[names(S_fos_exp_ext)!=paste0(cntry,"_",sect_focus)], decreasing = TRUE),n_exp))
 
 # generate network
-cn_exp <- exposure_network_fin(exposed = exposed, m_top = m_top, depth = 2, S1 = S1, B = B, color_1 = 'rgba(0,0,102,0.75)', color_2 = 'rgba(255,0,0,0.75)', color_3 = 'rgba(250,210,0,0.75)')
+cn_exp <- exposure_network_fin(exposed = exposed, m_top = m_top, depth = depth, S1 = S1, B = B, color_1 = 'rgba(0,0,102,0.75)', color_2 = 'rgba(255,0,0,0.75)', color_3 = 'rgba(250,210,0,0.75)')
 # transform the igraph network object to a visNetwork data frame and set layout parameters
 cn_exp_vis_dat <- layout_network(network = cn_exp,  type = "exposure", edgewidth_factor = 30, edgelabel = TRUE)
 # plot (deactivating physics lets you drag nodes manually)
