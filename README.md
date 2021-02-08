@@ -27,7 +27,7 @@ The [Results](/Results) folder contains several tables and figures contained in 
 ![Stranding cascade from the global mining sector](/Results/figures/Cascades_global_sectors.png) 
 
 - __Stranding caused by domestic fossil sectors__ in other countries (Top 10 countries for external marginal stranding multipliers)  
-![Top 10 countries for external marginal stranding multipliers](/Results/figures/Lollipop_country.png) 
+![Top 10 countries for external marginal stranding multipliers](/Results/figures/Lollipop_country.pdf) 
 
 - Main __stranding exposure__ links for the __United States__ 
 ![Main exposure links for USA](Results/figures/Exposure_USA_top2.png) 
