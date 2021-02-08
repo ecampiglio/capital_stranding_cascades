@@ -3,7 +3,7 @@
 This repository contains the code and material for: 
 __Cahen-Fourot, L., Campiglio, E., Godin, A., Kemp-Benedict, E. and Trsek, S. (2021): "Capital stranding cascades: The impact of decarbonisation on productive asset utilisation"__
 
-All code and data necessary to replicate the the results is contained in the [Main](/Main) folder. 
+All code and data necessary to replicate the the results can be found in the [Main](/Main) folder. 
 The __main code file__ is *Cascades_script.R*. It requires the installation of [R](https://cran.r-project.org/).
 
 To run the main code, two additional files are required:
