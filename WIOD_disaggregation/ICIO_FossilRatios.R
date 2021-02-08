@@ -15,7 +15,7 @@
 library(openxlsx)
 
 # read in ICIO and extract total output column
-ICIO <- read.csv("Data/ICIO2018_2014.csv", row.names = 1) ## file not contained, see note above
+ICIO <- read.csv("WIOD_disaggregation/Data/ICIO2018_2014.csv", row.names = 1) ## file not contained, see note above
 ICIO <- as.matrix(ICIO)
 
 # 1. total output -----------------------------------------------------
@@ -127,7 +127,7 @@ ICIO_Z_agg <- rbind(ICIO_Z_agg, matrix(0, ncol = ncol(ICIO_Z_agg), nrow = length
 # extract ICIO sector codes
 ICIO_sect <- unique(substring(rownames(ICIO_Z_agg),first = 5))
 # load ICIO to WIOD sector correspondence
-ICIO_to_WIOD <- read.xlsx("Data/ICIO_to_WIOD.xlsx", colNames = TRUE)
+ICIO_to_WIOD <- read.xlsx("WIOD_disaggregation/Data/ICIO_to_WIOD.xlsx", colNames = TRUE)
 #generate correspondence for every country
 country_sec_ICIOtoWIOD <- paste0(rep(countries_true,each=58),"_",rep(ICIO_to_WIOD$ICIO, 44))
 # expand ICIO to WIOD dimension, duplicating sectors with lower disaggregation (this is okay because we only take the relative ratios for disaggregation)

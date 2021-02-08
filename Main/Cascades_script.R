@@ -37,10 +37,10 @@ invisible(lapply(packages, library, character.only = TRUE))
 options(scipen = 999) 
 
 # load the functions written in the library file
-source("R/Cascades_function_library.R")
+source("Main/Cascades_function_library.R")
 
 # load the disaggregated WIOD data (see script "WIOD_MiningDisaggregation")
-load("Data/WIOT2014_disaggregated.Rdata")
+load("Main/WIOT2014_disaggregated.Rdata")
 
 # declare folder where to save figures
 fig_path <- getwd()
@@ -65,9 +65,9 @@ country_sec_noRoW <- country_sec[1:(43*length(sectors))]
 sect_focus <- "MINfos"
 
 # generate summation matrices for easy aggregation along sectors and countries
-sum_sec <- matrix(diag(length(sectors)), nrow=length(sectors), ncol=length(country_sec))
-sum_sec_noRoW <- matrix(diag(length(sectors)), nrow=length(sectors), ncol=length(country_sec_noRoW))
-sum_country <- matrix(rep(diag(length(countries)),each=length(sectors)),nrow=length(countries), ncol=length(country_sec), byrow=T)
+sum_sec <- matrix(diag(length(sectors)), nrow = length(sectors), ncol = length(country_sec))
+sum_sec_noRoW <- matrix(diag(length(sectors)), nrow = length(sectors), ncol = length(country_sec_noRoW))
+sum_country <- matrix(rep(diag(length(countries)), each = length(sectors)), nrow = length(countries), ncol = length(country_sec), byrow=T)
 sum_country_noRoW <- sum_country[1:43,1:(43*length(sectors))]
 
 
@@ -312,10 +312,10 @@ ggplot(S_fos_country_plot, aes(x = reorder(orig_country,value, mean, na.rm = TRU
   coord_flip() +
   geom_line(color="grey", size = 1.5, alpha = 0.5) +
   # add jittered dots, making the maximum value transparent
-  geom_jitter(position = position_jitter(width = 0.3, height = 0, seed = 111), alpha = 1/5, 
+  geom_jitter(size = 1.3, position = position_jitter(width = 0.25, height = 0, seed = 1), alpha = 1/5, 
               aes(color = I(ifelse(rank_by_orig_country == max(rank_by_orig_country), "transparent", "black")))) + # if color/shape should be country-specific, add aes(color = aff_country)
   ## add large dot for the maximum value (optionally also for mean, see below)
-  stat_summary(fun = max, color=rgb(0.1,0.7,0.9), geom = "point", size = 4, alpha = 1) + 
+  stat_summary(fun = max, color=rgb(0.1,0.7,0.9), geom = "point", size = 3.5, alpha = 1) + 
   #stat_summary(fun = mean, color="yellow", geom = "point", shape = 18, size = 3, alpha = 1) +  # adds point for the mean
   ##add label to maximum value and ggrepel labels to the 2nd and 3rd largest (using the same seed as above ensures correct positioning)
   geom_text(aes(label=ifelse(rank_by_orig_country == max(rank_by_orig_country), paste(aff_country, round(value,2)),'')), 
@@ -323,7 +323,7 @@ ggplot(S_fos_country_plot, aes(x = reorder(orig_country,value, mean, na.rm = TRU
   geom_text_repel(aes(label=ifelse(rank_by_orig_country %in% ((length(countries)-2):(length(countries)-1)), paste(aff_country, round(value,2)),'')), 
                   size = 2, hjust = 0.2, vjust = 0.5, color = "black", 
                   segment.colour = "grey", min.segment.length	= 0.1, force = 0.1, max.overlaps = 100,   
-                  position = position_jitter(width = 0.3, height = 0, seed = 111)) +
+                  position = position_jitter(width = 0.25, height = 0, seed = 1)) + # make sure that the same seed as in the geom_jitter is used!
   # add total value at the border, controlling the horizontal position with "position argument"
   stat_summary(geom="label", fun.data=totals_df, fun.args = list(position = 2.2))+
   ## add axis labels and a subtitle used as a heading for the total values (see hjust positioning argument in theme())
@@ -335,7 +335,7 @@ ggplot(S_fos_country_plot, aes(x = reorder(orig_country,value, mean, na.rm = TRU
         axis.text.y = element_text(margin = margin(r = 0)))
 
 # export plot
-# ggsave(filename = paste0(path.expand(fig_path),"/","Lollipop_country",".pdf"))
+# ggsave(filename = paste0(path.expand(fig_path),"/","Lollipop_country",".pdf"), height = 6)
 
 
 # for countries' exposure to all (foreign) MINfos sectors
@@ -348,18 +348,18 @@ ggplot(S_fos_country_plot, aes(x = reorder(aff_country, value, mean, na.rm = TRU
   coord_flip() +
   geom_line(color="grey", size = 1.5, alpha = 0.5) +
   # add jittered dots, making the maximum value transparent
-  geom_jitter(position = position_jitter(width = 0.3, height = 0, seed = 222), alpha = 1/5, 
+  geom_jitter(size = 1.3, position = position_jitter(width = 0.25, height = 0, seed = 1), alpha = 1/5, 
               aes(color = I(ifelse(rank_by_aff_country == max(rank_by_aff_country), "transparent", "black")))) + 
   ## add large dot for the maximum value (optionally also for mean, see below)
-  stat_summary(fun = max, color=rgb(0.1,0.7,0.9), geom = "point", size = 4, alpha = 1) + 
+  stat_summary(fun = max, color=rgb(0.1,0.7,0.9), geom = "point", size = 3.5, alpha = 1) + 
   #stat_summary(fun = mean, color="yellow", geom = "point", shape = 18, size = 3, alpha = 1) +  # adds point for the mean
   ##add label to maximum value and ggrepel labels to the 2nd and 3rd largest 
   geom_text(aes(label=ifelse(rank_by_aff_country == max(rank_by_aff_country), paste(orig_country, round(value,2)),'')), 
             size = 2.5, hjust = -0.25 ,vjust = 0.25, color = "black") +
   geom_text_repel(aes(label=ifelse(rank_by_aff_country %in% ((length(countries)-2):(length(countries)-1)), paste(orig_country, round(value,2)),'')),
                   size = 2, hjust = 0.2, vjust = 0.5, color = "black", 
-                  segment.colour = "grey", min.segment.length	= 0.1, box.padding = 0.25, force = 0.5,	point.padding	= 0,
-                  position = position_jitter(width = 0.3, height = 0, seed = 222)) +
+                  segment.colour = "grey", min.segment.length	= 0.1, box.padding = 0.25, force = 1,	point.padding	= 0,
+                  position = position_jitter(width = 0.25, height = 0, seed = 1)) +  # make sure that the same seed as in the geom_jitter is used!
   # add total value at the border, controlling the horizontal position with "position argument"
   stat_summary(geom="label", fun.data=totals_df, fun.args = list(position = 2.1))+
   ## add axis labels and a subtitle used as a heading for the total values (see hjust positioning argument in theme())
@@ -370,7 +370,7 @@ ggplot(S_fos_country_plot, aes(x = reorder(aff_country, value, mean, na.rm = TRU
         axis.text.y = element_text(margin = margin(r = 0)))
 
 # export plot
-# ggsave(filename = paste0(path.expand(fig_path),"/","Lollipop_country_exposure",".pdf"))
+# ggsave(filename = paste0(path.expand(fig_path),"/","Lollipop_country_exposure",".pdf"), height = 6)
 
 
 # 3. Stranding rounds  -----------------------------------------------------

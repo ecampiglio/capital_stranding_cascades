@@ -8,13 +8,13 @@
 # 2. Balancing using TRAS algorithm
 
 # load the WIOT (World Input-Output Tables)
-load("Data/WIOT2014_October16_ROW.RData")
+load("WIOD_disaggregation/Data/WIOT2014_October16_ROW.RData")
 
 # load the fossil ratios of the mining sector from  OECD ICIO
-load("Data/FossilRatios2014_ICIO.Rdata")
+load("WIOD_disaggregation/Data/FossilRatios2014_ICIO.Rdata")
 
 # load the functions written in the library file, including the TRAS balancing function 
-source("R/Cascades_function_library.R")
+source("Main/Cascades_function_library.R")
 
 ## define sectors
 # FOR REF: NACE default sectors: 
@@ -51,10 +51,10 @@ FD_base <- output_base - rowSums(Z_base)
 VA_base <- output_base - colSums(Z_base)
 
 # import capital stock data and transform it to US$
-k_raw <- read.csv("Data/capital_stocks_wiod.csv",  dec=",", sep=";")
+k_raw <- read.csv("WIOD_disaggregation/Data/capital_stocks_wiod.csv",  dec=",", sep=";")
 k_loc <- as.numeric(gsub(" ","",k_raw[,5]))
 names(k_loc) <- country_sec_base[1:2408]
-ex_rate <- read.csv("Data/exchange_rate_wiod.csv",  dec=",", sep=";")
+ex_rate <- read.csv("WIOD_disaggregation/Data/exchange_rate_wiod.csv",  dec=",", sep=";")
 ex_rate <- as.numeric(ex_rate[,2])
 names(ex_rate) <- countries[-length(countries)]
 k_base <- k_loc*rep(ex_rate, each=56)
@@ -102,6 +102,7 @@ Q <- t(P)
 
 # finally, balance the IOT with the extended TRAS function (which takes out negative values of the matrix and adds them back in the end)
 # parameters: "tol" defines the tolerance for the algorithm convergence, "maxiter" the maximum number of iterations
+# NOTE: the algorithm should converge after about 380 iterations
 IOT_TRAS <- TRAS_extended(IOT=IOT, rowgoal=IOT_rowgoal, colgoal=IOT_colgoal, blockgoal=IOT_base, P= P, Q = Q, tol = 1e-3, maxiter = 1000, verbose = T)
 Z <- IOT_TRAS$Z
 FD <- IOT_TRAS$FD
