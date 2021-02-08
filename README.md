@@ -10,7 +10,7 @@ To run the main code, two additional files are required:
 * A library of functions (*Cascades_function_library.R*)
 * A version of the World Input-Output Database (WIOD) for the year 2014 (including capital stocks) in which the mining sector has been disaggregated into three separate sectors (*WIOT2014_disaggregated.Rdata*, see [Data](/Data) folder)  
 
-<br />
+---
 
 The disaggregation of the WIOD mining sector is conducted in separate preparatory code files (see [WIOD_disaggregation](/WIOD_disaggregation) for code and data). However, to run the main code, it is not necessary to run the preparatory code before. 
 * The script *ICIO_FossilRatios.R* computes ratios for the splitting of the WIOD mining sector from the OECD Inter-Country Input-Output (ICIO) table. This script requires the sector correspondence sheet *ICIO_to_WIOD.xlsx* as well as the OECD ICIO table for the year 2014. To run the code, please download the ICIO table in csv format from the [OECD website](https://www.oecd.org/sti/ind/inter-country-input-output-tables.htm).
