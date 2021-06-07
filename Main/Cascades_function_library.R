@@ -278,7 +278,7 @@ TRAS_extended <- function(IOT, rowgoal, colgoal, blockgoal, P, Q, tol = 1e-3, ma
 # sectors can appear multiple times in the network, but only once per layer
 # note that the layer name of the originating node is set to 0
 
-cascade_network_fin <- function(matrix, node, n_top = 3, depth = NA, B_matrix = B) {
+cascade_network_fin <- function(matrix, node, q_top = 3, depth = NA, B_matrix = B) {
   
   # first, take care of the case in which depth is not defined. 
   if (is.na(depth)) {
@@ -305,7 +305,7 @@ cascade_network_fin <- function(matrix, node, n_top = 3, depth = NA, B_matrix = 
       # apply input loss to the whole column
       v_sect_col_weighted <- v_sect_col*V(cn.graph)[layer==l][v]$input_loss
       # and take the top n stranding links in this column (excluding zeros)
-      n.list <- head(sort(v_sect_col_weighted[v_sect_col_weighted > 0], decreasing = TRUE), n_top)
+      n.list <- head(sort(v_sect_col_weighted[v_sect_col_weighted > 0], decreasing = TRUE), q_top)
       
       # now we add vertices given by the sectors in the ordered n.list (only if those sectors are not yet included)
       for (s in names(n.list)){ 
@@ -333,7 +333,7 @@ cascade_network_fin <- function(matrix, node, n_top = 3, depth = NA, B_matrix = 
 # for each exposed sector on the bottom, identify the n most important incoming direct, 2-step and 3-step stranding linkages from fossil sectors
 # --> final version
 
-exposure_network_fin <- function(exposed, m_top = 2, depth = 2, B = B, S1 = S1, color_1 = 'rgba(0,0,102,0.75)', color_2 = 'rgba(255,0,102,0.75)', color_3 = 'rgba(230,210,60,0.75)') {
+exposure_network_fin <- function(exposed, r_top = 2, depth = 2, B = B, S1 = S1, color_1 = 'rgba(0,0,102,0.75)', color_2 = 'rgba(255,0,102,0.75)', color_3 = 'rgba(230,210,60,0.75)') {
   
   # first, take care of the case in which depth is not defined
   if (!depth %in% c(2,3)) {
@@ -359,7 +359,7 @@ exposure_network_fin <- function(exposed, m_top = 2, depth = 2, B = B, S1 = S1, 
     sect_focus_v <- paste0(substr(v,1,3),"_",sect_focus)
     v_S1_fos_row[sect_focus_v] <- 0
     # take the top sectors
-    top.list1 <- head(sort(v_S1_fos_row, decreasing = TRUE), m_top)
+    top.list1 <- head(sort(v_S1_fos_row, decreasing = TRUE), r_top)
     
     #now we add vertices given by the sectors in the ordered top.list (only if those sectors are not yet included)
     for (s in names(top.list1)){ 
@@ -388,7 +388,7 @@ exposure_network_fin <- function(exposed, m_top = 2, depth = 2, B = B, S1 = S1, 
     
     # select top values
     top.list2 <- reshape2::melt(twostep_strand_fos, as.is = TRUE)
-    top.list2 <- head(top.list2[order(top.list2$value, decreasing=TRUE),], m_top) %>% # slice_max(top.list2, order_by = value, n = m_top) 
+    top.list2 <- head(top.list2[order(top.list2$value, decreasing=TRUE),], r_top) %>% # slice_max(top.list2, order_by = value, n = r_top) 
       rename(inter1 = Var1, origin = Var2) %>% relocate (inter1, .after = origin)
     
     # now add vertices: the originating sector is the column sectors of top.list2
@@ -424,7 +424,7 @@ exposure_network_fin <- function(exposed, m_top = 2, depth = 2, B = B, S1 = S1, 
       top.list3_all <- lapply(colnames(twostep_strand_fos)[colnames(twostep_strand_fos) != sect_focus_v], function(x){
         # create a threestep_strand matrix with originating sector i by multiplying the twostep_strand matrix row-wise with the column of i in Bt
         threestep_strand <- t(t(twostep_strand)*Bt[,paste(x)]) %>% reshape2::melt(as.is = TRUE) 
-        threestep_strand <- head(threestep_strand[order(threestep_strand$value, decreasing=TRUE),], m_top) %>% # slice_max(threestep_strand, order_by = value, n = m_top) 
+        threestep_strand <- head(threestep_strand[order(threestep_strand$value, decreasing=TRUE),], r_top) %>% # slice_max(threestep_strand, order_by = value, n = r_top) 
           rename(inter2 = Var1, inter1 = Var2) %>% relocate (inter2, .after = inter1) %>% # reformat columns
           mutate(origin = paste(x)) %>% relocate (origin, .before = inter1) %>%
           return(threestep_strand)}) %>% bind_rows()
@@ -437,7 +437,7 @@ exposure_network_fin <- function(exposed, m_top = 2, depth = 2, B = B, S1 = S1, 
       top.list3_all$value[top.list3_all$origin == top.list3_all$inter1] <- 0 
       top.list3_all$value[top.list3_all$inter1 == top.list3_all$inter2] <- 0 
       # select top stranding paths
-      top.list3 <- head(top.list3_all[order(top.list3_all$value, decreasing=TRUE),], m_top) # slice_max(top.list3_all, order_by = value, n = m_top)
+      top.list3 <- head(top.list3_all[order(top.list3_all$value, decreasing=TRUE),], r_top) # slice_max(top.list3_all, order_by = value, n = r_top)
       
       
       # now add vertices given by of top.list3

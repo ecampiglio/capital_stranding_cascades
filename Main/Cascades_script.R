@@ -43,7 +43,7 @@ source("Main/Cascades_function_library.R")
 load("Main/WIOT2014_disaggregated.Rdata")
 
 # declare folder where to save figures
-fig_path <- getwd()
+fig_path <- "Results/figures"
 
 # FOR REF: NACE default sectors: 
 sectors_EU <-  c("A01", "A02", "A03", "B", "C10-12", "C13-15", "C16", "C17", "C18", "C19", "C20", "C21", "C22", "C23", "C24", "C25", "C26", "C27", "C28", "C29", "C30", "C31_32", "C33" , "D", "E36", "E37-39", "F", "G45", "G46", "G47", "H49", "H50", "H51", "H52", "H53", "I", "J58", "J59_60", "J61", "J62_63", "K64", "K65", "K66", "L", "M69_70", "M71", "M72", "M73", "M74_75", "N77", "N78", "N79", "N80-82", "O", "P", "Q86", "Q87_88", "R90-92", "R93", "S94", "S95", "S96")
@@ -335,7 +335,7 @@ ggplot(S_fos_country_plot, aes(x = reorder(orig_country,value, mean, na.rm = TRU
         axis.text.y = element_text(margin = margin(r = 0)))
 
 # export plot
-# ggsave(filename = paste0(path.expand(fig_path),"/","Lollipop_country",".pdf"), height = 6)
+# ggsave(filename = paste0(path.expand(fig_path),"/","Lollipop_country",".pdf"), height = 6, width = 6.5)
 
 
 # for countries' exposure to all (foreign) MINfos sectors
@@ -370,7 +370,7 @@ ggplot(S_fos_country_plot, aes(x = reorder(aff_country, value, mean, na.rm = TRU
         axis.text.y = element_text(margin = margin(r = 0)))
 
 # export plot
-# ggsave(filename = paste0(path.expand(fig_path),"/","Lollipop_country_exposure",".pdf"), height = 6)
+# ggsave(filename = paste0(path.expand(fig_path),"/","Lollipop_country_exposure",".pdf"), height = 6, width = 6.5)
 
 
 # 3. Stranding rounds  -----------------------------------------------------
@@ -471,12 +471,12 @@ bar_single_worldsec
 # define parameters
 node <- sect_focus # originating sector 
 depth <- 3 # maximum number of layers
-n_top <- 3 # threshold number "n" of top stranding links to be selected for each node
+q_top <- 3 # threshold number "q" of top stranding links to be selected for each node
 
 # generate network 
 # the cascade_network function takes only the first stranding Round matrix and uses Bt to compute power-series-like input losses for each node 
 S1_worldsec <- Rounds_worldsec$Round1
-cn_worldsec <- cascade_network_fin(matrix = S1_worldsec, node = node, n_top = n_top, depth = depth, B_matrix = B_worldsec) 
+cn_worldsec <- cascade_network_fin(matrix = S1_worldsec, node = node, q_top = q_top, depth = depth, B_matrix = B_worldsec) 
 
 # the layout_network function below transforms the igraph network object to a visNetwork dataframe and sets basic layout parameters (node / edge labels & attributes) within this dataframe
 # the type of the input network needs to be defined (either "worldsec" for global sectors or "standard" for country-level sectors)
@@ -507,11 +507,11 @@ cn_worldsec_plot
 cntry <-"AUS" 
 node <- paste0(cntry,"_",sect_focus)
 depth <- 3
-n_top <- 3
+q_top <- 3
 S1 <- Rounds$Round1
 
 # generate network
-cn <- cascade_network_fin(matrix = S1, node = node, n_top = n_top, depth = depth, B_matrix = B)
+cn <- cascade_network_fin(matrix = S1, node = node, q_top = q_top, depth = depth, B_matrix = B)
 
 # transform the igraph network object to a visNetwork data frame and set layout parameters
 cn_vis_dat <- layout_network(network = cn, type = "standard", strand_rounds = Rounds, edgewidth_factor = 50)
@@ -531,10 +531,10 @@ cn_plot
 # define parameters 
 cntry <- "USA" # country to be investigated 
 n_exp <- 3 # number of top exposed sectors to include
-# the "m_top" argument specifies how many ("m") of the most important 1-, 2- and 3-step linkages arriving in the exposed sectors should be displayed
-m_top <- 2
+# the "r_top" argument specifies how many ("m") of the most important 1-, 2- and 3-step linkages arriving in the exposed sectors should be displayed
+r_top <- 2
 # the depth argument (possible values: 2 or 3) defines whether only 2 or 3 steps should be displayed
-## NOTE: if depth 3 is used, the computation can take several minutes (depending on your machine and the number of n_exp and m_top)
+## NOTE: if depth 3 is used, the computation can take several minutes (depending on your machine and the number of n_exp and r_top)
 depth <- 2
 
 # extract sectors that are most exposed to fossil stranding (total or external, i.e. only to foreign fossil sectors)
@@ -543,7 +543,7 @@ S_fos_exp_ext <- rowSums(S_fosCols[grepl(paste0(cntry,"_"), rownames(S_fosCols))
 exposed <- names(head(sort(S_fos_exp_ext[names(S_fos_exp_ext)!=paste0(cntry,"_",sect_focus)], decreasing = TRUE),n_exp))
 
 # generate network
-cn_exp <- exposure_network_fin(exposed = exposed, m_top = m_top, depth = depth, S1 = S1, B = B, color_1 = 'rgba(0,0,102,0.75)', color_2 = 'rgba(255,0,0,0.75)', color_3 = 'rgba(250,210,0,0.75)')
+cn_exp <- exposure_network_fin(exposed = exposed, r_top = r_top, depth = depth, S1 = S1, B = B, color_1 = 'rgba(0,0,102,0.75)', color_2 = 'rgba(255,0,0,0.75)', color_3 = 'rgba(250,210,0,0.75)')
 # transform the igraph network object to a visNetwork data frame and set layout parameters
 cn_exp_vis_dat <- layout_network(network = cn_exp,  type = "exposure", edgewidth_factor = 30, edgelabel = TRUE)
 # plot (deactivating physics lets you drag nodes manually)
