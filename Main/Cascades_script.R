@@ -310,7 +310,8 @@ totals_df <- function(y, position) {return(data.frame(y = position, label = past
 #plot
 ggplot(S_fos_country_plot, aes(x = reorder(orig_country,value, mean, na.rm = TRUE), value, group = orig_country)) + # you can also reorder according to median or max
   coord_flip() +
-  geom_line(color="grey", size = 1.5, alpha = 0.5) +
+  # optional line to maximum value
+  # geom_line(color="grey", size = 1.5, alpha = 0.5) + 
   # add jittered dots, making the maximum value transparent
   geom_jitter(size = 1.3, position = position_jitter(width = 0.25, height = 0, seed = 1), alpha = 1/5, 
               aes(color = I(ifelse(rank_by_orig_country == max(rank_by_orig_country), "transparent", "black")))) + # if color/shape should be country-specific, add aes(color = aff_country)
@@ -346,7 +347,8 @@ S_fos_country_plot <- filter(S_fos_country_long, aff_country_total_rank %in% 1:t
 
 ggplot(S_fos_country_plot, aes(x = reorder(aff_country, value, mean, na.rm = TRUE), value, group = aff_country)) + # you can also reorder according to median or max
   coord_flip() +
-  geom_line(color="grey", size = 1.5, alpha = 0.5) +
+  # optional line to maximum value
+  # geom_line(color="grey", size = 1.5, alpha = 0.5) +
   # add jittered dots, making the maximum value transparent
   geom_jitter(size = 1.3, position = position_jitter(width = 0.25, height = 0, seed = 1), alpha = 1/5, 
               aes(color = I(ifelse(rank_by_aff_country == max(rank_by_aff_country), "transparent", "black")))) + 
