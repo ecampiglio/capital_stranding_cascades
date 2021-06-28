@@ -73,7 +73,7 @@ sum_country_noRoW <- sum_country[1:43,1:(43*length(sectors))]
 
 # 1. Derivation of matrix S of stranding multipliers ----------------------
 
-# 1.1 Z  ====
+## 1.1 Z  ====
 
 # create version of Z without the rest of the world (RoW)
 Z_noRoW <- Z[1:(43*length(sectors)),1:(43*length(sectors))]
@@ -97,7 +97,7 @@ Z_fos_ext <- Z_fos; diag(Z_fos_ext) <- 0
 Z_fos_ext_noRoW <- Z_fos_ext[-44,-44]
 
 
-# 1.2 output ====
+## 1.2 output ====
 
 # create versions of output without the rest of the world (row)
 output_noRoW <- output[1:(43*length(sectors))]
@@ -107,7 +107,7 @@ output_worldsec <- as.numeric(sum_sec_noRoW%*%output_noRoW); names(output_worlds
 output_country <- as.numeric(sum_country%*%output); names(output_country) <- countries # RoW is INcluded here
 
 
-# 1.3 k ====
+## 1.3 k ====
 
 # create aggregate k vectors (by sector and by country)
 k_worldsec <- as.numeric(sum_sec%*%k); names(k_worldsec) <- sectors
@@ -117,7 +117,7 @@ k_country <- as.numeric(sum_country%*%k); names(k_country) <- countries
 k_fos <- k[grepl(paste0("_",sect_focus), names(k))]
 
 
-# 1.4 k_int ==== 
+## 1.4 k_int ==== 
 
 # capital intensity (sector x country): Note that RoW has 0's here due to lack of capital stock data
 k_int <- k/output
@@ -129,7 +129,7 @@ k_int_country <- c(k_country/output_country)
 k_int_fos <- k_int[grepl(paste0("_",sect_focus), names(k_int))]
 
 
-# 1.5 Summary of fossil data ====
+## 1.5 Summary of fossil data ====
 
 fossil_data_summary <-cbind(
   "share of global production (% excl. RoW)"= round(rowSums(Z_fos_noRoW)/sum(Z_fos_noRoW)*100, digits=3),
@@ -141,7 +141,7 @@ fossil_data_summary <-cbind(
 )
 
 
-# 1.6 B and G ====
+## 1.6 B and G ====
 
 # calculate the B matrix and the Ghosh Inverse G
 B <- Z/output
@@ -168,7 +168,7 @@ B_fos_rows_rank <- sort(rowSums(B_fos_rows), decreasing = TRUE)
 Gt_fos_cols <- Gt[,grepl(paste0("_",sect_focus), colnames(Gt))]
 
 
-# 1.7 S ====
+## 1.7 S ====
 
 # compute the S matrix of stranding multipliers
 S <- Gt*k_int # same as S_alt<-diag(k_int)%*%Gt but faster!
@@ -240,7 +240,7 @@ strand_exp_ext_fos_worldsec <- rowSums(S_fos_worldsec_ext)
 
 # 2. Analysis of S --------------------------------------------------------
 
-# 2.1 Global sectoral stranding ====
+## 2.1 Global sectoral stranding ====
 
 ## Tables for S_worldsec: Compare world-sector stranding results (total, internal, external & exposure) from S_worldsec
 # --> How much stranding is each aggregated world-sector causing / exposed to?
@@ -253,7 +253,7 @@ rank_strand_worldsec_comp <- apply(strand_worldsec_comp, 2, rank_and_name)
 # export
 # write.xlsx(rank_strand_worldsec_comp, file = "sectoral_stranding.xlsx")
 
-# 2.2 Cross-country stranding ====
+## 2.2 Cross-country stranding ====
 
 ## Tables for cross-country & cross-sector stranding from the fossil sector:
 # S_fos_country: rank each column to see IN WHICH COUNTRIES the individual fossil sectors cause most stranding
@@ -277,7 +277,7 @@ colnames(rank_strand_fos_comp_fin) <- c("Total stranding", "External stranding",
 # export
 # write.xlsx(rank_strand_fos_comp_fin, file = "country_stranding_and_exposure.xlsx")
 
-# 2.2a Lollipop charts ====
+## 2.2a Lollipop charts ====
 
 # for S_fos_country (stranding caused by national MINfos sectors in other countries)
 # excluding internal stranding within the same country
@@ -377,7 +377,7 @@ ggplot(S_fos_country_plot, aes(x = reorder(aff_country, value, mean, na.rm = TRU
 
 # 3. Stranding rounds  -----------------------------------------------------
 
-# 3.1 Rounds computation ----
+## 3.1 Rounds computation ----
 
 # Computation of the power series & stranding rounds matrices
 
@@ -413,7 +413,7 @@ Rounds <- lapply(B_powers, function(x) {Round <- t(x)*k_int; dimnames(Round)<-di
 Rounds <- lapply(Rounds, function(x){ x[is.na(x)] <- 0 ; return(x)}) # set NA's to zero
 
 
-# 3.2 Rounds barcharts: Shock in aggregate world sectors----
+## 3.2 Rounds barcharts: Shock in aggregate world sectors----
 
 ## for world sector level (S_worldsec)
 
@@ -435,7 +435,7 @@ bar_worldsec
 # orca(bar_worldsec, file = "Rounds_worldsectors.pdf")
 
 
-# 3.3 Rounds vis: Shock from a single country-sector  ----
+## 3.3 Rounds vis: Shock from a single country-sector  ----
 
 # country-sector level results
 
@@ -466,7 +466,7 @@ bar_single_worldsec
 
 # 4. Stranding cascade networks  -----------------------------------------------------
 
-# 4.1 World-sector cascades ----
+## 4.1 World-sector cascades ----
 
 # compute network for S_worldsec: stranding from world-level MINfos sector on other world-sectors
 
@@ -501,7 +501,7 @@ cn_worldsec_plot
 # visSave(cn_worldsec_plot, file = "cn_worldsec.html")
 
 
-# 4.2 Cross-country cascades ----
+## 4.2 Cross-country cascades ----
 
 # compute network for S: stranding from an individual country MINfos sector on other sectors within and outside the country
 
@@ -528,7 +528,7 @@ cn_plot
 
 # 5. Stranding exposure networks  -----------------------------------------------------
 
-# generate exposure networks for the most fossil-exposed sectors of selected countries
+## 5.1 exposure networks for the most fossil-exposed sectors of selected countries ----
 
 # define parameters 
 cntry <- "USA" # country to be investigated 
@@ -553,4 +553,21 @@ cn_exp_plot <- plot_network(network = cn_exp_vis_dat, node_height = 70, node_dis
 cn_exp_plot
 # export
 # visExport(cn_exp_plot, type = "png") # or pdf  
+
+
+## 5.2 exposure networks for world sectors ----
+
+exposed = "RES+" # sector to be investigated
+depth = 3
+r_top = 8
+
+# generate network
+cn_exp_ws <- exposure_network_ws(exposed = exposed, r_top = r_top, depth = depth, S1 = S1_worldsec, B = B_worldsec, color_1 = 'rgba(0,0,102,0.75)', color_2 = 'rgba(255,0,0,0.75)', color_3 = 'rgba(250,210,0,0.75)')
+# transform the igraph network object to a visNetwork data frame and set layout parameters
+cn_exp_vis_dat_ws <- layout_network(network = cn_exp_ws,  type = "exposure_worldsec", edgewidth_factor = 30, edgelabel = TRUE)
+# plot (deactivating physics lets you drag nodes manually)
+cn_exp_plot_ws <- plot_network(network = cn_exp_vis_dat_ws, node_height = 70, node_dist = 180, layer_sep = 200, physics = T)
+cn_exp_plot_ws
+# export
+# visExport(cn_exp_plot_ws, type = "png") # or pdf 
 

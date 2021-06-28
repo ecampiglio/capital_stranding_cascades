@@ -475,6 +475,127 @@ exposure_network_fin <- function(exposed, r_top = 2, depth = 2, B = B, S1 = S1, 
 }
 
 
+# exposure network version for world sectors
+
+exposure_network_ws <- function(exposed, r_top = 2, depth = 2, B = B_worldsec, S1 = S1_worldsec, k_int = k_int_worldsec, color_1 = 'rgba(0,0,102,0.75)', color_2 = 'rgba(255,0,102,0.75)', color_3 = 'rgba(230,210,60,0.75)') {
+  
+  # first, take care of the case in which depth is not defined
+  if (!depth %in% c(2,3)) {
+    stop ("depth has to be defined in this function and can either be 2 or 3")
+  }
+  
+  # create a graph with the exposed sectors in the lowest and the originating sectors in the highest layer
+  exp.graph <- make_empty_graph(n = 0, directed = TRUE) + vertices(exposed, layer = depth)
+  
+  # save the transpose of B as a variable
+  Bt <- t(B)
+  #extract fossil column so of S1
+  S1_fosCols <- S1[, grepl("MINfos", colnames(S1))] 
+  
+  ## step 1:
+  # connect bottom sector to MINfos
+  
+  
+  for (v in V(exp.graph)[layer == depth]$name){
+    # for sector v, we extract the corresponding row the S1 and Bt matrix 
+    v_S1_fos_row <- S1_fosCols[v]
+    v_Bt_row <- Bt[v,]
+
+    
+    #now we add vertices given by the sectors in the ordered top.list (only if those sectors are not yet included)
+    if (! sect_focus %in% V(exp.graph)[layer == 0]$name) { 
+      exp.graph <- exp.graph + vertex(sect_focus, layer = 0)
+    }
+    #and connect them with edges, given by the direct stranding link in the S1 matrix
+    exp.graph <- exp.graph + edge(V(exp.graph)[layer==0][sect_focus], V(exp.graph)[layer==depth][v], weight = S1[v,sect_focus], color = color_1, length = 1, origin = sect_focus, final = TRUE)
+    
+    
+    ## step 2: 
+    # find the most significant 2-step incoming linkages for exposed sectors, place originating sectors in layer 0 and intermediate sectors in layer 1
+    
+    # for this, create a matrix of all possible 2-step linkages ending in v, obtained by multiplying the row of v in Bt as a column vector with Bt
+    # in this matrix, the elements represent the stranding in v that originates from a unitary shock in the column sectors, then passes on to the row sectors and finally arrives in v
+    twostep_strand <- v_Bt_row * Bt * k_int[v]
+    # exclude self-loops
+    diag(twostep_strand) <- 0  
+    # remove the fossil sector 
+    twostep_strand[sect_focus,] <- 0
+    # remove the bottom layer itself
+    twostep_strand[v,] <- 0
+    # constrain the search to stranding channels originating in fossil sectors
+    twostep_strand_fos <- twostep_strand[,grepl(sect_focus, colnames(twostep_strand))]
+    
+    # select top values
+    top.list2 <- head(sort(twostep_strand_fos, decreasing = TRUE), r_top) #reshape2::melt(twostep_strand_fos, as.is = TRUE)
+
+    # now add vertices: the originating sector is the column sectors of top.list2
+    # add it only of the node does not yet exist in this layer
+    for (t in names(top.list2)){ 
+      if (! t %in% V(exp.graph)[layer == 1]$name) { 
+        exp.graph <- exp.graph + vertex(t, layer = 1)
+      }
+      #and connect them with edges, given by the direct stranding link in the S1 matrix
+      exp.graph <- exp.graph + edge(V(exp.graph)[layer==0][sect_focus], V(exp.graph)[layer==1][t], weight = S1[t,sect_focus], color = color_2, length = 2, origin = sect_focus, inter1 = t, dashes = NA)
+      exp.graph <- exp.graph + edge(V(exp.graph)[layer==1][t], V(exp.graph)[layer==depth][v], weight = top.list2[t], color = color_2, length = 2, origin = sect_focus, inter1 = t, final = TRUE)
+      
+    }
+   
+    if (depth == 3){ 
+      
+      ## step 3: 
+      #find the most significant 3-step linkages from the sectors in the top layer to the exposed sectors at the bottom
+      
+      # generate data.frame to save the m top most important 3-step linkages starting in each fossil sector and ending in v
+      # create a threestep_strand matrix with originating sector i by multiplying the twostep_strand matrix row-wise with the column of i in Bt
+      threestep_strand <- t(t(twostep_strand)*Bt[,sect_focus]) %>% reshape2::melt(as.is = TRUE) 
+      threestep_strand <- threestep_strand %>% rename(inter2 = Var1, inter1 = Var2) %>% relocate (inter2, .after = inter1) %>% # reformat columns
+        mutate(origin = paste(sect_focus)) %>% relocate (origin, .before = inter1)
+      
+      # now select top linkages overall: 
+      # excluding the MINfos sector of the target country
+      threestep_strand$value[threestep_strand$inter1 == sect_focus] <- 0 
+      # top.list3_all$value[top.list3_all$inter2 == sect_focus] <- 0 
+      # exclude self-loops
+      threestep_strand$value[threestep_strand$origin == threestep_strand$inter1] <- 0 
+      threestep_strand$value[threestep_strand$inter1 == threestep_strand$inter2] <- 0
+      threestep_strand$value[threestep_strand$inter2 == v] <- 0
+      # select top stranding paths
+      top.list3 <- head(threestep_strand[order(threestep_strand$value, decreasing=TRUE),], r_top) # slice_max(top.list3_all, order_by = value, n = r_top)
+      
+      # now add vertices given by of top.list3
+      # add it only of the node does not yet exist in this layer
+      for (a in top.list3$origin){ 
+        if (!a %in% V(exp.graph)[layer == 0]$name) { 
+          exp.graph <- exp.graph + vertex(a, layer = 0)
+        }
+        
+        # add the corresponding inter1 sector
+        for (b in top.list3$inter1[top.list3$origin == a]){ 
+          if (!b %in% V(exp.graph)[layer == 1]$name) { 
+            exp.graph <- exp.graph + vertex(b, layer = 1)}
+          # add edge (if not already existing)
+          # make the edge dashed in case a two-step path with this edge already exists
+          if (!isTRUE(try(E(exp.graph, P = list(V(exp.graph)[layer==0][a], V(exp.graph)[layer==1][b]))[length==3] %in% E(exp.graph), silent = T))) { 
+            exp.graph <- exp.graph + edge(V(exp.graph)[layer==0][a], V(exp.graph)[layer==1][b], weight = S1[b,a], origin = a, length = 3, color = color_3, dashes = ifelse(are_adjacent(exp.graph,V(exp.graph)[layer==0][a], V(exp.graph)[layer==1][b]),"[15,15]", NA))}
+          
+          for (c in top.list3$inter2[top.list3$origin == a & top.list3$inter1 == b]){
+            if (!c %in% V(exp.graph)[layer == 2]$name) { 
+              exp.graph <- exp.graph + vertex(c, layer = 2)}
+            # add edge (if not already existing)
+            if (!isTRUE(try(E(exp.graph, P = list(V(exp.graph)[layer==1][b], V(exp.graph)[layer==2][c]))[origin == a][length == 3] %in% E(exp.graph), silent = T))) { 
+              exp.graph <- exp.graph + edge(V(exp.graph)[layer==1][b], V(exp.graph)[layer==2][c], weight = Bt[b,a]*Bt[c,b]*k_int[c], origin = a, inter1 = b, color = color_3, length = 3)}
+            # and with exposed sectors at the bottom with weight taken from the top.list3 vector (only if this edge with the same path does not yet exist)
+            if (!isTRUE(try(E(exp.graph, P = list(V(exp.graph)[layer==2][c], V(exp.graph)[layer==depth][v]))[origin == a][inter1 == b][length == 3] %in% E(exp.graph), silent = T))) { 
+              exp.graph <- exp.graph + edge(V(exp.graph)[layer==2][c], V(exp.graph)[layer==depth][v], weight = top.list3$value[top.list3$origin == a & top.list3$inter1 == b & top.list3$inter2 == c], color = color_3, origin = a, inter1 = b, inter2 = c, length = 3, final = TRUE)}
+          } 
+        }
+      }
+    }
+  }
+  
+  return(exp.graph)
+}
+
 
 
 # Simplification of plotting chunks -------------------------------------------------------------------------------------------
@@ -552,8 +673,8 @@ plotly_barchart <- function(Rounds_matrix, sector = sect_focus, internal_strand 
 
 layout_network <- function(network, type = "standard", strand_rounds, edgelabel = TRUE, edgewidth_factor = 50){
   
-  # the type of the input network needs to be defined (either "worldsec", "standard", or "burden_sharing")
-  if(is.na(type)) { stop( "the type of the input network needs to be defined (either 'worldsec', 'standard', 'burden_sharing', or 'exposure')" )}
+  # the type of the input network needs to be defined 
+  if(is.na(type)) { stop( "the type of the input network needs to be defined (either 'worldsec', 'standard', 'burden_sharing', 'exposure', or 'exposure_worldsec')" )}
   
   ## transform the igraph object cn into a dataframe for visNetwork
   
@@ -566,7 +687,7 @@ layout_network <- function(network, type = "standard", strand_rounds, edgelabel 
   
   
   # in case the network is an exposure network, make sure there are no duplicate edges and sum up edges of different weight but same type between two nodes
-  if (type == "exposure"){
+  if (type %in% c("exposure", "exposure_worldsec")){
     network_vis_dat$edges <- distinct(network_vis_dat$edges, from, to, length, weight, final, origin, inter1, .keep_all=TRUE)
     network_vis_dat$edges <- network_vis_dat$edges %>% group_by(from, to, length, color, final) %>% 
       summarise(weight = sum(weight), 
@@ -603,7 +724,12 @@ layout_network <- function(network, type = "standard", strand_rounds, edgelabel 
         sector_Sfos_row <- S_fosCols[sector,] 
         sector_Sfos_row_ext <- sector_Sfos_row[colnames(S_fosCols) != paste0(substr(sector,1,3),"_",sect_focus)]
         network_vis_dat$nodes$totStrand[network_vis_dat$nodes$name_orig == sector & network_vis_dat$nodes$layer == max(network_vis_dat$nodes$layer)] <- sum(sector_Sfos_row_ext)
-   }} 
+        }
+  } else if (type == "exposure_worldsec"){ 
+    for (sector in network_vis_dat$nodes$name_orig[network_vis_dat$nodes$layer == max(network_vis_dat$nodes$layer)]){
+      # add the total external exposure to fossil stranding (i.e. only to foreign fossil sectors) to the bottom edges
+      network_vis_dat$nodes$totStrand[network_vis_dat$nodes$name_orig == sector & network_vis_dat$nodes$layer == max(network_vis_dat$nodes$layer)] <- S_worldsec[sector, sect_focus]
+    }} 
   
   
   # setting node labels: the vis network dataframe can contain a separate "label" column. 
@@ -616,7 +742,7 @@ layout_network <- function(network, type = "standard", strand_rounds, edgelabel 
     network_vis_dat$nodes$label <- paste0("<b>",sub("_","\n <b>",network_vis_dat$nodes$name_orig),"\n", ifelse(round(network_vis_dat$nodes$totStrand,3)>0, round(network_vis_dat$nodes$totStrand,3), round(network_vis_dat$nodes$totStrand,4)))
   } else if (type == "burden_sharing") {
     network_vis_dat$nodes$label <- paste0("<b>",sub("_","\n <b>",network_vis_dat$nodes$name_orig),"\n", ifelse(round(as.numeric(network_vis_dat$nodes$totStrand),3)>0, round(as.numeric(network_vis_dat$nodes$totStrand),3), round(as.numeric(network_vis_dat$nodes$totStrand),4)))
-  } else if (type == "exposure") {
+  } else if (type %in% c("exposure", "exposure_worldsec")) {
     network_vis_dat$nodes$label <- paste0("<b>",sub("_","\n <b>",network_vis_dat$nodes$name_orig))
     network_vis_dat$nodes$label[!is.na(network_vis_dat$nodes$totStrand)] <- paste0("<b>",sub("_","\n <b>",sub("*~.", "", network_vis_dat$nodes$id[!is.na(network_vis_dat$nodes$totStrand)])), "\n", ifelse(round(as.numeric(network_vis_dat$nodes$totStrand[!is.na(network_vis_dat$nodes$totStrand)]),3)>0, round(as.numeric(network_vis_dat$nodes$totStrand[!is.na(network_vis_dat$nodes$totStrand)]),3), round(as.numeric(network_vis_dat$nodes$totStrand[!is.na(network_vis_dat$nodes$totStrand)]),4)))
   }
@@ -642,7 +768,7 @@ layout_network <- function(network, type = "standard", strand_rounds, edgelabel 
     network_vis_dat$edges$label <- ifelse(round(network_vis_dat$edges$weight,3)>0, round(network_vis_dat$edges$weight,3), ifelse(round(network_vis_dat$edges$weight,4)>0, round(network_vis_dat$edges$weight,4), round(network_vis_dat$edges$weight,5)))
     network_vis_dat$edges$label[network_vis_dat$edges$label == 0] <- NA
     # for exposure networks, we only want edge labels for final edges
-    if (type == "exposure"){network_vis_dat$edges$label[is.na(network_vis_dat$edges$final)] <- NA}
+    if (type %in% c("exposure", "exposure_worldsec")){network_vis_dat$edges$label[is.na(network_vis_dat$edges$final)] <- NA}
   }
   network_vis_dat$edges$width <- 3 + network_vis_dat$edges$weight * edgewidth_factor
   network_vis_dat$nodes$level <- network_vis_dat$nodes$layer
