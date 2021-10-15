@@ -32,5 +32,11 @@ The [Results](/Results) folder contains several tables and figures contained in 
 - Main __stranding exposure__ links for the __United States__ 
 ![Main exposure links for USA](Results/figures/Exposure_USA_top2.png) 
 
+## Licenses
+
+Database: CC-BY 4.0: https://creativecommons.org/licenses/by/4.0/. The database we provide is a modified version of the WIOD database (http://www.wiod.org/home), also available with CC-BY 4.0 license. See also: Timmer, M. P., Dietzenbacher, E., Los, B., Stehrer, R. and de Vries, G. J. (2015), "An Illustrated User Guide to the World Input–Output Database: the Case of Global Automotive Production", Review of International Economics., 23: 575–605.
+
+Code: MIT (https://choosealicense.com/licenses/mit/); year: 2021; copyright holders: Louison Cahen-Fourot, Emanuele Campiglio, Antoine Godin, Eric Kemp-Benedict, Stefan Trsek.
+
 ## Contact
 For any questions or comments, please write to: emanuele.campiglio@unibo.it
