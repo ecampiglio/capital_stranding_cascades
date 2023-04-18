@@ -1,4 +1,4 @@
-# Capital Stranding Cascades
+# Capital Stranding Cascades - Replication kit
 
 This repository contains the code and material for 
 __Cahen-Fourot, L., Campiglio, E., Godin, A., Kemp-Benedict, E. and Trsek, S. (2021): "Capital stranding cascades: The impact of decarbonisation on productive asset utilisation"__. The article, published in Energy Economics, is available open-access [__here__](https://doi.org/10.1016/j.eneco.2021.105581).
